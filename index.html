@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Synapse — AI with Jim Love, John Pinard & Marcel Gagné</title>
+  <style>
+    :root {
+      --bg: #0a0e1a;
+      --surface: #111827;
+      --surface2: #1a2236;
+      --border: #1e2d45;
+      --accent: #3b82f6;
+      --accent2: #06b6d4;
+      --accent-glow: rgba(59, 130, 246, 0.15);
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --tag-bg: rgba(59, 130, 246, 0.12);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #0a0e1a 0%, #0f172a 50%, #0a1628 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 3rem 2rem 2.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 400px;
+      background: radial-gradient(ellipse, rgba(59,130,246,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .header-badge {
+      display: inline-block;
+      background: var(--tag-bg);
+      border: 1px solid rgba(59,130,246,0.3);
+      color: var(--accent2);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.9rem;
+      border-radius: 20px;
+      margin-bottom: 1.2rem;
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #e2e8f0 30%, var(--accent2) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.75rem;
+    }
+
+    header p.tagline {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 560px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .hosts {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .host-chip {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: 20px;
+    }
+
+    .host-chip strong {
+      color: var(--text);
+    }
+
+    /* ── Stats bar ── */
+    .stats-bar {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0.9rem 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .stat-label {
+      font-size: 0.72rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    /* ── Main layout ── */
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .section-header h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .section-header::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── Episode cards ── */
+    .episodes {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1.75rem;
+    }
+
+    .episode-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .episode-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(59,130,246,0.4);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 0 1px rgba(59,130,246,0.1);
+    }
+
+    .embed-wrap {
+      position: relative;
+      padding-top: 56.25%;
+      background: #000;
+    }
+
+    .embed-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .card-body {
+      padding: 1.25rem 1.4rem 1.4rem;
+    }
+
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .ep-number {
+      background: var(--accent-glow);
+      border: 1px solid rgba(59,130,246,0.25);
+      color: var(--accent);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      text-transform: uppercase;
+    }
+
+    .ep-date {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+      line-height: 1.4;
+    }
+
+    .card-description {
+      font-size: 0.845rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    .card-description.collapsed {
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .toggle-btn {
+      background: none;
+      border: none;
+      color: var(--accent);
+      font-size: 0.8rem;
+      cursor: pointer;
+      padding: 0.4rem 0;
+      margin-top: 0.3rem;
+      display: block;
+      transition: color 0.15s;
+    }
+
+    .toggle-btn:hover {
+      color: var(--accent2);
+    }
+
+    .watch-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 1rem;
+      color: var(--accent2);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .watch-link:hover {
+      color: #67e8f9;
+    }
+
+    .watch-link svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 0.82rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--accent2);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      .stats-bar { gap: 1.5rem; }
+      .episodes { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-badge">Every Saturday</div>
+  <h1>Project Synapse</h1>
+  <p class="tagline">A weekly deep dive into artificial intelligence — what it means, where it's going, and why it matters.</p>
+  <div class="hosts">
+    <span class="host-chip"><strong>Jim Love</strong> — Host</span>
+    <span class="host-chip"><strong>Marcel Gagné</strong> — Co-host</span>
+    <span class="host-chip"><strong>John Pinard</strong> — Co-host</span>
+  </div>
+</header>
+
+<div class="stats-bar">
+  <div class="stat">
+    <div class="stat-number">28</div>
+    <div class="stat-label">Episodes</div>
+  </div>
+  <div class="stat">
+    <div class="stat-number">2024–2026</div>
+    <div class="stat-label">On Air</div>
+  </div>
+  <div class="stat">
+    <div class="stat-number">@technewsday</div>
+    <div class="stat-label">YouTube Channel</div>
+  </div>
+</div>
+
+<main>
+  <div class="section-header"><h2>All Episodes</h2></div>
+
+  <div class="episodes">
+
+    <!-- EP 32 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/X0ChjaSmcFU" title="Episode 32" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 32</span>
+          <span class="ep-date">February 21, 2026</span>
+        </div>
+        <div class="card-title">Hollywood vs. AI Video, Data Loss in Gemini, and Perplexity's New Terms</div>
+        <div class="card-description collapsed">ByteDance's "SeaDance" AI video generator stirs up Hollywood with cinematic-quality recreations of actors. Perplexity overhauls its terms of service — non-commercial use only, mandatory attribution, and broad licensing of user content. Google Gemini chat history disappears for thousands of users. A developer uses Claude to reverse-engineer a robot vacuum and access ~7,000 live camera feeds across multiple countries. Rapid-fire: Anthropic Sonnet 4.6 release, Grok "4.20," and a viral clip of Sam Altman and Dario Amodei refusing to shake hands at an AI summit.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=X0ChjaSmcFU" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 31 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/u9-Ayd3TAPg" title="Episode 31" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 31</span>
+          <span class="ep-date">February 14, 2026</span>
+        </div>
+        <div class="card-title">Agentic AI Is Getting Out of Control: OpenClaw, Claude vs Codex, and the Security Crisis</div>
+        <div class="card-description collapsed">Autonomous AI agents have proliferated at a COVID-like pace — OpenClaw alone reportedly runs ~160,000 instances. Claude 4.6 helped build a C compiler for ~$20,000; Codex 5.3 can replicate certain tools in a single day. MCP (Model Context Protocol) is called "fundamentally insecure," malicious skills are appearing in agent marketplaces, and "shadow AI" deployments are bypassing organizational oversight. The takeaway for leaders: don't say no to AI — say how.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=u9-Ayd3TAPg" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 30 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/mrzh4j3B-nU" title="Episode 30" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 30</span>
+          <span class="ep-date">January 31, 2026</span>
+        </div>
+        <div class="card-title">Clawbot, Moltbot and the Overview Effect</div>
+        <div class="card-description collapsed">Special guest Kevin Russell from the Human Space Program joins the conversation. The team digs into Claude Bot (Clawbot) and its agentic capabilities and security implications, alongside Anthropic's development philosophy. The centrepiece is an extended discussion on the "Overview Effect" — the cognitive shift astronauts experience seeing Earth from space — and how it connects to AI ethics and building technology that enhances rather than diminishes humanity.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=mrzh4j3B-nU" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 29 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/yzZsjUAFH20" title="Episode 29" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 29</span>
+          <span class="ep-date">January 24, 2026</span>
+        </div>
+        <div class="card-title">The Rise of Anthropic</div>
+        <div class="card-description collapsed">A deep dive into Anthropic's strategy and what sets it apart in the AI landscape. Topics include constitutional AI methodology, the Cowork agentic environment, autonomous task execution, real-world AI coding challenges, the business model costs of AI tooling, and security concerns in AI deployments. The conversation wraps with big-picture thinking about the future of synthetic intelligence.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=yzZsjUAFH20" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 28 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/dHNl4QRF0TQ" title="Episode 28" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 28</span>
+          <span class="ep-date">January 10, 2026</span>
+        </div>
+        <div class="card-title">AI Backlash</div>
+        <div class="card-description collapsed">The societal mood has shifted from AI hype to AI backlash — job loss fears, ethical concerns, proliferating deepfakes, and non-consensual AI-generated content are all fueling the pushback. The team discusses significant new AI updates, the pitfalls of ad-supported AI models, a Clippy cultural revival, Grok's "notify apps" concept, and the seriousness of AI-enabled revenge porn and erosion of digital trust. The key message: engage with AI deliberately, not reactively.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=dHNl4QRF0TQ" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 27 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/Y_Ztr5oolic" title="Episode 27" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 27</span>
+          <span class="ep-date">December 20, 2025</span>
+        </div>
+        <div class="card-title">The Christmas Show</div>
+        <div class="card-description collapsed">A holiday edition comparing ChatGPT and Gemini's capabilities, new image generation features, and the disappointment of Gemini 3.0. The team reviews AI's growing role in daily life and breaks down three camps of AI thinkers: Doomers, Scouts, and Accelerationists. Topics include AI for older adults, future scenarios framed as "Star Trek vs. Star Wars," and what governments and corporations should be doing. Closes with holiday wishes for the year ahead.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=Y_Ztr5oolic" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 26 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/dCX9kd47tvQ" title="Episode 26" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 26</span>
+          <span class="ep-date">December 6, 2025</span>
+        </div>
+        <div class="card-title">AI Myths and Misconceptions</div>
+        <div class="card-description collapsed">Busting popular AI myths: scaling laws aren't magic, AI does create real business value, "hallucinations" may actually be a form of creativity, and claims about AI's water usage are wildly exaggerated. The team also covers flawed AI benchmarks, the Dunning-Kruger effect in AI skepticism, the importance of personalised AI responses, and the future of continuous AI learning. Critical thinking in a fast-moving field is the through-line.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=dCX9kd47tvQ" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 25 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/lgZrboV5grY" title="Episode 25" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 25</span>
+          <span class="ep-date">November 29, 2025</span>
+        </div>
+        <div class="card-title">AGI Is Here</div>
+        <div class="card-description collapsed">The team makes the case that AI has crossed a meaningful AGI threshold. The discussion covers Claude 4.5 vs. Google Gemini, AI's role in research, writing, and coding via AI Studio, cybersecurity concerns with third-party app integrations, and the importance of keeping software updated as AI attack surfaces expand. References to classic films and early tech-support war stories keep things grounded.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=lgZrboV5grY" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 23 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/iA6NIMKLMLo" title="Episode 23" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 23</span>
+          <span class="ep-date">November 22, 2025</span>
+        </div>
+        <div class="card-title">Gemini 3.0 Rocks!</div>
+        <div class="card-description collapsed">Google Gemini 3.0 gets a thorough live workout — text, images, and video all in one place. The team demos generating restaurant menus, building apps, and analysing YouTube videos. Google's "Nano Banana Pro" is singled out as a comprehensive multimodal solution that rivals (and in some ways beats) ChatGPT 5.1. A high-energy episode that showcases just how much AI creative and business tooling has matured.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=iA6NIMKLMLo" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 22 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/s4X57SvP-k0" title="Episode 22" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 22</span>
+          <span class="ep-date">November 16, 2025</span>
+        </div>
+        <div class="card-title">AI Music, Marcel's Tesla Trial, and More</div>
+        <div class="card-description collapsed">AI-generated music has become indistinguishable from human-made music — and the copyright battle is heating up. The team also covers AI brand recognition trends, the financial dynamics and potential bubble forming around AI infrastructure, and Marcel's firsthand Tesla Model Y test drive and its self-driving capabilities. Plus: the economics of data centres and a preview of upcoming AI ethics topics.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=s4X57SvP-k0" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 21 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/WOtUXyK94xo" title="Episode 21" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 21</span>
+          <span class="ep-date">November 2, 2025</span>
+        </div>
+        <div class="card-title">Debunking the AI Bubble and Exploring Vibe Coding</div>
+        <div class="card-description collapsed">Marcel shows up in a Grim Reaper costume for a spirited Halloween debate about AI's future. Topics: is the AI boom a bubble? Google's quiet product launches, AI chip manufacturing competition, and job market impacts. The main attraction is "vibe coding" — building software through natural language descriptions — with live demos in Google AI Studio. Key message for executives: get your hands dirty with these tools yourself.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=WOtUXyK94xo" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 20 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/KSVP0A4qVo8" title="Episode 20" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 20</span>
+          <span class="ep-date">September 13, 2025</span>
+        </div>
+        <div class="card-title">Why We Aren't Getting Benefits From AI</div>
+        <div class="card-description collapsed">An MIT survey finds only 5% of companies financially benefit from AI — so where's the disconnect? The team explores how AI genuinely improves productivity in content creation, coding, and research, and why so many organisations are failing to capture that value. A Harvard Business Review chart of top AI use cases sparks discussion on treating AI as a coworker. Practical advice: start small, play with the tools, and chip away at the 80% completion barrier.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=KSVP0A4qVo8" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 19 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/414S08DCOGI" title="Episode 19" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 19</span>
+          <span class="ep-date">August 30, 2025</span>
+        </div>
+        <div class="card-title">Exploring the Cutting-Edge AI Tools: A Deep Dive</div>
+        <div class="card-description collapsed">Marcel leads a hands-on showcase: Google Genie 3, Gemini 2.5 Image Generator, Heygen voice cloning and digital twins, and Suno AI music generation. The team also builds AI storybooks and explores interactive environments and real-world physics simulations. A serious note emerges on parental responsibility — children are using AI tools unsupervised, and the risks are real. Returns to the show's roots: play with AI to understand it.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=414S08DCOGI" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 18 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/b5p58AnfINw" title="Episode 18" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 18</span>
+          <span class="ep-date">August 23, 2025</span>
+        </div>
+        <div class="card-title">Is the AI Bubble About To Burst?</div>
+        <div class="card-description collapsed">The MIT report claiming only 5% of AI projects yield financial benefits has rattled markets — but is the panic justified? The team examines historical technology adoption cycles, open-source AI democratisation, China's role in the global AI race, and security implementation gaps. Topics include Canada's AI positioning, home automation, the "Elon Musk Factor," and AI scalability. Teases an upcoming interview with the head of Zoho Canada.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=b5p58AnfINw" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 17 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/dvG7rBa_bpw" title="Episode 17" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 17</span>
+          <span class="ep-date">August 16, 2025</span>
+        </div>
+        <div class="card-title">AI Hype, Reality, and the Future of Intelligence</div>
+        <div class="card-description collapsed">GPT-5 and Grok push the boundaries of AI intelligence — but how reliable are they in corporate settings? The team covers Apple's AI strategy and its abandoned self-driving car programme, Grok's "unhinged personality" and new voice modes, and GPT-5's rollout controversies. Live interactions with AI models demonstrate both capabilities and limits. Broader themes: AI personalisation, transhumanism, and the intensifying global competition among Apple, Google, OpenAI, and China.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=dvG7rBa_bpw" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 16 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/_dYYMEUHjgs" title="Episode 16" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 16</span>
+          <span class="ep-date">August 9, 2025</span>
+        </div>
+        <div class="card-title">AI This Week: Security, GPT-5, and Digital Identity</div>
+        <div class="card-description collapsed">Developers are losing production code thanks to AI-powered IDEs — and Black Hat conference reveals new prompt injection attack vectors. The T App data breach makes the case for better digital identity systems. OpenAI's GPT-5 launch: impressive but not without issues. Age verification failures and AI-assisted identity fraud round out a dense security-focused episode that ends with practical guidance on safer AI practices.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=_dYYMEUHjgs" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 15 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/OjnJxfcbrUU" title="Episode 15" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 15</span>
+          <span class="ep-date">June 28, 2025</span>
+        </div>
+        <div class="card-title">Project Synapse — June 28, 2025</div>
+        <div class="card-description collapsed">The latest conversation from Jim, Marcel, and John covering the week in AI. Watch the episode for full details.</div>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=OjnJxfcbrUU" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 14 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/zQWrHwMlJ2k" title="Episode 14" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 14</span>
+          <span class="ep-date">April 26, 2025</span>
+        </div>
+        <div class="card-title">AI's Next Leap: Learning Through Experience</div>
+        <div class="card-description collapsed">Centred on the landmark paper "Welcome to the Era of Experience" by AI pioneers David Silver and Richard Sutton, this episode explores how AI is shifting from pre-trained knowledge to learning through reinforcement and direct experience. AlphaGo and AlphaZero are revisited as milestones. The team discusses robots trained on YouTube videos, the rise of autonomous AI coworkers, job displacement, and ethical challenges of the human-AI transition. Book recommendation: "The Dawn of Everything."</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=zQWrHwMlJ2k" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 13 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/BHRW-Hohfx8" title="Episode 13" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 13</span>
+          <span class="ep-date">March 29, 2025</span>
+        </div>
+        <div class="card-title">AI &amp; Robots — Prepare for Impact</div>
+        <div class="card-description collapsed">OpenAI vs. Google — consumer focus vs. research focus. Gemini 2.5, Studio Ghibli AI imagery, and Sam Altman's "marketing genius" are all on the table. The main event: humanoid robots replacing assembly line and home jobs (Sanctuary AI, Boston Dynamics, Neo). What does automation at scale mean for the economy? The team discusses Universal Basic Income, the illusion of humanity in AI robots, and support challenges for people with disabilities.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=BHRW-Hohfx8" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 12 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/9zdGdybefTg" title="Episode 12" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 12</span>
+          <span class="ep-date">March 22, 2025</span>
+        </div>
+        <div class="card-title">2025: The Year of AI Agents Revolutionising Tech</div>
+        <div class="card-description collapsed">Autonomous AI agents take centre stage: OpenAI's Operator, Manus, and the Model Context Protocol (MCP). The team covers deep research capabilities, novel phishing tactics exploiting AI autonomy, vulnerabilities in business and legacy systems, Mark Zuckerberg's AI vision, vibe coding, and the paper "Preparing for the Intelligence Explosion." Practical security advice for businesses trying to stay ahead of rapidly evolving AI-driven threats.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=9zdGdybefTg" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 11 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/JlZd4Org9I0" title="Episode 11" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 11</span>
+          <span class="ep-date">March 8, 2025</span>
+        </div>
+        <div class="card-title">OpenAI GPT-4.5: Why Everyone's Disappointed</div>
+        <div class="card-description collapsed">GPT-4.5 is billed as "the most human-like AI yet" — so why is everyone underwhelmed? The team also covers AI etiquette (should you say please and thank you to AI?), Sesame AI for childhood learning, the AI research replication crisis, diffusion models, why AGI "will be boring," Opera's AI browser, China's DALL-E 2 and R2, and Anthropic's model structure. Conclusion: limitations exist, but genuinely innovative use cases are multiplying fast.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=JlZd4Org9I0" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 10 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/dm-zlZMRWKI" title="Episode 10" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 10</span>
+          <span class="ep-date">March 1, 2025</span>
+        </div>
+        <div class="card-title">AI Wars: Which Model Should You Choose?</div>
+        <div class="card-description collapsed">A head-to-head comparison of the major AI models — OpenAI ChatGPT, Google Gemini, Anthropic Claude, and Grok — across features, real-world performance, and use cases. Microsoft Copilot and DeepSeek are evaluated as enterprise options. Topics include custom instructions, managing multiple AI tools, future AI trends, Google's unrecognised successes, and the very real risk of downloading unofficial AI tools. Practical guidance for tailoring AI to your personal workflow.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=dm-zlZMRWKI" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 9 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/IIz9-cLKuZ0" title="Episode 9" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 9</span>
+          <span class="ep-date">February 22, 2025</span>
+        </div>
+        <div class="card-title">The Dark Side of AI: Risks You Can't Ignore</div>
+        <div class="card-description collapsed">A deep look at AI's cybersecurity dark side: misbehaving models, next-generation phishing tactics, data breaches, misinformation at scale, and the urgent need for explainability. The team covers AI consciousness debates, jailbreak exploits, emergent AI behaviours, data privacy, AI in regulated industries, and the skills required for the AI era. Distinguishes between temporary and long-term organisational AI strategies. Core message: guard against unsecured tools and ransomware.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=IIz9-cLKuZ0" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 8 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/JxDBanWhKqw" title="Episode 8" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 8</span>
+          <span class="ep-date">February 1, 2025</span>
+        </div>
+        <div class="card-title">DeepSeek's Open AI Revolution: What It Means for You</div>
+        <div class="card-description collapsed">DeepSeek's R1 reasoning model matches GPT-4 at a fraction of the cost — and it's open-source. The team digs into what that means for international AI competition, discusses tools including DeepSeek, Fusion, and Qwen 2.5, and addresses the elephant in the room: Chinese censorship. Open-source security benefits, ISP responsibilities, and OpenAI's counter-measures are all covered. Includes a live demo: building a snake game entirely with AI.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=JxDBanWhKqw" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 7 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/gGvCelkG6h4" title="Episode 7" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 7</span>
+          <span class="ep-date">January 18, 2025</span>
+        </div>
+        <div class="card-title">Microsoft's $130 AI Gamble: Will Users Pay Up?</div>
+        <div class="card-description collapsed">Microsoft raises Microsoft 365 Family to $130 per year — citing Copilot AI as the justification. Is that enough to stop users defecting to free alternatives? Also covered: ChatGPT's new task scheduling, ChatGPT's long-term memory update, Google funding live news AI initiatives, training AI models for $450, multimodal AI (text, voice, image), smart glasses, and AGI considerations. Closes with practical guidance for anyone just getting started with AI tools.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=gGvCelkG6h4" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 6 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/TPJ_vFX9umk" title="Episode 6" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 6</span>
+          <span class="ep-date">December 7, 2024</span>
+        </div>
+        <div class="card-title">AI Use Cases for Business and Fun</div>
+        <div class="card-description collapsed">OpenAI's "12 Days of Innovation" sets the backdrop as the team explores practical AI applications for business and everyday life. Topics include ChatGPT's capabilities and accuracy limits, AI's impact on data and spreadsheets, AI meeting summarisation, voice transcription, creating personalised AI agents, AI in creative writing, AI-generated music with Suno, and AI in marketing and branding. Live demos across CoPilot, Suno, and Claude.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=TPJ_vFX9umk" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 5 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/NDgqhcfqIu0" title="Episode 5" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 5</span>
+          <span class="ep-date">November 30, 2024</span>
+        </div>
+        <div class="card-title">AI: What's Holding You Back?</div>
+        <div class="card-description collapsed">What stops organisations from deploying AI effectively? The team covers AI security, corporate and departmental AI strategy, myths about AI functionality, guardrails and jailbreaking, data security with AI models, and the value of running local large language models. Broader topics include maximising existing IT resources, critical thinking in the AI era, validating AI outputs, and AI in medical diagnostics. The key balance: AI augments human judgment, it doesn't replace it.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=NDgqhcfqIu0" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- EP 4 -->
+    <div class="episode-card">
+      <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/6EbZWnWIV_w" title="Episode 4" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="ep-number">Ep 4</span>
+          <span class="ep-date">November 15, 2024</span>
+        </div>
+        <div class="card-title">AI in Action: Episode 2</div>
+        <div class="card-description collapsed">The intersection of AI and cybersecurity explored in depth. Topics include practical AI applications in business, secure AI implementation strategies, the pace of AI advancement, and why experimentation matters. Covers specialised AI agents, AI in accounting and customer service, and the cultural shift businesses need to make. Discusses security concerns with AI deployments and announces an upcoming AI workshop for practitioners.</div>
+        <button class="toggle-btn" onclick="toggleDesc(this)">Read more</button>
+        <a class="watch-link" href="https://www.youtube.com/watch?v=6EbZWnWIV_w" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div><!-- /episodes -->
+</main>
+
+<footer>
+  <p>
+    Part of <a href="https://www.youtube.com/@technewsday" target="_blank" rel="noopener">Tech Newsday</a> &mdash;
+    Hosted by Jim Love &middot; Co-hosted by Marcel Gagné &amp; John Pinard
+  </p>
+</footer>
+
+<script>
+  function toggleDesc(btn) {
+    const desc = btn.previousElementSibling;
+    const collapsed = desc.classList.toggle('collapsed');
+    btn.textContent = collapsed ? 'Read more' : 'Show less';
+  }
+
+  // Initialise all collapsible descriptions on load
+  document.querySelectorAll('.card-description').forEach(desc => {
+    if (desc.scrollHeight > desc.clientHeight + 5) {
+      // has overflow; already collapsed via CSS
+    }
+  });
+</script>
+
+</body>
+</html>
