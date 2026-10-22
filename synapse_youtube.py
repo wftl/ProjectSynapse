@@ -112,7 +112,7 @@ def show_date(metadata):
 def episode_from_metadata(metadata, number):
     return {
         "number": number,
-        "title": metadata["title"].strip(),
+        "title": " ".join(metadata["title"].split()),
         "date": show_date(metadata),
         "youtube_id": metadata["id"],
         "blurb": trim_description(metadata.get("description") or ""),

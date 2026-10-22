@@ -88,6 +88,14 @@ class ShowDateTest(unittest.TestCase):
             youtube.show_date({"id": "x"})
 
 
+class EpisodeFromMetadataTest(unittest.TestCase):
+    def test_title_whitespace_is_collapsed(self):
+        episode = youtube.episode_from_metadata(
+            {"id": "gG1LMitW114", "title": " Agents,  Robots ", "upload_date": "20261002"}, 51)
+        self.assertEqual(episode["title"], "Agents, Robots")
+        self.assertEqual(episode["blurb"], "")
+
+
 class RssAndIgnoreListTest(unittest.TestCase):
     def test_parse_rss(self):
         feed = b"""<?xml version="1.0"?>
