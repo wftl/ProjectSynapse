@@ -1,0 +1,13 @@
+[Unit]
+Description=Add new Project Synapse episodes to the archive site and commit locally
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+# Adjust if the repository lives elsewhere.
+WorkingDirectory=/mnt/stff/AI/ProjectSynapse
+Environment=SYNAPSE_BRANCH=auto-generator
+ExecStart=/mnt/stff/AI/ProjectSynapse/deploy/run-update.sh
+NoNewPrivileges=yes
+TimeoutStartSec=30min

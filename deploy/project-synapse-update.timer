@@ -1,0 +1,11 @@
+[Unit]
+Description=Weekly Project Synapse episode update
+
+[Timer]
+# Episodes go up Friday/Saturday; Sunday morning catches the week's show.
+OnCalendar=Sun *-*-* 10:00:00
+RandomizedDelaySec=30min
+Persistent=true
+
+[Install]
+WantedBy=timers.target
