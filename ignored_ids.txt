@@ -1,0 +1,2 @@
+# YouTube ids that update.py must never add, one per line.
+p2FHsWfLsl4  # Lionel Litty CISO interview: #TrendingOnTheWeekend special, removed as Ep 44
