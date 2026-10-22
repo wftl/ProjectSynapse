@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Synapse — AI with Jim Love, John Pinard & Marcel Gagné</title>
+  <style>
+    :root {
+      --bg: #0a0e1a;
+      --surface: #111827;
+      --surface2: #1a2236;
+      --border: #1e2d45;
+      --accent: #3b82f6;
+      --accent2: #06b6d4;
+      --accent-glow: rgba(59, 130, 246, 0.15);
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --tag-bg: rgba(59, 130, 246, 0.12);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #0a0e1a 0%, #0f172a 50%, #0a1628 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 3rem 2rem 2.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 400px;
+      background: radial-gradient(ellipse, rgba(59,130,246,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .header-badge {
+      display: inline-block;
+      background: var(--tag-bg);
+      border: 1px solid rgba(59,130,246,0.3);
+      color: var(--accent2);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.9rem;
+      border-radius: 20px;
+      margin-bottom: 1.2rem;
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #e2e8f0 30%, var(--accent2) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.75rem;
+    }
+
+    header p.tagline {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 560px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .hosts {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .host-chip {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: 20px;
+    }
+
+    .host-chip strong {
+      color: var(--text);
+    }
+
+    /* ── Stats bar ── */
+    .stats-bar {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0.9rem 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .stat-label {
+      font-size: 0.72rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    /* ── Main layout ── */
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .section-header h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .section-header::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── Episode cards ── */
+    .episodes {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1.75rem;
+    }
+
+    .episode-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .episode-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(59,130,246,0.4);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 0 1px rgba(59,130,246,0.1);
+    }
+
+    .embed-wrap {
+      position: relative;
+      padding-top: 56.25%;
+      background: #000;
+    }
+
+    .embed-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .card-body {
+      padding: 1.25rem 1.4rem 1.4rem;
+    }
+
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .ep-number {
+      background: var(--accent-glow);
+      border: 1px solid rgba(59,130,246,0.25);
+      color: var(--accent);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      text-transform: uppercase;
+    }
+
+    .ep-date {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+      line-height: 1.4;
+    }
+
+    .card-description {
+      font-size: 0.845rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    .card-description.collapsed {
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .toggle-btn {
+      background: none;
+      border: none;
+      color: var(--accent);
+      font-size: 0.8rem;
+      cursor: pointer;
+      padding: 0.4rem 0;
+      margin-top: 0.3rem;
+      display: block;
+      transition: color 0.15s;
+    }
+
+    .toggle-btn:hover {
+      color: var(--accent2);
+    }
+
+    .watch-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 1rem;
+      color: var(--accent2);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .watch-link:hover {
+      color: #67e8f9;
+    }
+
+    .watch-link svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 0.82rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--accent2);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      .stats-bar { gap: 1.5rem; }
+      .episodes { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-badge">Every Saturday</div>
+  <h1>Project Synapse</h1>
+  <p class="tagline">A weekly deep dive into artificial intelligence — what it means, where it's going, and why it matters.</p>
+  <div class="hosts">
+    <span class="host-chip"><strong>Jim Love</strong> — Host</span>
+    <span class="host-chip"><strong>Marcel Gagné</strong> — Co-host</span>
+    <span class="host-chip"><strong>John Pinard</strong> — Co-host</span>
+  </div>
+</header>
+
+<div class="stats-bar">
+  <div class="stat">
+    <div class="stat-number">{{EPISODE_COUNT}}</div>
+    <div class="stat-label">Episodes</div>
+  </div>
+  <div class="stat">
+    <div class="stat-number">{{YEAR_RANGE}}</div>
+    <div class="stat-label">On Air</div>
+  </div>
+  <div class="stat">
+    <div class="stat-number">@technewsday</div>
+    <div class="stat-label">YouTube Channel</div>
+  </div>
+</div>
+
+<main>
+  <div class="section-header"><h2>All Episodes</h2></div>
+
+  <div class="episodes">
+
+{{EPISODE_CARDS}}  </div><!-- /episodes -->
+</main>
+
+<footer>
+  <p>
+    Part of <a href="https://www.youtube.com/@technewsday" target="_blank" rel="noopener">Tech Newsday</a> &mdash;
+    Hosted by Jim Love &middot; Co-hosted by Marcel Gagné &amp; John Pinard
+  </p>
+</footer>
+
+<script>
+  function toggleDesc(btn) {
+    const desc = btn.previousElementSibling;
+    const collapsed = desc.classList.toggle('collapsed');
+    btn.textContent = collapsed ? 'Read more' : 'Show less';
+  }
+
+  // Initialise all collapsible descriptions on load
+  document.querySelectorAll('.card-description').forEach(desc => {
+    if (desc.scrollHeight > desc.clientHeight + 5) {
+      // has overflow; already collapsed via CSS
+    }
+  });
+</script>
+
+</body>
+</html>
