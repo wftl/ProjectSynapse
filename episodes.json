@@ -1,5 +1,75 @@
 [
   {
+    "number": 53,
+    "title": "Will AI Kill Capitalism? Plus Hands-On With AI Agents | Project Synapse",
+    "date": "2026-10-16",
+    "youtube_id": "pCeBgwrXlqI",
+    "blurb": "Could AI undermine the economic system funding its development? And what can today’s AI agents actually do? This week on Project Synapse, we debate the economics—and put the tools to work. Jim Love and the panel examine rising AI subscription prices, the cost of running agents, competition from free models, and whether today’s spending can support a sustainable business. Could AI change capitalism itself, or are we watching another technology bubble? Then we get hands-on with Meta Muse, OpenAI Dots and Grok’s multi-agent workflows."
+  },
+  {
+    "number": 52,
+    "title": "Project Synapse - AI Out of Control",
+    "date": "2026-10-09",
+    "youtube_id": "_yRqgQqNElI",
+    "blurb": "Thus Spoke Compute: Is AI a “Normal Technology,” or Something Much Bigger? The hosts discuss an AI-generated piece called “Thus Spoke Compute,” framed as a rebuttal to the idea that AI will diffuse slowly like electricity or the telephone, and use it to explore claims of accelerating, self-compounding progress (agents, robots building robots, parallel “million minds”)."
+  },
+  {
+    "number": 51,
+    "title": "Project Synapse: AI Doom Percentages, New Model Releases, Always On Agents, Robots in the Foundry",
+    "date": "2026-10-02",
+    "youtube_id": "gG1LMitW114",
+    "blurb": "In this episode of Project Synapse, Jim Loftus, John Pinard, and Marcel Gagné debate AI “pdoom” probabilities and argue the bigger risk is emotionally immature leaders controlling powerful systems, citing concerns about weapons and a lack of meaningful regulation. They review major AI releases and pricing changes—Anthropic Opus 5.5 and Sonnet 5.5, OpenAI’s GPT-6.1 Sol (with Astra 6.1 withheld for security), Grok 4.7, and Google’s restricted Gemini 4 Argon—plus rapid cost/performance acceleration and token-per-task economics."
+  },
+  {
+    "number": 50,
+    "title": "Project Synapse: Meta Muse Agents, AI Model Price Wars, and Why Governance Matters",
+    "date": "2026-09-26",
+    "youtube_id": "GuwhMdfkTas",
+    "blurb": "The hosts open with a rapid-fire “nothing happened” recap: major labs reportedly ship new models immediately after urging caution (GPT‑6/Luna, Claude Opus 5.5, Grok 4.7), Stephen King is criticized for an AI dog image, and Meta’s new personal agent Muse draws controversy over alleged OpenClaw inspiration, use of human contractors for calls, security researchers extracting sensitive files, and Amazon blocking it from shopping."
+  },
+  {
+    "number": 49,
+    "title": "Project Synapse - AI Is Killing Me",
+    "date": "2026-09-18",
+    "youtube_id": "VlA5IzV-j50",
+    "blurb": "On Project Synapse, Marcel Gagne and Jon Pinard open with humor, then criticize sensational media claims that “AI will kill us all,” arguing journalism and politics favor fear over practical discussion of real, near-term risks and AI’s benefits (including healthcare). They compare society’s short-term attention to long-term issues like climate change and nuclear weapons, and debate how to manage AI risk with realistic “how would it happen?” scrutiny."
+  },
+  {
+    "number": 48,
+    "title": "Project Synapse: Astra (GPT-6?), AGI Hype, Model Costs, and Teaching AI Critical Thinking",
+    "date": "2026-09-04",
+    "youtube_id": "FEsDpBktAs8",
+    "blurb": "Jim Love hosts Project Synapse with John Pinard and University of Waterloo professor Doug Sparks, reviewing a week of intense AI model releases led by OpenAI’s Astra (called a “generational leap” by Greg Brockman) and debating what “AGI-ish” could mean, including Sam Altman’s definition tied to commercially performing a wide range of human tasks and claims about creating new knowledge. They discuss how to test creativity, using AI for scenario planning and backcasting, and frustrations with inconsistent behavior and feature gaps across ChatGPT web/desktop/voice experiences."
+  },
+  {
+    "number": 47,
+    "title": "Project Synapse Aug 29 2026 Robots",
+    "date": "2026-08-28",
+    "youtube_id": "qDVh8LHwnyY",
+    "blurb": "Jim Love, Marcel Gagné, and retired John Pinard cover tech news and a deep dive on robots. They note Linux’s 35th anniversary and how the name changed from “Freax” to Linux. They discuss Apple’s AI-focused hardware advances (integrated CPU/GPU/neural processing and shared memory) enabling large local model inference, and OpenAI’s “Jalapeno” inference chip built with Broadcom, developed in about nine months, delivering 1.5–1.9x more AI work per watt, raising questions for NVIDIA’s CUDA moat."
+  },
+  {
+    "number": 46,
+    "title": "AI Companies Destroy Books, Backers Fund AI Doom, Robots Learn Fast | Project Synapse",
+    "date": "2026-08-21",
+    "youtube_id": "cCJ_o61mVpU",
+    "blurb": "AI companies are buying physical books, cutting off their spines and scanning the pages to train AI models. This episode of Project Synapse examines destroyed originals, copyright loopholes and what mass digitization could mean for cultural and historical preservation. The conversation compares destructive book scanning with Google Books’ non-destructive approach and limited search access. The hosts also discuss the shift from printed books to ebooks and audiobooks, the challenge of storing personal libraries and whether physical books are becoming a niche product."
+  },
+  {
+    "number": 45,
+    "title": "Project Synapse August 7 2026",
+    "date": "2026-08-07",
+    "youtube_id": "M6dShqOS2ic",
+    "blurb": "Jim Love hosts Project Synapse (Aug 8, 2026) with Marcel Gagne and John Pinard, discussing rapid AI advances framed as “the singularity,” including a rumored OpenAI GPT-6 proving and disproving 10 long-standing math proofs in hours. They describe increasingly humanlike conversations with Claude and ChatGPT voice mode, and how ChatGPT can rapidly build full websites, shrinking the value of many tools."
+  },
+  {
+    "number": 44,
+    "title": "Project Synapse",
+    "date": "2026-07-24",
+    "youtube_id": "WK3VAHNLjo8",
+    "blurb": "With John away, Jim and Marcel discuss recent AI security concerns, arguing that sensational claims about an OpenAI model “escaping” distract from basic safeguards like network segmentation and monitoring, especially when testing hacking capability via the Exploit Gym benchmark in a sandboxed, virtualized environment."
+  },
+  {
     "number": 43,
     "title": "GPT-5.6 Sol Shocks AI World, Claude's J-Space, Linus Torvalds on AI & Robot Hands",
     "date": "2026-07-10",
