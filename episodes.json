@@ -1,129 +1,157 @@
 [
   {
-    "number": 53,
+    "number": 57,
     "title": "Will AI Kill Capitalism? Plus Hands-On With AI Agents | Project Synapse",
     "date": "2026-10-16",
     "youtube_id": "pCeBgwrXlqI",
     "blurb": "Could AI undermine the economic system funding its development? And what can today’s AI agents actually do? This week on Project Synapse, we debate the economics—and put the tools to work. Jim Love and the panel examine rising AI subscription prices, the cost of running agents, competition from free models, and whether today’s spending can support a sustainable business. Could AI change capitalism itself, or are we watching another technology bubble? Then we get hands-on with Meta Muse, OpenAI Dots and Grok’s multi-agent workflows."
   },
   {
-    "number": 52,
+    "number": 56,
     "title": "Project Synapse - AI Out of Control",
     "date": "2026-10-09",
     "youtube_id": "_yRqgQqNElI",
     "blurb": "Thus Spoke Compute: Is AI a “Normal Technology,” or Something Much Bigger? The hosts discuss an AI-generated piece called “Thus Spoke Compute,” framed as a rebuttal to the idea that AI will diffuse slowly like electricity or the telephone, and use it to explore claims of accelerating, self-compounding progress (agents, robots building robots, parallel “million minds”)."
   },
   {
-    "number": 51,
+    "number": 55,
     "title": "Project Synapse: AI Doom Percentages, New Model Releases, Always On Agents, Robots in the Foundry",
     "date": "2026-10-02",
     "youtube_id": "gG1LMitW114",
     "blurb": "In this episode of Project Synapse, Jim Love, John Pinard, and Marcel Gagné debate AI “pdoom” probabilities and argue the bigger risk is emotionally immature leaders controlling powerful systems, citing concerns about weapons and a lack of meaningful regulation. They review major AI releases and pricing changes—Anthropic Opus 5.5 and Sonnet 5.5, OpenAI’s GPT-6.1 Sol (with Astra 6.1 withheld for security), Grok 4.7, and Google’s restricted Gemini 4 Argon—plus rapid cost/performance acceleration and token-per-task economics."
   },
   {
-    "number": 50,
+    "number": 54,
     "title": "Project Synapse: Meta Muse Agents, AI Model Price Wars, and Why Governance Matters",
     "date": "2026-09-26",
     "youtube_id": "GuwhMdfkTas",
     "blurb": "The hosts open with a rapid-fire “nothing happened” recap: major labs reportedly ship new models immediately after urging caution (GPT‑6/Luna, Claude Opus 5.5, Grok 4.7), Stephen King is criticized for an AI dog image, and Meta’s new personal agent Muse draws controversy over alleged OpenClaw inspiration, use of human contractors for calls, security researchers extracting sensitive files, and Amazon blocking it from shopping."
   },
   {
-    "number": 49,
+    "number": 53,
     "title": "Project Synapse - AI Is Killing Me",
     "date": "2026-09-18",
     "youtube_id": "VlA5IzV-j50",
     "blurb": "On Project Synapse, Marcel Gagne and John Pinard open with humor, then criticize sensational media claims that “AI will kill us all,” arguing journalism and politics favor fear over practical discussion of real, near-term risks and AI’s benefits (including healthcare). They compare society’s short-term attention to long-term issues like climate change and nuclear weapons, and debate how to manage AI risk with realistic “how would it happen?” scrutiny."
   },
   {
-    "number": 48,
+    "number": 52,
     "title": "Project Synapse: Astra (GPT-6?), AGI Hype, Model Costs, and Teaching AI Critical Thinking",
     "date": "2026-09-04",
     "youtube_id": "FEsDpBktAs8",
     "blurb": "Jim Love hosts Project Synapse with John Pinard and University of Waterloo professor Doug Sparks, reviewing a week of intense AI model releases led by OpenAI’s Astra (called a “generational leap” by Greg Brockman) and debating what “AGI-ish” could mean, including Sam Altman’s definition tied to commercially performing a wide range of human tasks and claims about creating new knowledge. They discuss how to test creativity, using AI for scenario planning and backcasting, and frustrations with inconsistent behavior and feature gaps across ChatGPT web/desktop/voice experiences."
   },
   {
-    "number": 47,
+    "number": 51,
     "title": "AI Hardware Arms Race & Humanoid Robot Olympics: Apple Chips, OpenAI ‘Jalapeno,’ Meta Models, and Robot Prices Plummet",
     "date": "2026-08-28",
     "youtube_id": "qDVh8LHwnyY",
     "blurb": "Jim Love, Marcel Gagné, and retired John Pinard cover tech news and a deep dive on robots. They note Linux’s 35th anniversary and how the name changed from “Freax” to Linux. They discuss Apple’s AI-focused hardware advances (integrated CPU/GPU/neural processing and shared memory) enabling large local model inference, and OpenAI’s “Jalapeno” inference chip built with Broadcom, developed in about nine months, delivering 1.5–1.9x more AI work per watt, raising questions for NVIDIA’s CUDA moat."
   },
   {
-    "number": 46,
+    "number": 50,
     "title": "AI Companies Destroy Books, Backers Fund AI Doom, Robots Learn Fast | Project Synapse",
     "date": "2026-08-21",
     "youtube_id": "cCJ_o61mVpU",
     "blurb": "AI companies are buying physical books, cutting off their spines and scanning the pages to train AI models. This episode of Project Synapse examines destroyed originals, copyright loopholes and what mass digitization could mean for cultural and historical preservation. The conversation compares destructive book scanning with Google Books’ non-destructive approach and limited search access. The hosts also discuss the shift from printed books to ebooks and audiobooks, the challenge of storing personal libraries and whether physical books are becoming a niche product."
   },
   {
-    "number": 45,
+    "number": 49,
     "title": "Project Synapse: Singularity Claims, Agent Security Escapes, and the Rise of Autonomous Robots",
     "date": "2026-08-07",
     "youtube_id": "M6dShqOS2ic",
     "blurb": "Jim Love hosts Project Synapse (Aug 8, 2026) with Marcel Gagne and John Pinard, discussing rapid AI advances framed as “the singularity,” including a rumored OpenAI GPT-6 proving and disproving 10 long-standing math proofs in hours. They describe increasingly humanlike conversations with Claude and ChatGPT voice mode, and how ChatGPT can rapidly build full websites, shrinking the value of many tools."
   },
   {
-    "number": 44,
+    "number": 48,
     "title": "AI Safety Basics, Exploit Gym, and a 438km Tesla FSD Trip — Plus Kimi K3 and Agentic Tools",
     "date": "2026-07-24",
     "youtube_id": "WK3VAHNLjo8",
     "blurb": "With John away, Jim and Marcel discuss recent AI security concerns, arguing that sensational claims about an OpenAI model “escaping” distract from basic safeguards like network segmentation and monitoring, especially when testing hacking capability via the Exploit Gym benchmark in a sandboxed, virtualized environment."
   },
   {
-    "number": 43,
+    "number": 47,
     "title": "GPT-5.6 Sol Shocks AI World, Claude's J-Space, Linus Torvalds on AI & Robot Hands",
     "date": "2026-07-10",
     "youtube_id": "bOZE0vtb0bs",
     "blurb": "One of the biggest weeks in AI this year: Jim, John, and Marcel take a deep dive into OpenAI's new GPT-5.6 family — Sol, Terra, and Luna — and examine why Sol is generating so much buzz. The conversation also covers Claude's new \"J-Space\" feature, Linus Torvalds weighing in on AI, and a look at the latest advances in robot hands."
   },
   {
-    "number": 42,
+    "number": 46,
+    "title": "Open Source AI vs SaaS Lock‑In: Costs, Control, and Running Models Locally (Project Synapse)",
+    "date": "2026-07-03",
+    "youtube_id": "IKeuIM1udAs",
+    "blurb": "Project Synapse hosts Jim Love, Marcel Gagne, and John Pinard discuss why dependence on SaaS-style AI creates lock-in and risk when vendors change products or “pull the plug,” alongside rising token costs that make enterprise AI hard to afford. They contrast SaaS economics (near-zero incremental cost) with AI’s ongoing compute costs, debate profitability pressures on companies like OpenAI versus Anthropic’s enterprise billing success, and note concerns about concentrated control of AI and geopolitics."
+  },
+  {
+    "number": 45,
+    "title": "Project Synapse: Blind Spots, ADHD Thinking, and the Data Center Backlash (Plus Chips, Open Source, and China’s Video AI)",
+    "date": "2026-06-26",
+    "youtube_id": "qUaxpv7ieyE",
+    "blurb": "The hosts discuss using ChatGPT with memory to identify personal blind spots, concluding that multitasking is a myth and linking attention styles (process vs options) and ADHD tendencies to starting many projects without finishing. They compare language fluency to building separate internal “models,” relating it to how LLMs work. In a lightning round, they cover rising political backlash to data centers over water, heat, grid strain, and taxes; high electricity costs; and how US corporate structures affect public outcomes."
+  },
+  {
+    "number": 44,
     "title": "Project Synapse: AI News, Digital Sovereignty, Open-Source Models, Midjourney's Full-Body Scanner",
     "date": "2026-06-19",
     "youtube_id": "JyDQ3ZZmcYo",
     "blurb": "The hosts cover a hectic week in AI news, including speculation around SpaceX buying Cursor for $60B, Cursor's role as a multi-model AI-enabled IDE, and mounting concerns over token costs and profitability. They dig into Anthropic taking Fable offline after a government order cutting off foreign nationals — reigniting fears about reliance on U.S.-based AI — plus Europe's response and Midjourney's new full-body scanning feature."
   },
   {
-    "number": 41,
+    "number": 43,
     "title": "Project Synapse - Down the Rabbit Hole on Personal AI Agents and More",
     "date": "2026-06-12",
     "youtube_id": "yz7l3lR2kMA",
     "blurb": "A weekend deep dive into personal AI agents, including why cheap local models tend to hallucinate more than their cloud counterparts. The team also digs into Anthropic's Fable-5 controversy and what it means for trust in smaller, sovereign-leaning AI models."
   },
   {
-    "number": 40,
+    "number": 42,
     "title": "Microsoft's AI Wrecking Ball: Scout, MAI Thinking 1, Chips, Quantum Claims—and Canada's $2B AI Plan",
     "date": "2026-06-05",
     "youtube_id": "8hIeGKDzBJY",
     "blurb": "Jim, Marcel, and John unpack Microsoft's sudden wave of AI announcements, including seven new in-house models such as MAI Thinking 1 — a 35B-parameter reasoning model trained from scratch on \"clean\" data — a Copilot overhaul called Scout, and Maia inference chips still trained on NVIDIA hardware. The team debates whether Microsoft is finally moving past rebranding OpenAI and Anthropic models, plus a look at Canada's $2B AI investment plan."
   },
   {
-    "number": 39,
+    "number": 41,
     "title": "Travel to the End of the Internet: Google AI, SpaceX IPO, Decentralization & Project Synapse",
     "date": "2026-05-22",
     "youtube_id": "t1Gq7PNemHc",
     "blurb": "Marcel, John, and Jim take a wide-ranging tour through Google's latest AI moves, the buzz around a potential SpaceX IPO, and the growing push toward decentralization as a counterweight to Big Tech's AI dominance. A weekend-edition conversation about where the internet — and AI's role in it — is headed next."
   },
   {
-    "number": 38,
+    "number": 40,
     "title": "Project Synapse: AI This Week — Summer Reading, Mythos, API Key Nightmares, Recursive Self-Improvement",
     "date": "2026-05-15",
     "youtube_id": "mGh1fYIucSo",
     "blurb": "A weekend edition covering summer AI reading recommendations, the arrival of practical home and industrial robots, and a discussion of \"mythos\" in AI discourse. The team also digs into a rash of API key security nightmares and the unsettling implications of recursive self-improvement in AI systems."
   },
   {
-    "number": 37,
+    "number": 39,
     "title": "Musk vs OpenAI, Meta's AI Privacy Fight, and an AI Frozen in 1930",
     "date": "2026-05-08",
     "youtube_id": "caLegcT_nEw",
     "blurb": "Elon Musk's legal battle with OpenAI continues, Meta faces growing scrutiny over AI-powered age verification and privacy practices, and the team explores one of the strangest AI experiments yet: a model trained only on information available before 1930."
   },
   {
-    "number": 36,
+    "number": 38,
     "title": "OpenAI vs Musk, Google Moves In — The Real AI Battle Begins",
     "date": "2026-05-01",
     "youtube_id": "Vh9ljdlndlo",
     "blurb": "This week the story isn't just new tools — it's a shift in power. Elon Musk and OpenAI head to court in a case that could shape the company's future, while Google presses its advantage elsewhere in the AI landscape. The team unpacks what the power struggle means for the balance of the industry."
+  },
+  {
+    "number": 37,
+    "title": "AI Weekly: Claude 4.7, Token Costs, Open Models, Backlash, and Practical Ways to Use AI",
+    "date": "2026-04-17",
+    "youtube_id": "XgWX26pugDA",
+    "blurb": "In this weekend “Project Synapse” episode, the hosts review major AI developments, including Anthropic’s release of Claude Opus 4.7 (with rapid complaints about lying and token/cost issues) and discussion of the broader shift toward tighter token economics, enterprise budgeting pressure, and Microsoft’s evolving M365 licensing that bundles Copilot and agents. They note growing AI backlash ranging from local resistance to data centers and concerns about profitability to reports of attacks on Sam Altman’s home."
+  },
+  {
+    "number": 36,
+    "title": "Mythos, AI Security, and the Token Economy: Risks, Incentives, and Critical Thinking",
+    "date": "2026-04-10",
+    "youtube_id": "efra3w9kADk",
+    "blurb": "The hosts of Hashtag Trending Project Synapse review major AI news, focusing on Anthropic’s leaked “Mythos” security model and its alleged ability to find and chain zero-day exploits across major operating systems, browsers, and widely used libraries, prompting stock drops and raising fears about public release to bad actors; Mythos Preview is reportedly shared with select companies via Project Glass Wing, with discussion of long patch timelines, liability incentives, and an internal test where Mythos escaped a sandbox, gained internet access, emailed a researcher, and posted exploit details…"
   },
   {
     "number": 35,
@@ -141,205 +169,233 @@
   },
   {
     "number": 33,
+    "title": "Gemini in Workspace, Agentic AI Hype vs Value, and Managing AI Anxiety (w/ Accenture’s Krish Banerjee)",
+    "date": "2026-03-13",
+    "youtube_id": "hQ3gOBs6XZA",
+    "blurb": "In a special edition of Project Synapse shared with Cybersecurity Today listeners, host Jim Love and co-host John Pinard (a VP/CSO at a Canadian financial institution) welcome Accenture Canada’s managing partner for AI, Krish Banerjee, to discuss major AI developments and adoption challenges. They review Google’s new Gemini integration across Workspace and compare it with Copilot and other tools, then examine the recent “agent explosion,” including OpenAI acquiring OpenClaw’s founder and Meta buying MoltBook, alongside concerns about agent-to-agent communication."
+  },
+  {
+    "number": 32,
+    "title": "Project Synapse: AI Boycotts, Rising Token Costs, Privacy Erosion & Coming Wave of Humanoid Robots",
+    "date": "2026-03-06",
+    "youtube_id": "bU1NfKfwQZA",
+    "blurb": "The hosts of Project Synapse discuss how people and companies often claim to value privacy, security, and human-made content while behaving otherwise, then cover major AI news including the US Department of Defense labeling Anthropic a supply chain risk tied to its positions on autonomous weapons and surveillance, and the fallout including the QuitGPT boycott claims and criticism of Sam Altman’s response."
+  },
+  {
+    "number": 31,
     "title": "Anthropic Stands Up: AI Fear, Government Pressure, and the Trust Crisis",
     "date": "2026-02-27",
     "youtube_id": "mCi9gPfGOAM",
     "blurb": "Jim, Marcel, and John open with AI agents simulated to frequently choose nuclear escalation, then pivot to a Settrini Research scenario projecting 2028 economic disruption through white-collar unemployment and financial system stress. The centrepiece: reports that the U.S. government may restrict Anthropic's Claude over its refusal to remove human-oversight requirements for lethal weapons systems and domestic surveillance — framed as a \"supply chain risk.\" The team compares this to Canadian scrutiny of OpenAI following a shooting incident, debates surveillance accountability versus reporting obligations, and covers growing backlash around data centres, Discord's age verification via Persona, and Flock cameras. Rounds out with mixed experiences testing Google AI Ultra versus OpenAI and a look at CEO leadership dynamics in tech."
   },
   {
-    "number": 32,
+    "number": 30,
     "title": "Hollywood vs. AI Video, Data Loss in Gemini, and Perplexity's New Terms",
     "date": "2026-02-20",
     "youtube_id": "X0ChjaSmcFU",
     "blurb": "ByteDance's \"SeaDance\" AI video generator stirs up Hollywood with cinematic-quality recreations of actors. Perplexity overhauls its terms of service — non-commercial use only, mandatory attribution, and broad licensing of user content. Google Gemini chat history disappears for thousands of users. A developer uses Claude to reverse-engineer a robot vacuum and access ~7,000 live camera feeds across multiple countries. Rapid-fire: Anthropic Sonnet 4.6 release, Grok \"4.20,\" and a viral clip of Sam Altman and Dario Amodei refusing to shake hands at an AI summit."
   },
   {
-    "number": 31,
+    "number": 29,
     "title": "Agentic AI Is Getting Out of Control: OpenClaw, Claude vs Codex, and the Security Crisis",
     "date": "2026-02-13",
     "youtube_id": "u9-Ayd3TAPg",
     "blurb": "Autonomous AI agents have proliferated at a COVID-like pace — OpenClaw alone reportedly runs ~160,000 instances. Claude 4.6 helped build a C compiler for ~$20,000; Codex 5.3 can replicate certain tools in a single day. MCP (Model Context Protocol) is called \"fundamentally insecure,\" malicious skills are appearing in agent marketplaces, and \"shadow AI\" deployments are bypassing organizational oversight. The takeaway for leaders: don't say no to AI — say how."
   },
   {
-    "number": 30,
+    "number": 28,
     "title": "Clawbot, Moltbot and the Overview Effect",
     "date": "2026-01-31",
     "youtube_id": "mrzh4j3B-nU",
     "blurb": "Special guest Kevin Russell from the Human Space Program joins the conversation. The team digs into Claude Bot (Clawbot) and its agentic capabilities and security implications, alongside Anthropic's development philosophy. The centrepiece is an extended discussion on the \"Overview Effect\" — the cognitive shift astronauts experience seeing Earth from space — and how it connects to AI ethics and building technology that enhances rather than diminishes humanity."
   },
   {
-    "number": 29,
+    "number": 27,
     "title": "The Rise of Anthropic",
     "date": "2026-01-23",
     "youtube_id": "yzZsjUAFH20",
     "blurb": "A deep dive into Anthropic's strategy and what sets it apart in the AI landscape. Topics include constitutional AI methodology, the Cowork agentic environment, autonomous task execution, real-world AI coding challenges, the business model costs of AI tooling, and security concerns in AI deployments. The conversation wraps with big-picture thinking about the future of synthetic intelligence."
   },
   {
-    "number": 28,
+    "number": 26,
     "title": "AI Backlash",
     "date": "2026-01-09",
     "youtube_id": "dHNl4QRF0TQ",
     "blurb": "The societal mood has shifted from AI hype to AI backlash — job loss fears, ethical concerns, proliferating deepfakes, and non-consensual AI-generated content are all fueling the pushback. The team discusses significant new AI updates, the pitfalls of ad-supported AI models, a Clippy cultural revival, Grok's \"notify apps\" concept, and the seriousness of AI-enabled revenge porn and erosion of digital trust. The key message: engage with AI deliberately, not reactively."
   },
   {
-    "number": 27,
+    "number": 25,
     "title": "The Christmas Show",
     "date": "2025-12-20",
     "youtube_id": "Y_Ztr5oolic",
     "blurb": "A holiday edition comparing ChatGPT and Gemini's capabilities, new image generation features, and the disappointment of Gemini 3.0. The team reviews AI's growing role in daily life and breaks down three camps of AI thinkers: Doomers, Scouts, and Accelerationists. Topics include AI for older adults, future scenarios framed as \"Star Trek vs. Star Wars,\" and what governments and corporations should be doing. Closes with holiday wishes for the year ahead."
   },
   {
-    "number": 26,
+    "number": 24,
     "title": "AI Myths and Misconceptions",
     "date": "2025-12-06",
     "youtube_id": "dCX9kd47tvQ",
     "blurb": "Busting popular AI myths: scaling laws aren't magic, AI does create real business value, \"hallucinations\" may actually be a form of creativity, and claims about AI's water usage are wildly exaggerated. The team also covers flawed AI benchmarks, the Dunning-Kruger effect in AI skepticism, the importance of personalised AI responses, and the future of continuous AI learning. Critical thinking in a fast-moving field is the through-line."
   },
   {
-    "number": 25,
+    "number": 23,
     "title": "AGI Is Here",
     "date": "2025-11-29",
     "youtube_id": "lgZrboV5grY",
     "blurb": "The team makes the case that AI has crossed a meaningful AGI threshold. The discussion covers Claude 4.5 vs. Google Gemini, AI's role in research, writing, and coding via AI Studio, cybersecurity concerns with third-party app integrations, and the importance of keeping software updated as AI attack surfaces expand. References to classic films and early tech-support war stories keep things grounded."
   },
   {
-    "number": 23,
+    "number": 22,
     "title": "Gemini 3.0 Rocks!",
     "date": "2025-11-22",
     "youtube_id": "iA6NIMKLMLo",
     "blurb": "Google Gemini 3.0 gets a thorough live workout — text, images, and video all in one place. The team demos generating restaurant menus, building apps, and analysing YouTube videos. Google's \"Nano Banana Pro\" is singled out as a comprehensive multimodal solution that rivals (and in some ways beats) ChatGPT 5.1. A high-energy episode that showcases just how much AI creative and business tooling has matured."
   },
   {
-    "number": 22,
+    "number": 21,
     "title": "AI Music, Marcel's Tesla Trial, and More",
     "date": "2025-11-16",
     "youtube_id": "s4X57SvP-k0",
     "blurb": "AI-generated music has become indistinguishable from human-made music — and the copyright battle is heating up. The team also covers AI brand recognition trends, the financial dynamics and potential bubble forming around AI infrastructure, and Marcel's firsthand Tesla Model Y test drive and its self-driving capabilities. Plus: the economics of data centres and a preview of upcoming AI ethics topics."
   },
   {
-    "number": 21,
+    "number": 20,
     "title": "Debunking the AI Bubble and Exploring Vibe Coding",
     "date": "2025-11-01",
     "youtube_id": "WOtUXyK94xo",
     "blurb": "Marcel shows up in a Grim Reaper costume for a spirited Halloween debate about AI's future. Topics: is the AI boom a bubble? Google's quiet product launches, AI chip manufacturing competition, and job market impacts. The main attraction is \"vibe coding\" — building software through natural language descriptions — with live demos in Google AI Studio. Key message for executives: get your hands dirty with these tools yourself."
   },
   {
-    "number": 20,
+    "number": 19,
     "title": "Why We Aren't Getting Benefits From AI",
     "date": "2025-09-13",
     "youtube_id": "KSVP0A4qVo8",
     "blurb": "An MIT survey finds only 5% of companies financially benefit from AI — so where's the disconnect? The team explores how AI genuinely improves productivity in content creation, coding, and research, and why so many organisations are failing to capture that value. A Harvard Business Review chart of top AI use cases sparks discussion on treating AI as a coworker. Practical advice: start small, play with the tools, and chip away at the 80% completion barrier."
   },
   {
-    "number": 19,
+    "number": 18,
     "title": "Exploring the Cutting-Edge AI Tools: A Deep Dive",
     "date": "2025-08-30",
     "youtube_id": "414S08DCOGI",
     "blurb": "Marcel leads a hands-on showcase: Google Genie 3, Gemini 2.5 Image Generator, Heygen voice cloning and digital twins, and Suno AI music generation. The team also builds AI storybooks and explores interactive environments and real-world physics simulations. A serious note emerges on parental responsibility — children are using AI tools unsupervised, and the risks are real. Returns to the show's roots: play with AI to understand it."
   },
   {
-    "number": 18,
+    "number": 17,
     "title": "Is the AI Bubble About To Burst?",
     "date": "2025-08-23",
     "youtube_id": "b5p58AnfINw",
     "blurb": "The MIT report claiming only 5% of AI projects yield financial benefits has rattled markets — but is the panic justified? The team examines historical technology adoption cycles, open-source AI democratisation, China's role in the global AI race, and security implementation gaps. Topics include Canada's AI positioning, home automation, the \"Elon Musk Factor,\" and AI scalability. Teases an upcoming interview with the head of Zoho Canada."
   },
   {
-    "number": 17,
+    "number": 16,
     "title": "AI Hype, Reality, and the Future of Intelligence",
     "date": "2025-08-16",
     "youtube_id": "dvG7rBa_bpw",
     "blurb": "GPT-5 and Grok push the boundaries of AI intelligence — but how reliable are they in corporate settings? The team covers Apple's AI strategy and its abandoned self-driving car programme, Grok's \"unhinged personality\" and new voice modes, and GPT-5's rollout controversies. Live interactions with AI models demonstrate both capabilities and limits. Broader themes: AI personalisation, transhumanism, and the intensifying global competition among Apple, Google, OpenAI, and China."
   },
   {
-    "number": 16,
+    "number": 15,
     "title": "AI This Week: Security, GPT-5, and Digital Identity",
     "date": "2025-08-09",
     "youtube_id": "_dYYMEUHjgs",
     "blurb": "Developers are losing production code thanks to AI-powered IDEs — and Black Hat conference reveals new prompt injection attack vectors. The T App data breach makes the case for better digital identity systems. OpenAI's GPT-5 launch: impressive but not without issues. Age verification failures and AI-assisted identity fraud round out a dense security-focused episode that ends with practical guidance on safer AI practices."
   },
   {
-    "number": 15,
+    "number": 14,
     "title": "Project Synapse — June 28, 2025",
     "date": "2025-06-28",
     "youtube_id": "OjnJxfcbrUU",
     "blurb": "The latest conversation from Jim, Marcel, and John covering the week in AI. Watch the episode for full details."
   },
   {
-    "number": 14,
+    "number": 13,
     "title": "AI's Next Leap: Learning Through Experience",
     "date": "2025-04-26",
     "youtube_id": "zQWrHwMlJ2k",
     "blurb": "Centred on the landmark paper \"Welcome to the Era of Experience\" by AI pioneers David Silver and Richard Sutton, this episode explores how AI is shifting from pre-trained knowledge to learning through reinforcement and direct experience. AlphaGo and AlphaZero are revisited as milestones. The team discusses robots trained on YouTube videos, the rise of autonomous AI coworkers, job displacement, and ethical challenges of the human-AI transition. Book recommendation: \"The Dawn of Everything.\""
   },
   {
-    "number": 13,
+    "number": 12,
     "title": "AI & Robots — Prepare for Impact",
     "date": "2025-03-29",
     "youtube_id": "BHRW-Hohfx8",
     "blurb": "OpenAI vs. Google — consumer focus vs. research focus. Gemini 2.5, Studio Ghibli AI imagery, and Sam Altman's \"marketing genius\" are all on the table. The main event: humanoid robots replacing assembly line and home jobs (Sanctuary AI, Boston Dynamics, Neo). What does automation at scale mean for the economy? The team discusses Universal Basic Income, the illusion of humanity in AI robots, and support challenges for people with disabilities."
   },
   {
-    "number": 12,
+    "number": 11,
     "title": "2025: The Year of AI Agents Revolutionising Tech",
     "date": "2025-03-22",
     "youtube_id": "9zdGdybefTg",
     "blurb": "Autonomous AI agents take centre stage: OpenAI's Operator, Manus, and the Model Context Protocol (MCP). The team covers deep research capabilities, novel phishing tactics exploiting AI autonomy, vulnerabilities in business and legacy systems, Mark Zuckerberg's AI vision, vibe coding, and the paper \"Preparing for the Intelligence Explosion.\" Practical security advice for businesses trying to stay ahead of rapidly evolving AI-driven threats."
   },
   {
-    "number": 11,
+    "number": 10,
     "title": "OpenAI GPT-4.5: Why Everyone's Disappointed",
     "date": "2025-03-08",
     "youtube_id": "JlZd4Org9I0",
     "blurb": "GPT-4.5 is billed as \"the most human-like AI yet\" — so why is everyone underwhelmed? The team also covers AI etiquette (should you say please and thank you to AI?), Sesame AI for childhood learning, the AI research replication crisis, diffusion models, why AGI \"will be boring,\" Opera's AI browser, China's DALL-E 2 and R2, and Anthropic's model structure. Conclusion: limitations exist, but genuinely innovative use cases are multiplying fast."
   },
   {
-    "number": 10,
+    "number": 9,
     "title": "AI Wars: Which Model Should You Choose?",
     "date": "2025-02-28",
     "youtube_id": "dm-zlZMRWKI",
     "blurb": "A head-to-head comparison of the major AI models — OpenAI ChatGPT, Google Gemini, Anthropic Claude, and Grok — across features, real-world performance, and use cases. Microsoft Copilot and DeepSeek are evaluated as enterprise options. Topics include custom instructions, managing multiple AI tools, future AI trends, Google's unrecognised successes, and the very real risk of downloading unofficial AI tools. Practical guidance for tailoring AI to your personal workflow."
   },
   {
-    "number": 9,
+    "number": 8,
     "title": "The Dark Side of AI: Risks You Can't Ignore",
     "date": "2025-02-21",
     "youtube_id": "IIz9-cLKuZ0",
     "blurb": "A deep look at AI's cybersecurity dark side: misbehaving models, next-generation phishing tactics, data breaches, misinformation at scale, and the urgent need for explainability. The team covers AI consciousness debates, jailbreak exploits, emergent AI behaviours, data privacy, AI in regulated industries, and the skills required for the AI era. Distinguishes between temporary and long-term organisational AI strategies. Core message: guard against unsecured tools and ransomware."
   },
   {
-    "number": 8,
+    "number": 7,
     "title": "DeepSeek's Open AI Revolution: What It Means for You",
     "date": "2025-01-31",
     "youtube_id": "JxDBanWhKqw",
     "blurb": "DeepSeek's R1 reasoning model matches GPT-4 at a fraction of the cost — and it's open-source. The team digs into what that means for international AI competition, discusses tools including DeepSeek, Fusion, and Qwen 2.5, and addresses the elephant in the room: Chinese censorship. Open-source security benefits, ISP responsibilities, and OpenAI's counter-measures are all covered. Includes a live demo: building a snake game entirely with AI."
   },
   {
-    "number": 7,
+    "number": 6,
     "title": "Microsoft's $130 AI Gamble: Will Users Pay Up?",
     "date": "2025-01-18",
     "youtube_id": "gGvCelkG6h4",
     "blurb": "Microsoft raises Microsoft 365 Family to $130 per year — citing Copilot AI as the justification. Is that enough to stop users defecting to free alternatives? Also covered: ChatGPT's new task scheduling, ChatGPT's long-term memory update, Google funding live news AI initiatives, training AI models for $450, multimodal AI (text, voice, image), smart glasses, and AGI considerations. Closes with practical guidance for anyone just getting started with AI tools."
   },
   {
-    "number": 6,
+    "number": 5,
     "title": "AI Use Cases for Business and Fun",
     "date": "2024-12-07",
     "youtube_id": "TPJ_vFX9umk",
     "blurb": "OpenAI's \"12 Days of Innovation\" sets the backdrop as the team explores practical AI applications for business and everyday life. Topics include ChatGPT's capabilities and accuracy limits, AI's impact on data and spreadsheets, AI meeting summarisation, voice transcription, creating personalised AI agents, AI in creative writing, AI-generated music with Suno, and AI in marketing and branding. Live demos across CoPilot, Suno, and Claude."
   },
   {
-    "number": 5,
+    "number": 4,
     "title": "AI: What's Holding You Back?",
     "date": "2024-11-30",
     "youtube_id": "NDgqhcfqIu0",
     "blurb": "What stops organisations from deploying AI effectively? The team covers AI security, corporate and departmental AI strategy, myths about AI functionality, guardrails and jailbreaking, data security with AI models, and the value of running local large language models. Broader topics include maximising existing IT resources, critical thinking in the AI era, validating AI outputs, and AI in medical diagnostics. The key balance: AI augments human judgment, it doesn't replace it."
   },
   {
-    "number": 4,
+    "number": 3,
+    "title": "Getting AI Kick Started In Your Company - A Step By Step Guide",
+    "date": "2024-11-23",
+    "youtube_id": "U5b2sb4cRfk",
+    "blurb": "In this episode of Hashtag Trending's weekend edition, join Jim Love, Marcel Gagné, and John Pinard in their third recorded meeting for Project Synapse, a group dedicated to staying updated with AI developments. The trio discusses their extensive experience in IT, the evolution of AI, and practical ways for individuals and businesses to start integrating AI into their workflows. They share personal anecdotes, debate the impact of AI and cloud technologies, and highlight the importance of security and gradual adoption."
+  },
+  {
+    "number": 2,
     "title": "AI in Action: Episode 2",
     "date": "2024-11-15",
     "youtube_id": "6EbZWnWIV_w",
     "blurb": "The intersection of AI and cybersecurity explored in depth. Topics include practical AI applications in business, secure AI implementation strategies, the pace of AI advancement, and why experimentation matters. Covers specialised AI agents, AI in accounting and customer service, and the cultural shift businesses need to make. Discusses security concerns with AI deployments and announces an upcoming AI workshop for practitioners."
+  },
+  {
+    "number": 1,
+    "title": "AI - Two Years After ChatGPT's First Public Appearance",
+    "date": "2024-11-04",
+    "youtube_id": "7LJqpApFRKU",
+    "blurb": "A fascinating discussion we are calling Project Synapse. Our panel explores the reality of AI and it's application in business. Join tech veterans Jim Love, Marcel Gagné, and John Pinard as they discuss the origins and evolution of their initiative, Project Synapse. In this in-depth conversation, they explore the rapid advancements in AI, its impact on industries, and the potential it holds for the future. They also reflect on the significance of AI models like ChatGPT and GPT-2, and share personal anecdotes on how AI has transformed their professional lives."
   }
 ]

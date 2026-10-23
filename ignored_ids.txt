@@ -1,2 +1,4 @@
 # YouTube ids that update.py must never add, one per line.
 p2FHsWfLsl4  # Lionel Litty CISO interview: #TrendingOnTheWeekend special, removed as Ep 44
+c89xTd2qdm4  # duplicate upload of "AGI Is Here" (Ep 23, lgZrboV5grY): same title, 4329 s, same chapters
+zTGkl0rMGmA  # Cybersecurity Today cross-post of Ep 2 (6EbZWnWIV_w), "AI in Action, Episode 2"
