@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Find new Project Synapse episodes on @technewsday, add them, and rebuild index.html.
 
-Only videos whose title contains "Project Synapse" and that were published
-after the newest listed episode are added, numbered on from the highest
-episode in publication order. Older unlisted videos are reported but left
+Only videos whose title or description mentions "Project Synapse" (and that
+aren't replays, encores or Cybersecurity Today cross-posts) and that were
+published after the newest listed episode are added, numbered on from the
+highest episode in publication order. Older unlisted videos are reported but left
 alone: inserting one renumbers every later episode, which needs a human
 check, so add them with add_episode.py instead.
 """
@@ -16,10 +17,13 @@ import synapse_youtube as youtube
 
 SEARCH_LIMIT = 40
 RECENT_UPLOADS_LIMIT = 80
+# Episodes run about an hour (the shortest is 48 minutes) and the daily shows
+# 5-20 minutes, so a short listing that doesn't name the show isn't worth fetching.
+MIN_EPISODE_SECONDS = 40 * 60
 
 
 def discover_candidates(channel_id, log):
-    """(video_id, title) pairs from every source that answers. Raises if none do."""
+    """{video_id: listing} merged from every source that answers. Raises if none do."""
     sources = [
         ("RSS feed", lambda: youtube.fetch_rss(channel_id)),
         ("channel search", lambda: youtube.list_playlist(youtube.SEARCH_URL, SEARCH_LIMIT)),
@@ -35,11 +39,25 @@ def discover_candidates(channel_id, log):
             log(f"warning: {name} unavailable: {error}")
             continue
         log(f"{name}: {len(videos)} videos")
-        for video_id, title in videos:
-            found.setdefault(video_id, title)
+        for video in videos:
+            merged = found.setdefault(video["id"], dict(video))
+            # Sources know different things (RSS: description, channel tabs: duration).
+            for key, value in video.items():
+                if merged.get(key) is None:
+                    merged[key] = value
     if failures == len(sources):
         raise youtube.YouTubeError("every discovery source failed")
     return found
+
+
+def worth_fetching(listing):
+    """Whether a listing could be a new episode, judged without fetching its metadata."""
+    if youtube.is_rerun_or_cross_post(listing["title"]):
+        return False
+    if youtube.mentions_project_synapse(listing["title"]) or youtube.mentions_project_synapse(listing["description"]):
+        return True
+    # Channel tabs give no description, so a long video might still name the show in its own.
+    return listing["duration"] is None or listing["duration"] >= MIN_EPISODE_SECONDS
 
 
 def select_new_episodes(candidates, episodes, ignored_ids, fetch_video, log):
@@ -52,15 +70,16 @@ def select_new_episodes(candidates, episodes, ignored_ids, fetch_video, log):
     next_number = max(episode["number"] for episode in episodes) + 1
 
     accepted = []
-    for video_id, title in candidates.items():
+    for video_id, listing in candidates.items():
         if video_id in listed_ids or video_id in ignored_ids:
             continue
-        if not youtube.is_project_synapse_title(title):
+        if not worth_fetching(listing):
             continue
         metadata = fetch_video(video_id)
-        # Flat listings can carry stale or truncated titles; verify against the real one.
-        if not youtube.is_project_synapse_title(metadata["title"]):
-            log(f"skip {video_id}: full title {metadata['title']!r} is not a Project Synapse episode")
+        # Flat listings carry stale titles and truncated descriptions; verify against the real ones.
+        if not youtube.is_project_synapse_video(metadata["title"], metadata.get("description")):
+            log(f"skip {video_id}: {metadata['title']!r} is not a new Project Synapse episode "
+                "(show not named, or a replay/encore/cross-post)")
             continue
         published = youtube.show_date(metadata)
         if published <= newest_date:

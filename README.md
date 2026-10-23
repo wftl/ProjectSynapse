@@ -30,22 +30,35 @@ count and year range in the stats bar come from the data. Cards with a blurb und
 channel RSS feed, the channel search for "Project Synapse", and recent uploads and
 streams (through `/usr/bin/yt-dlp`; override this with `YT_DLP=...`). A video is added only if:
 
-- its title contains "Project Synapse" (so daily Tech News Day shows are skipped)
-  and doesn't say replay/encore,
+- its title or description mentions "Project Synapse" (or `#ProjectSynapse`), so
+  daily Tech News Day shows are skipped, and neither says replay/encore/rerun,
+- its title doesn't name Cybersecurity Today (those are cross-posts of episodes),
 - its ID isn't already listed and isn't in `ignored_ids.txt`, and
 - it was published after the newest listed episode. Older unlisted videos are
   reported but not added: inserting one renumbers every later episode, which
   shouldn't happen unattended. If one is genuine, add it with `add_episode.py`.
+
+Channel tabs list videos without descriptions, so any listed video of 40 minutes or
+more is fetched to check its description; shorter ones that don't name the show
+in their listing are skipped without a fetch.
 
 Episodes are numbered 1..N by air date. New episodes take the next numbers
 (highest + 1) in publication order; `update.py` warns if the existing list has gaps
 or numbers out of date order, since highest + 1 would then be wrong. Dates are the
 yt-dlp publication timestamp converted to America/Toronto, not YouTube's UTC
 `upload_date`, so evening uploads keep the right day. The blurb is the YouTube description with links, sponsor
-lines, chapter markers and headline lines removed, cut to about 600 characters at
+reads (a paragraph that opens with "X would like to thank Meter…", "brought to you
+by", a promo/discount code, and so on is dropped whole, along with its ad copy),
+chapter markers and headline lines removed, cut to about 600 characters at
 a sentence boundary. Check the titles and blurbs before publishing.
 
-`add_episode.py` refuses titles without "Project Synapse" unless you pass `--force`.
+Titles all take the form `Project Synapse: <title>` (`format_title` in
+`synapse_youtube.py`, used by both scripts). A show name at either end
+("X | Project Synapse", "Project Synapse - X", "X (Project Synapse)") moves to the
+prefix; a title that names the show mid-sentence is left as it is.
+
+`add_episode.py` applies the same episode checks as `update.py` (show named in title or
+description, not a replay or cross-post) unless you pass `--force`.
 It places the episode by air date and renumbers the list, so back-filling an older
 episode moves every later one up by one (it reports how many moved). `--number N`
 sets the number yourself and skips renumbering.

@@ -5,19 +5,65 @@ from pathlib import Path
 import synapse_youtube as youtube
 
 
-class TitleFilterTest(unittest.TestCase):
+class EpisodeFilterTest(unittest.TestCase):
     def test_accepts_project_synapse_titles(self):
         for title in ("Project Synapse - AI Out of Control",
                       "Will AI Kill Capitalism? | Project Synapse",
                       "PROJECT  SYNAPSE  on Hashtag Trending"):
-            self.assertTrue(youtube.is_project_synapse_title(title), title)
+            self.assertTrue(youtube.is_project_synapse_video(title), title)
+
+    def test_accepts_show_named_only_in_description(self):
+        self.assertTrue(youtube.is_project_synapse_video(
+            "Who is Paying People to Trash AI?", "On Project Synapse for Saturday, September 12, Jim..."))
+        self.assertTrue(youtube.is_project_synapse_video("When We Finally Get To Google I/O", "#projectsynapse #ainews"))
 
     def test_rejects_daily_shows_and_reruns(self):
         for title in ("Cybercriminals hack Staples to steal millions in gift cards",
                       "Gemini 3.0 Rocks. Hashtag Trending Weekend With Project Synapse (Replay)",
                       "Gemini 3.0 Rocks!: Project Synapse Holiday Encore:",
                       "Synapse project notes"):
-            self.assertFalse(youtube.is_project_synapse_title(title), title)
+            self.assertFalse(youtube.is_project_synapse_video(title), title)
+
+    def test_rejects_rerun_flagged_in_description(self):
+        self.assertFalse(youtube.is_project_synapse_video(
+            "Gemini 3.0 Rocks!", "A replay of last week's Project Synapse."))
+
+    def test_rejects_cybersecurity_today_cross_posts(self):
+        self.assertFalse(youtube.is_project_synapse_video(
+            "AI in Action: Project Synapse with Marcel Gagne and John Pinard. Cyber Security Today, Nov 16, 2024"))
+        # Naming Cybersecurity Today in the description alone is fine (Ep 33 was shared with its listeners).
+        self.assertTrue(youtube.is_project_synapse_video(
+            "AI Anxiety", "A special edition of Project Synapse shared with Cybersecurity Today listeners."))
+
+
+class FormatTitleTest(unittest.TestCase):
+    def test_prefixes_titles_without_the_show_name(self):
+        self.assertEqual(youtube.format_title("AI Backlash"), "Project Synapse: AI Backlash")
+
+    def test_moves_a_trailing_show_name_to_the_prefix(self):
+        for title, expected in (
+            ("Will AI Kill Capitalism? | Project Synapse", "Will AI Kill Capitalism?"),
+            ("Clawbot, Moltbot and the Overview Effect: Project Synapse", "Clawbot, Moltbot and the Overview Effect"),
+            ("Running Models Locally (Project Synapse)", "Running Models Locally"),
+            ("SpaceX IPO, Decentralization & Project Synapse", "SpaceX IPO, Decentralization"),
+            ("Risks You Can't Ignore - Project Synapse", "Risks You Can't Ignore"),
+        ):
+            self.assertEqual(youtube.format_title(title), f"Project Synapse: {expected}", title)
+
+    def test_normalizes_a_leading_show_name(self):
+        for title in ("Project Synapse - AI Out of Control", "Project Synapse — AI Out of Control",
+                      "project  synapse AI Out of Control", "Project Synapse: AI Out of Control"):
+            self.assertEqual(youtube.format_title(title), "Project Synapse: AI Out of Control", title)
+
+    def test_is_idempotent_and_collapses_whitespace(self):
+        once = youtube.format_title("  Agents,  Robots  ")
+        self.assertEqual(once, "Project Synapse: Agents, Robots")
+        self.assertEqual(youtube.format_title(once), once)
+
+    def test_bare_show_name_and_mid_title_mentions_are_left_alone(self):
+        self.assertEqual(youtube.format_title("Project Synapse"), "Project Synapse")
+        mid = "AI Use Cases: Hashtag Trending with Project Synapse, December 7, 2024"
+        self.assertEqual(youtube.format_title(mid), mid)
 
 
 class VideoIdTest(unittest.TestCase):
@@ -52,6 +98,33 @@ class TrimDescriptionTest(unittest.TestCase):
             "The hosts discuss robots in depth and why prices are falling fast. They also cover new chips "
             "for local inference and what that means for cloud vendors.",
         )
+
+    def test_drops_sponsor_paragraphs_and_their_ad_copy(self):
+        description = (
+            "Hashtag Trending would like to thank Meter for their support in bringing you this podcast. "
+            "Meter delivers a complete networking stack, wired, wireless and cellular in one integrated "
+            "solution that's built for performance and scale.\n\n"
+            "You can find them at Meter.com/htt\n\n"
+            "The panel debates AI consciousness and robots.\n\n"
+            "This episode is brought to you by NordLayer.  Visit nordlayer.com/hashtagtrending and use the "
+            "discount code NLSUMMER26 for a special discount on your purchase\n"
+            "Hashtag Trending thanks Meter for supporting this podcast. Meter delivers a complete stack. "
+            "Learn more at Meter.com/htt.\n"
+            "Support us at: buymeacoffee.com/techpodcast\n"
+            "Get 20% off with promo code SYNAPSE today.\n"
+        )
+        self.assertEqual(youtube.trim_description(description), "The panel debates AI consciousness and robots.")
+
+    def test_sponsor_sentence_inside_prose_drops_only_that_sentence(self):
+        self.assertEqual(
+            youtube.trim_description("The hosts discuss chips. Special thanks to Meter for supporting the podcast. "
+                                     "They also cover robots."),
+            "The hosts discuss chips. They also cover robots.")
+
+    def test_keeps_prose_that_only_resembles_sponsor_text(self):
+        prose = ("State-sponsored hackers target AI labs. Should you say please and thank you to AI? "
+                 "The team covers support challenges for people with disabilities.")
+        self.assertEqual(youtube.trim_description(prose), prose)
 
     def test_keeps_closing_quotes_on_sentences(self):
         self.assertEqual(youtube.trim_description("They call it “the singularity.” Then robots."),
@@ -89,23 +162,25 @@ class ShowDateTest(unittest.TestCase):
 
 
 class EpisodeFromMetadataTest(unittest.TestCase):
-    def test_title_whitespace_is_collapsed(self):
+    def test_title_is_formatted(self):
         episode = youtube.episode_from_metadata(
-            {"id": "gG1LMitW114", "title": " Agents,  Robots ", "upload_date": "20261002"}, 51)
-        self.assertEqual(episode["title"], "Agents, Robots")
+            {"id": "gG1LMitW114", "title": " Agents,  Robots | Project Synapse", "upload_date": "20261002"}, 51)
+        self.assertEqual(episode["title"], "Project Synapse: Agents, Robots")
         self.assertEqual(episode["blurb"], "")
 
 
 class RssAndIgnoreListTest(unittest.TestCase):
     def test_parse_rss(self):
         feed = b"""<?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xmlns:yt="http://www.youtube.com/xml/schemas/2015">
-  <entry><yt:videoId>pCeBgwrXlqI</yt:videoId><title>Will AI Kill Capitalism? | Project Synapse</title></entry>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:yt="http://www.youtube.com/xml/schemas/2015"
+      xmlns:media="http://search.yahoo.com/mrss/">
+  <entry><yt:videoId>pCeBgwrXlqI</yt:videoId><title>Will AI Kill Capitalism? | Project Synapse</title>
+    <media:group><media:description>On Project Synapse this week</media:description></media:group></entry>
   <entry><yt:videoId>Zm2GQv8yp3s</yt:videoId><title>Special Report</title></entry>
 </feed>"""
         self.assertEqual(youtube.parse_rss(feed), [
-            ("pCeBgwrXlqI", "Will AI Kill Capitalism? | Project Synapse"),
-            ("Zm2GQv8yp3s", "Special Report"),
+            youtube.listing("pCeBgwrXlqI", "Will AI Kill Capitalism? | Project Synapse", "On Project Synapse this week"),
+            youtube.listing("Zm2GQv8yp3s", "Special Report"),
         ])
 
     def test_ignored_ids_skip_comments_and_blanks(self):

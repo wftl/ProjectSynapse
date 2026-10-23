@@ -3,6 +3,7 @@ import unittest
 from unittest import mock
 
 import add_episode
+import synapse_youtube as youtube
 import update
 
 EXISTING = [
@@ -11,8 +12,13 @@ EXISTING = [
 ]
 
 
-def metadata(video_id, title, timestamp):
-    return {"id": video_id, "title": title, "timestamp": timestamp, "description": "A summary."}
+def metadata(video_id, title, timestamp, description="A summary."):
+    return {"id": video_id, "title": title, "timestamp": timestamp, "description": description}
+
+
+def listings(**titles):
+    """Candidates as discover_candidates returns them, from video_id=title keywords."""
+    return {video_id: youtube.listing(video_id, title) for video_id, title in titles.items()}
 
 
 VIDEOS = {
@@ -21,20 +27,26 @@ VIDEOS = {
     "olderCCCCCC": metadata("olderCCCCCC", "Project Synapse July 4", 1783180800),     # 2026-07-04
     "renamedDDDD": metadata("renamedDDDD", "Daily news", 1790000000),
     "ignoredEEEE": metadata("ignoredEEEE", "Project Synapse special", 1790000000),
+    "descOnlyGGG": metadata("descOnlyGGG", "Who Is Paying People to Trash AI?", 1789000000,  # 2026-09-09
+                            "On Project Synapse this week, Jim, Marcel and John..."),
+    "longDailyHH": metadata("longDailyHH", "Tech Newsday Month in Review", 1789000000,
+                            "The month's top security stories."),
+    "crossPostII": metadata("crossPostII", "AI in Action: Project Synapse. Cyber Security Today", 1789000000),
+    "replayJJJJJ": metadata("replayJJJJJ", "Gemini 3.0 Rocks!", 1789000000, "A replay of Project Synapse."),
 }
 
 
 class SelectNewEpisodesTest(unittest.TestCase):
     def test_adds_only_newer_project_synapse_videos_in_date_order(self):
-        candidates = {
-            "newerAAAAAA": "Project Synapse: Later",
-            "bOZE0vtb0bs": "Project Synapse already listed",
-            "newBBBBBBBB": "Robots | Project Synapse",
-            "olderCCCCCC": "Project Synapse July 4",
-            "renamedDDDD": "Project Synapse (flat title differs)",
-            "ignoredEEEE": "Project Synapse special",
-            "dailyFFFFFF": "Tech News Day: chips",
-        }
+        candidates = listings(
+            newerAAAAAA="Project Synapse: Later",
+            bOZE0vtb0bs="Project Synapse already listed",
+            newBBBBBBBB="Robots | Project Synapse",
+            olderCCCCCC="Project Synapse July 4",
+            renamedDDDD="Project Synapse (flat title differs)",
+            ignoredEEEE="Project Synapse special",
+        )
+        candidates["dailyFFFFFF"] = youtube.listing("dailyFFFFFF", "Tech News Day: chips", duration=640.0)
         fetched = []
 
         def fake_fetch(video_id):
@@ -44,16 +56,52 @@ class SelectNewEpisodesTest(unittest.TestCase):
         new = update.select_new_episodes(candidates, EXISTING, {"ignoredEEEE"}, fake_fetch, lambda message: None)
         self.assertEqual([(e["number"], e["youtube_id"], e["date"]) for e in new],
                          [(3, "newBBBBBBBB", "2026-07-24"), (4, "newerAAAAAA", "2026-10-16")])
+        self.assertEqual(new[1]["title"], "Project Synapse: Later")
         self.assertNotIn("dailyFFFFFF", fetched)
         self.assertNotIn("ignoredEEEE", fetched)
         self.assertNotIn("bOZE0vtb0bs", fetched)
+
+    def test_adds_episode_named_only_in_its_full_description(self):
+        # Channel tabs list no description, so long unnamed videos are fetched and checked.
+        candidates = {"descOnlyGGG": youtube.listing("descOnlyGGG", "Who Is Paying People to Trash AI?",
+                                                     duration=4472.0)}
+        new = update.select_new_episodes(candidates, EXISTING, set(), VIDEOS.get, lambda message: None)
+        self.assertEqual([(e["youtube_id"], e["title"]) for e in new],
+                         [("descOnlyGGG", "Project Synapse: Who Is Paying People to Trash AI?")])
+
+    def test_adds_episode_named_in_listing_description(self):
+        candidates = {"descOnlyGGG": youtube.listing("descOnlyGGG", "Who Is Paying People to Trash AI?",
+                                                     description="#ProjectSynapse", duration=300.0)}
+        new = update.select_new_episodes(candidates, EXISTING, set(), VIDEOS.get, lambda message: None)
+        self.assertEqual([e["youtube_id"] for e in new], ["descOnlyGGG"])
+
+    def test_skips_unnamed_long_videos_cross_posts_and_replays(self):
+        candidates = {
+            "longDailyHH": youtube.listing("longDailyHH", "Tech Newsday Month in Review", duration=3000.0),
+            "replayJJJJJ": youtube.listing("replayJJJJJ", "Gemini 3.0 Rocks!", duration=4287.0),
+            **listings(crossPostII="AI in Action: Project Synapse. Cyber Security Today"),
+        }
+        fetched, messages = [], []
+
+        def fake_fetch(video_id):
+            fetched.append(video_id)
+            return VIDEOS[video_id]
+
+        self.assertEqual(update.select_new_episodes(candidates, EXISTING, set(), fake_fetch, messages.append), [])
+        # The cross-post is recognisable from its listing title, so it is never fetched.
+        self.assertEqual(sorted(fetched), ["longDailyHH", "replayJJJJJ"])
+        self.assertTrue(any("replayJJJJJ" in message for message in messages))
+
+    def test_short_unnamed_listings_are_not_fetched(self):
+        candidates = {"dailyFFFFFF": youtube.listing("dailyFFFFFF", "Tech News Day: chips", duration=640.0)}
+        self.assertEqual(update.select_new_episodes(candidates, EXISTING, set(), None, lambda message: None), [])
 
     def test_nothing_new(self):
         self.assertEqual(update.select_new_episodes({}, EXISTING, set(), None, print), [])
 
     def test_reports_older_videos_without_adding_them(self):
         messages = []
-        new = update.select_new_episodes({"olderCCCCCC": "Project Synapse July 4"}, EXISTING, set(),
+        new = update.select_new_episodes(listings(olderCCCCCC="Project Synapse July 4"), EXISTING, set(),
                                          VIDEOS.get, messages.append)
         self.assertEqual(new, [])
         self.assertTrue(any("olderCCCCCC" in message and "add_episode.py" in message for message in messages))
@@ -94,6 +142,7 @@ class AddEpisodeTest(unittest.TestCase):
         self.assertEqual(episode["number"], 3)
         self.assertEqual(renumbered, {})
         self.assertEqual(self.saved(), {"JyDQ3ZZmcYo": 1, "bOZE0vtb0bs": 2, "newerAAAAAA": 3})
+        self.assertEqual(episode["title"], "Project Synapse: Later")
         self.rebuild.assert_called_once()
 
     def test_older_episode_is_inserted_by_date_and_later_ones_renumbered(self):
@@ -117,7 +166,16 @@ class AddEpisodeTest(unittest.TestCase):
         with self.assertRaises(add_episode.AddEpisodeError):
             add_episode.add_episode("renamedDDDD", fetch_video=self.fetch)
         episode, _ = add_episode.add_episode("renamedDDDD", force=True, fetch_video=self.fetch)
-        self.assertEqual(episode["title"], "Daily news")
+        self.assertEqual(episode["title"], "Project Synapse: Daily news")
+
+    def test_accepts_show_named_only_in_description_and_formats_title(self):
+        episode, _ = add_episode.add_episode("descOnlyGGG", fetch_video=self.fetch)
+        self.assertEqual(episode["title"], "Project Synapse: Who Is Paying People to Trash AI?")
+
+    def test_rejects_cross_posts_and_replays_unless_forced(self):
+        for video_id in ("crossPostII", "replayJJJJJ"):
+            with self.assertRaises(add_episode.AddEpisodeError):
+                add_episode.add_episode(video_id, fetch_video=self.fetch)
 
     def test_rejects_taken_number(self):
         with self.assertRaises(add_episode.AddEpisodeError):

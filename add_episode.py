@@ -28,9 +28,10 @@ def add_episode(url, number=None, force=False, fetch_video=youtube.fetch_video):
         raise AddEpisodeError(f"{video_id} is already listed")
 
     metadata = fetch_video(video_id)
-    if not force and not youtube.is_project_synapse_title(metadata["title"]):
+    if not force and not youtube.is_project_synapse_video(metadata["title"], metadata.get("description")):
         raise AddEpisodeError(
-            f"title {metadata['title']!r} does not look like a Project Synapse episode (use --force)"
+            f"{metadata['title']!r} does not look like a new Project Synapse episode: the show isn't "
+            "named in its title or description, or it is a replay/encore/cross-post (use --force)"
         )
 
     renumbered = {}
@@ -86,7 +87,8 @@ def main(argv=None):
     parser.add_argument("url", nargs="?", help="YouTube watch/share URL or bare video id")
     parser.add_argument("--number", type=int,
                         help="episode number (default: place by air date and renumber later episodes)")
-    parser.add_argument("--force", action="store_true", help="add even if the title lacks 'Project Synapse'")
+    parser.add_argument("--force", action="store_true",
+                        help="add even if neither title nor description names Project Synapse")
     parser.add_argument("--gui", action="store_true", help="open a small Tk window instead")
     args = parser.parse_args(argv)
 
