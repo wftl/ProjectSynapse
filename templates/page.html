@@ -159,6 +159,86 @@
       background: var(--border);
     }
 
+    /* ── Discord callout ── */
+    .discord-callout {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      background: linear-gradient(135deg, var(--surface) 0%, var(--surface2) 100%);
+      border: 1px solid rgba(59,130,246,0.35);
+      border-radius: 14px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 0 0 1px rgba(6,182,212,0.08), 0 8px 32px var(--accent-glow);
+    }
+
+    .discord-icon {
+      flex-shrink: 0;
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--tag-bg);
+      border: 1px solid rgba(59,130,246,0.3);
+      border-radius: 14px;
+      color: var(--accent2);
+    }
+
+    .discord-icon svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    .discord-text {
+      flex: 1;
+    }
+
+    .discord-text h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.25rem;
+    }
+
+    .discord-text p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .discord-button {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 0.75rem 1.4rem;
+      border-radius: 10px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .discord-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(59,130,246,0.35);
+    }
+
+    .discord-button svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    .footer-discord {
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-discord a {
+      font-weight: 600;
+    }
+
     /* ── Episode cards ── */
     .episodes {
       display: grid;
@@ -303,6 +383,7 @@
     @media (max-width: 640px) {
       .stats-bar { gap: 1.5rem; }
       .episodes { grid-template-columns: 1fr; }
+      .discord-callout { flex-direction: column; text-align: center; }
     }
   </style>
 </head>
@@ -335,6 +416,20 @@
 </div>
 
 <main>
+  <aside class="discord-callout">
+    <div class="discord-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.32 4.37a19.8 19.8 0 00-4.89-1.52.07.07 0 00-.08.04c-.21.38-.44.87-.61 1.25a18.3 18.3 0 00-5.49 0 12.6 12.6 0 00-.62-1.25.08.08 0 00-.08-.04 19.7 19.7 0 00-4.89 1.52.07.07 0 00-.03.03C.53 9.05-.32 13.58.1 18.06a.08.08 0 00.03.06 19.9 19.9 0 006 3.03.08.08 0 00.08-.03c.46-.63.87-1.3 1.23-2a.08.08 0 00-.04-.11 13.1 13.1 0 01-1.87-.89.08.08 0 01-.01-.13l.37-.29a.07.07 0 01.08-.01c3.93 1.79 8.18 1.79 12.07 0a.07.07 0 01.08.01l.37.29a.08.08 0 01-.01.13c-.6.35-1.22.65-1.87.89a.08.08 0 00-.04.11c.36.7.78 1.37 1.23 2a.08.08 0 00.08.03 19.8 19.8 0 006-3.03.08.08 0 00.03-.05c.5-5.18-.84-9.67-3.55-13.66a.06.06 0 00-.03-.03zM8.02 15.33c-1.18 0-2.16-1.09-2.16-2.42s.96-2.42 2.16-2.42c1.21 0 2.18 1.1 2.16 2.42 0 1.33-.96 2.42-2.16 2.42zm7.97 0c-1.18 0-2.15-1.09-2.15-2.42s.95-2.42 2.15-2.42c1.21 0 2.18 1.1 2.16 2.42 0 1.33-.95 2.42-2.16 2.42z"/></svg>
+    </div>
+    <div class="discord-text">
+      <h3>Join the Project Synapse community</h3>
+      <p>Keep the conversation going between episodes — share links, ask questions, and talk AI with the hosts and fellow listeners on our Discord server.</p>
+    </div>
+    <a class="discord-button" href="https://discord.gg/bzDJH4RyAu" target="_blank" rel="noopener">
+      Join us on Discord
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+    </a>
+  </aside>
+
   <div class="section-header"><h2>All Episodes</h2></div>
 
   <div class="episodes">
@@ -343,6 +438,9 @@
 </main>
 
 <footer>
+  <p class="footer-discord">
+    Come hang out with us &mdash; <a href="https://discord.gg/bzDJH4RyAu" target="_blank" rel="noopener">join the Project Synapse Discord</a>
+  </p>
   <p>
     Part of <a href="https://www.youtube.com/@technewsday" target="_blank" rel="noopener">Tech Newsday</a> &mdash;
     Hosted by Jim Love &middot; Co-hosted by Marcel Gagné &amp; John Pinard

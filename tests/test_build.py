@@ -1,4 +1,5 @@
 import json
+import re
 import tempfile
 import unittest
 from pathlib import Path
@@ -53,6 +54,17 @@ class RenderTest(unittest.TestCase):
         self.assertEqual(positions, sorted(positions))
         self.assertIn('<div class="stat-number">3</div>', page)
         self.assertIn('<div class="stat-number">2025–2026</div>', page)
+
+    def test_page_has_discord_invite_in_callout_and_footer(self):
+        page = build.render_page([make_episode(1)], PAGE_TEMPLATE, CARD_TEMPLATE)
+        discord_links = re.findall(r'<a [^>]*href="https://discord\.gg/bzDJH4RyAu"[^>]*>', page)
+        self.assertEqual(len(discord_links), 2)
+        for link in discord_links:
+            self.assertIn('target="_blank"', link)
+            self.assertIn('rel="noopener"', link)
+        callout = page.index('class="discord-callout"')
+        self.assertLess(callout, page.index('class="episodes"'))
+        self.assertGreater(page.index('class="footer-discord"'), page.index("<footer>"))
 
     def test_single_year_range(self):
         self.assertEqual(build.year_range([make_episode(1, date="2026-02-02")]), "2026")
