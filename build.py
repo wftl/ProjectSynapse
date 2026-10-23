@@ -60,6 +60,37 @@ def validate_episodes(episodes):
         seen_ids.add(episode["youtube_id"])
 
 
+def renumber_chronologically(episodes):
+    """Number episodes 1..N by air date, in place. Returns {youtube_id: (old, new)} for moved ones.
+
+    Same-day ties keep their existing relative order, so a newly appended
+    episode (numbered highest) lands after an existing one from that day.
+    """
+    ordered = sorted(episodes, key=lambda episode: (episode["date"], episode["number"]))
+    changes = {}
+    for new_number, episode in enumerate(ordered, start=1):
+        if episode["number"] != new_number:
+            changes[episode["youtube_id"]] = (episode["number"], new_number)
+            episode["number"] = new_number
+    return changes
+
+
+def numbering_problems(episodes):
+    """Ways the numbering differs from 1..N in air-date order (empty if it matches)."""
+    ordered = sorted(episodes, key=lambda episode: episode["number"])
+    problems = []
+    for expected, episode in enumerate(ordered, start=1):
+        if episode["number"] != expected:
+            problems.append(f"episode numbers skip from {expected - 1} to {episode['number']}")
+            break
+    for earlier, later in zip(ordered, ordered[1:]):
+        if earlier["date"] > later["date"]:
+            problems.append(
+                f"Ep {earlier['number']} ({earlier['date']}) is dated after Ep {later['number']} ({later['date']})"
+            )
+    return problems
+
+
 def format_display_date(iso_date):
     parsed = date.fromisoformat(iso_date)
     return f"{parsed:%B} {parsed.day}, {parsed.year}"

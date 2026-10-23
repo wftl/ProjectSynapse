@@ -81,6 +81,37 @@ class ValidationTest(unittest.TestCase):
         self.assert_invalid([episode])
 
 
+class NumberingTest(unittest.TestCase):
+    def test_renumber_orders_by_date_closes_gaps_and_reports_moves(self):
+        episodes = [
+            make_episode(7, date="2026-03-01"),
+            make_episode(2, date="2026-01-01"),
+            make_episode(9, date="2026-02-01"),
+        ]
+        changes = build.renumber_chronologically(episodes)
+        self.assertEqual(sorted((episode["date"], episode["number"]) for episode in episodes),
+                         [("2026-01-01", 1), ("2026-02-01", 2), ("2026-03-01", 3)])
+        self.assertEqual(changes, {
+            make_episode(2)["youtube_id"]: (2, 1),
+            make_episode(9)["youtube_id"]: (9, 2),
+            make_episode(7)["youtube_id"]: (7, 3),
+        })
+
+    def test_renumber_keeps_existing_order_for_same_day_and_reports_nothing_when_correct(self):
+        episodes = [make_episode(1, date="2026-01-01"), make_episode(2, date="2026-01-01")]
+        self.assertEqual(build.renumber_chronologically(episodes), {})
+        self.assertEqual([episode["number"] for episode in episodes], [1, 2])
+
+    def test_numbering_problems(self):
+        good = [make_episode(1, date="2026-01-01"), make_episode(2, date="2026-01-08")]
+        self.assertEqual(build.numbering_problems(good), [])
+        gap = [make_episode(1, date="2026-01-01"), make_episode(3, date="2026-01-08")]
+        self.assertEqual(build.numbering_problems(gap), ["episode numbers skip from 1 to 3"])
+        backwards = [make_episode(1, date="2026-01-08"), make_episode(2, date="2026-01-01")]
+        self.assertEqual(build.numbering_problems(backwards),
+                         ["Ep 1 (2026-01-08) is dated after Ep 2 (2026-01-01)"])
+
+
 class PersistenceTest(unittest.TestCase):
     def test_save_sorts_descending_and_round_trips_unicode(self):
         with tempfile.TemporaryDirectory() as directory:

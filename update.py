@@ -2,8 +2,10 @@
 """Find new Project Synapse episodes on @technewsday, add them, and rebuild index.html.
 
 Only videos whose title contains "Project Synapse" and that were published
-after the newest listed episode are added; older unlisted videos are reported
-but left alone, because inserting them would renumber existing episodes.
+after the newest listed episode are added, numbered on from the highest
+episode in publication order. Older unlisted videos are reported but left
+alone: inserting one renumbers every later episode, which needs a human
+check, so add them with add_episode.py instead.
 """
 
 import argparse
@@ -43,6 +45,9 @@ def discover_candidates(channel_id, log):
 def select_new_episodes(candidates, episodes, ignored_ids, fetch_video, log):
     """Fetch full metadata for promising candidates and return new episode dicts, numbered."""
     listed_ids = {episode["youtube_id"] for episode in episodes}
+    # max + 1 only continues the sequence if the list is already numbered by air date.
+    for problem in build.numbering_problems(episodes):
+        log(f"warning: {problem}; new episodes may be misnumbered")
     newest_date = max(episode["date"] for episode in episodes)
     next_number = max(episode["number"] for episode in episodes) + 1
 
@@ -59,7 +64,8 @@ def select_new_episodes(candidates, episodes, ignored_ids, fetch_video, log):
             continue
         published = youtube.show_date(metadata)
         if published <= newest_date:
-            log(f"skip {video_id} ({published}): older than newest listed episode; add manually if wanted")
+            log(f"skip {video_id} ({published}): not newer than the newest listed episode; "
+                "if genuine, add it with add_episode.py (renumbers later episodes)")
             continue
         accepted.append(metadata)
 

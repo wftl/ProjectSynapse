@@ -17,7 +17,11 @@ class AddEpisodeError(Exception):
 
 
 def add_episode(url, number=None, force=False, fetch_video=youtube.fetch_video):
-    """Fetch metadata, append the episode, save and rebuild. Returns the new episode."""
+    """Fetch metadata, add the episode, save and rebuild. Returns (episode, renumbered).
+
+    Without an explicit number the episode is placed by air date and the list is
+    renumbered 1..N, so later episodes move up by one; renumbered maps youtube_id -> (old, new).
+    """
     video_id = youtube.extract_video_id(url)
     episodes = build.load_episodes()
     if any(episode["youtube_id"] == video_id for episode in episodes):
@@ -29,19 +33,28 @@ def add_episode(url, number=None, force=False, fetch_video=youtube.fetch_video):
             f"title {metadata['title']!r} does not look like a Project Synapse episode (use --force)"
         )
 
+    renumbered = {}
     if number is None:
-        number = max((episode["number"] for episode in episodes), default=0) + 1
+        episode = youtube.episode_from_metadata(metadata, max((existing["number"] for existing in episodes), default=0) + 1)
+        episodes.append(episode)
+        renumbered = build.renumber_chronologically(episodes)
+        renumbered.pop(episode["youtube_id"], None)
     elif any(episode["number"] == number for episode in episodes):
         raise AddEpisodeError(f"episode number {number} is already taken")
+    else:
+        episode = youtube.episode_from_metadata(metadata, number)
+        episodes.append(episode)
 
-    episode = youtube.episode_from_metadata(metadata, number)
-    build.save_episodes(episodes + [episode])
+    build.save_episodes(episodes)
     build.build()
-    return episode
+    return episode, renumbered
 
 
-def describe(episode):
-    return f"Added Ep {episode['number']} ({episode['date']}): {episode['title']}"
+def describe(episode, renumbered):
+    text = f"Added Ep {episode['number']} ({episode['date']}): {episode['title']}"
+    if renumbered:
+        text += f"; renumbered {len(renumbered)} other episodes"
+    return text
 
 
 def run_gui():
@@ -59,7 +72,7 @@ def run_gui():
         status.config(text="Fetching…")
         window.update_idletasks()
         try:
-            status.config(text=describe(add_episode(url_entry.get())))
+            status.config(text=describe(*add_episode(url_entry.get())))
         except (AddEpisodeError, ValueError, youtube.YouTubeError, build.EpisodeDataError) as error:
             status.config(text=f"Error: {error}")
 
@@ -71,7 +84,8 @@ def run_gui():
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Add a Project Synapse episode by YouTube URL.")
     parser.add_argument("url", nargs="?", help="YouTube watch/share URL or bare video id")
-    parser.add_argument("--number", type=int, help="episode number (default: highest + 1)")
+    parser.add_argument("--number", type=int,
+                        help="episode number (default: place by air date and renumber later episodes)")
     parser.add_argument("--force", action="store_true", help="add even if the title lacks 'Project Synapse'")
     parser.add_argument("--gui", action="store_true", help="open a small Tk window instead")
     args = parser.parse_args(argv)
@@ -81,7 +95,7 @@ def main(argv=None):
     if not args.url:
         parser.error("a URL is required unless --gui is given")
     try:
-        print(describe(add_episode(args.url, number=args.number, force=args.force)))
+        print(describe(*add_episode(args.url, number=args.number, force=args.force)))
     except (AddEpisodeError, ValueError, youtube.YouTubeError, build.EpisodeDataError) as error:
         print(f"error: {error}", file=sys.stderr)
         return 1
