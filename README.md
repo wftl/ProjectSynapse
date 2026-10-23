@@ -34,15 +34,24 @@ streams (through `/usr/bin/yt-dlp`; override this with `YT_DLP=...`). A video is
   and doesn't say replay/encore,
 - its ID isn't already listed and isn't in `ignored_ids.txt`, and
 - it was published after the newest listed episode. Older unlisted videos are
-  reported but not added, because inserting them would renumber existing episodes.
+  reported but not added: inserting one renumbers every later episode, which
+  shouldn't happen unattended. If one is genuine, add it with `add_episode.py`.
 
-New episodes take the next numbers in publication order. Dates use the
-America/Toronto timezone. The blurb is the YouTube description with links, sponsor
+Episodes are numbered 1..N by air date. New episodes take the next numbers
+(highest + 1) in publication order; `update.py` warns if the existing list has gaps
+or numbers out of date order, since highest + 1 would then be wrong. Dates are the
+yt-dlp publication timestamp converted to America/Toronto, not YouTube's UTC
+`upload_date`, so evening uploads keep the right day. The blurb is the YouTube description with links, sponsor
 lines, chapter markers and headline lines removed, cut to about 600 characters at
 a sentence boundary. Check the titles and blurbs before publishing.
 
-`add_episode.py` refuses titles without "Project Synapse" unless you pass `--force`,
-and takes `--number N` to set the episode number yourself.
+`add_episode.py` refuses titles without "Project Synapse" unless you pass `--force`.
+It places the episode by air date and renumbers the list, so back-filling an older
+episode moves every later one up by one (it reports how many moved). `--number N`
+sets the number yourself and skips renumbering.
+
+Videos that look like episodes but aren't (cross-posts, re-uploads, specials) go in
+`ignored_ids.txt` with a comment saying why.
 
 ## Weekly automatic update (systemd user timer)
 
@@ -69,7 +78,7 @@ machine was off at that time, it runs on next boot.
 ## Tests
 
 ```sh
-python3 -m unittest discover tests
+python3 -m unittest discover -s tests
 ```
 
 The tests use only the standard library and never touch the network. One test fails
