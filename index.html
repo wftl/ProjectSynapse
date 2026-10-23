@@ -102,32 +102,37 @@
       color: var(--text);
     }
 
-    /* ── Stats bar ── */
-    .stats-bar {
+    /* ── Stats line ── */
+    .stats-line {
       background: var(--surface);
       border-bottom: 1px solid var(--border);
-      padding: 0.9rem 2rem;
-      display: flex;
-      justify-content: center;
-      gap: 2.5rem;
-      flex-wrap: wrap;
-    }
-
-    .stat {
+      padding: 0.35rem 1rem;
       text-align: center;
-    }
-
-    .stat-number {
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: var(--accent);
-    }
-
-    .stat-label {
-      font-size: 0.72rem;
+      font-size: 0.8rem;
       color: var(--text-dim);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
+    }
+
+    .stats-line strong {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .stats-line a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .stats-line a:hover {
+      color: var(--accent2);
+    }
+
+    /* Keeps each item intact so the line wraps between items, not inside them */
+    .stats-item {
+      white-space: nowrap;
+    }
+
+    .stats-sep {
+      margin: 0 0.5rem;
     }
 
     /* ── Main layout ── */
@@ -381,7 +386,6 @@
 
     /* ── Responsive ── */
     @media (max-width: 640px) {
-      .stats-bar { gap: 1.5rem; }
       .episodes { grid-template-columns: 1fr; }
       .discord-callout { flex-direction: column; text-align: center; }
     }
@@ -400,20 +404,11 @@
   </div>
 </header>
 
-<div class="stats-bar">
-  <div class="stat">
-    <div class="stat-number">75</div>
-    <div class="stat-label">Episodes</div>
-  </div>
-  <div class="stat">
-    <div class="stat-number">2024–2026</div>
-    <div class="stat-label">On Air</div>
-  </div>
-  <div class="stat">
-    <div class="stat-number">@technewsday</div>
-    <div class="stat-label">YouTube Channel</div>
-  </div>
-</div>
+<p class="stats-line">
+  <span class="stats-item"><strong>75</strong> episodes</span><span class="stats-sep" aria-hidden="true">·</span>
+  <span class="stats-item">On air <strong>2024–2026</strong></span><span class="stats-sep" aria-hidden="true">·</span>
+  <span class="stats-item"><a href="https://www.youtube.com/@technewsday" target="_blank" rel="noopener">@technewsday</a></span>
+</p>
 
 <main>
   <aside class="discord-callout">
@@ -422,7 +417,7 @@
     </div>
     <div class="discord-text">
       <h3>Join the Project Synapse community</h3>
-      <p>Keep the conversation going between episodes — share links, ask questions, and talk AI with the hosts and fellow listeners on our Discord server.</p>
+      <p>Keep the conversation going between episodes.</p>
     </div>
     <a class="discord-button" href="https://discord.gg/bzDJH4RyAu" target="_blank" rel="noopener">
       Join us on Discord

@@ -52,8 +52,8 @@ class RenderTest(unittest.TestCase):
         page = build.render_page(episodes, PAGE_TEMPLATE, CARD_TEMPLATE)
         positions = [page.index(f"<!-- EP {n} -->") for n in (10, 3, 2)]
         self.assertEqual(positions, sorted(positions))
-        self.assertIn('<div class="stat-number">3</div>', page)
-        self.assertIn('<div class="stat-number">2025–2026</div>', page)
+        self.assertIn('<strong>3</strong> episodes', page)
+        self.assertIn('On air <strong>2025–2026</strong>', page)
 
     def test_page_has_discord_invite_in_callout_and_footer(self):
         page = build.render_page([make_episode(1)], PAGE_TEMPLATE, CARD_TEMPLATE)
@@ -65,6 +65,20 @@ class RenderTest(unittest.TestCase):
         callout = page.index('class="discord-callout"')
         self.assertLess(callout, page.index('class="episodes"'))
         self.assertGreater(page.index('class="footer-discord"'), page.index("<footer>"))
+
+    def test_discord_callout_text(self):
+        page = build.render_page([make_episode(1)], PAGE_TEMPLATE, CARD_TEMPLATE)
+        self.assertIn("<p>Keep the conversation going between episodes.</p>", page)
+
+    def test_stats_line_replaces_stats_banner(self):
+        page = build.render_page([make_episode(1)], PAGE_TEMPLATE, CARD_TEMPLATE)
+        self.assertIn('class="stats-line"', page)
+        self.assertNotIn("stats-bar", page)
+        self.assertNotIn("stat-number", page)
+        self.assertRegex(
+            page,
+            r'<a href="https://www\.youtube\.com/@technewsday" target="_blank" rel="noopener">@technewsday</a></span>\s*</p>',
+        )
 
     def test_single_year_range(self):
         self.assertEqual(build.year_range([make_episode(1, date="2026-02-02")]), "2026")
