@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
-# Weekly job: add new Project Synapse episodes and commit them locally.
-# Never pushes. Refuses to run on an unexpected branch or over uncommitted
-# edits to the data files, so manual work is never swept into an auto-commit.
+# Weekly job: add new Project Synapse episodes, commit, and push to origin
+# (only when something new was committed). The target branch is set by
+# SYNAPSE_BRANCH (default: master); the job only runs when that branch is
+# checked out, and refuses to run over uncommitted edits to the data files.
 set -euo pipefail
 
 repo_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-expected_branch="${SYNAPSE_BRANCH:-auto-generator}"
+expected_branch="${SYNAPSE_BRANCH:-master}"
 data_files=(episodes.json index.html)
 
 cd "$repo_dir"
@@ -31,3 +32,4 @@ fi
 new_titles="$(git diff HEAD -U0 -- episodes.json | sed -n 's/^+    "title": "\(.*\)",$/- \1/p')"
 git commit --quiet -m "Add new Project Synapse episodes (weekly update)" -m "$new_titles" -- "${data_files[@]}"
 git log --oneline -1
+git push origin HEAD

@@ -56,8 +56,8 @@ Videos that look like episodes but aren't (cross-posts, re-uploads, specials) go
 ## Weekly automatic update (systemd user timer)
 
 `deploy/run-update.sh` runs `update.py` and the tests. If anything changed, it
-commits `episodes.json` and `index.html` **locally**. It never pushes. It refuses
-to run if the checked-out branch isn't `$SYNAPSE_BRANCH` (default `auto-generator`)
+commits `episodes.json` and `index.html` and, only when something new was committed, runs `git push origin HEAD`. It refuses
+to run if the checked-out branch isn't `$SYNAPSE_BRANCH` (default `master`)
 or if those files have uncommitted edits.
 
 The units are provided but not enabled. To install them:
