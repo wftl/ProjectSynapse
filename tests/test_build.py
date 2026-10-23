@@ -43,6 +43,45 @@ class RenderTest(unittest.TestCase):
         card = build.render_card(make_episode(7, title="{{NUMBER}} {{BLURB}}"), CARD_TEMPLATE)
         self.assertIn('<div class="card-title">{{NUMBER}} {{BLURB}}</div>', card)
 
+    def test_card_uses_click_to_play_facade_instead_of_iframe(self):
+        card = build.render_card(make_episode(1, youtube_id="dQw4w9WgXcQ"), CARD_TEMPLATE)
+        self.assertNotIn("<iframe", card)
+        link = re.search(r'<a class="video-facade"[^>]*>', card).group(0)
+        self.assertIn('href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"', link)
+        self.assertIn('target="_blank"', link)
+        self.assertIn('rel="noopener"', link)
+        self.assertIn('data-youtube-id="dQw4w9WgXcQ"', link)
+        img = re.search(r'<img [^>]*>', card).group(0)
+        self.assertIn('src="https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"', img)
+        self.assertIn("https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", img)
+        self.assertIn('loading="lazy"', img)
+        self.assertIn('alt="Thumbnail for Episode title 1"', img)
+        # The fallback must disarm itself, or a missing hqdefault would loop forever.
+        self.assertRegex(img, r'onerror="this\.onerror = null;')
+        self.assertIn('class="play-button" aria-hidden="true"', card)
+
+    def test_title_is_attribute_escaped_in_facade(self):
+        card = build.render_card(make_episode(1, title='He said "AI" & <left>\'s'), CARD_TEMPLATE)
+        escaped = "He said &quot;AI&quot; &amp; &lt;left&gt;&#x27;s"
+        self.assertIn(f'data-title="{escaped}"', card)
+        self.assertIn(f'aria-label="Watch {escaped} on YouTube"', card)
+        self.assertIn(f'alt="Thumbnail for {escaped}"', card)
+        self.assertNotIn('"AI"', card.split('class="card-title"')[0])
+
+    def test_page_script_upgrades_facade_to_nocookie_player(self):
+        page = build.render_page([make_episode(1)], PAGE_TEMPLATE, CARD_TEMPLATE)
+        script = page[page.rindex("<script>"):page.rindex("</script>")]
+        self.assertIn("document.createElement('button')", script)
+        self.assertIn("'Play ' + link.dataset.title", script)
+        self.assertIn("https://www.youtube-nocookie.com/embed/", script)
+        self.assertIn("?autoplay=1", script)
+        self.assertIn("autoplay; clipboard-write; encrypted-media", script)
+        self.assertIn("iframe.title = button.dataset.title", script)
+        # One delegated listener, and no HTML parsing of title text.
+        self.assertEqual(script.count("addEventListener('click'"), 1)
+        self.assertNotIn("innerHTML", script)
+        self.assertIn(".video-facade:focus-visible", page)
+
     def test_short_blurb_has_no_toggle_button(self):
         self.assertNotIn("toggle-btn", build.render_card(make_episode(1, blurb="Short."), CARD_TEMPLATE))
         self.assertIn("toggle-btn", build.render_card(make_episode(1), CARD_TEMPLATE))

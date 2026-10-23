@@ -1,7 +1,10 @@
     <!-- EP {{NUMBER}} -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/{{YOUTUBE_ID}}" title="Episode {{NUMBER}}" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v={{YOUTUBE_ID}}" target="_blank" rel="noopener" data-youtube-id="{{YOUTUBE_ID}}" data-title="{{TITLE_ATTR}}" aria-label="Watch {{TITLE_ATTR}} on YouTube">
+          <img src="https://i.ytimg.com/vi/{{YOUTUBE_ID}}/maxresdefault.jpg" alt="Thumbnail for {{TITLE_ATTR}}" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/{{YOUTUBE_ID}}/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">

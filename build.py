@@ -113,6 +113,7 @@ def render_card(episode, card_template):
         "YOUTUBE_ID": episode["youtube_id"],
         "DATE": format_display_date(episode["date"]),
         "TITLE": html.escape(episode["title"], quote=False),
+        "TITLE_ATTR": html.escape(episode["title"], quote=True),
         "BLURB": html.escape(episode["blurb"], quote=False),
         "TOGGLE_BUTTON": "" if len(episode["blurb"]) < SHORT_BLURB_CHARS else TOGGLE_BUTTON_HTML,
     })

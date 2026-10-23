@@ -271,12 +271,67 @@
       background: #000;
     }
 
-    .embed-wrap iframe {
+    .embed-wrap iframe,
+    .video-facade {
       position: absolute;
       inset: 0;
       width: 100%;
       height: 100%;
       border: none;
+    }
+
+    .video-facade {
+      display: block;
+      padding: 0;
+      background: #000;
+      cursor: pointer;
+    }
+
+    .video-facade img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: filter 0.2s ease;
+    }
+
+    .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 68px;
+      height: 48px;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5), 0 0 24px rgba(6,182,212,0.35);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .play-button svg {
+      width: 26px;
+      height: 26px;
+      fill: #fff;
+    }
+
+    .video-facade:hover img,
+    .video-facade:focus-visible img {
+      filter: brightness(0.8);
+    }
+
+    .video-facade:hover .play-button,
+    .video-facade:focus-visible .play-button {
+      transform: translate(-50%, -50%) scale(1.1);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.5), 0 0 32px rgba(6,182,212,0.6);
+    }
+
+    /* Inset outline: the card's overflow:hidden would clip an outer one. */
+    .video-facade:focus-visible {
+      outline: 3px solid var(--accent2);
+      outline-offset: -3px;
     }
 
     .card-body {
@@ -454,6 +509,40 @@
     if (desc.scrollHeight > desc.clientHeight + 5) {
       // has overflow; already collapsed via CSS
     }
+  });
+
+  // Video facades: each card ships a plain link to YouTube (works without JS).
+  // Here we upgrade it to a real button that swaps in the player on click,
+  // so the page loads thumbnails only instead of dozens of iframes.
+  // (The thumbnail's inline onload/onerror falls back to hqdefault.jpg when
+  // maxresdefault is missing: YouTube answers with a 120px-wide placeholder,
+  // sometimes as a 404. onerror clears itself first so it can't loop.)
+  document.querySelectorAll('a.video-facade').forEach(link => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = link.className;
+    button.dataset.youtubeId = link.dataset.youtubeId;
+    button.dataset.title = link.dataset.title;
+    // dataset returns decoded text and setAttribute never parses HTML, so titles need no re-escaping.
+    button.setAttribute('aria-label', 'Play ' + link.dataset.title);
+    button.append(...link.childNodes);
+    link.replaceWith(button);
+  });
+
+  document.querySelector('.episodes').addEventListener('click', event => {
+    const button = event.target.closest('button.video-facade');
+    if (!button) return;
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube-nocookie.com/embed/' +
+      encodeURIComponent(button.dataset.youtubeId) + '?autoplay=1';
+    iframe.title = button.dataset.title;
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.allowFullscreen = true;
+    // YouTube's embed refuses to play without a referrer.
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+    button.replaceWith(iframe);
+    // Keep keyboard users where they were instead of dropping focus to <body>.
+    iframe.focus();
   });
 </script>
 

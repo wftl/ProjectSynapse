@@ -271,12 +271,67 @@
       background: #000;
     }
 
-    .embed-wrap iframe {
+    .embed-wrap iframe,
+    .video-facade {
       position: absolute;
       inset: 0;
       width: 100%;
       height: 100%;
       border: none;
+    }
+
+    .video-facade {
+      display: block;
+      padding: 0;
+      background: #000;
+      cursor: pointer;
+    }
+
+    .video-facade img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: filter 0.2s ease;
+    }
+
+    .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 68px;
+      height: 48px;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5), 0 0 24px rgba(6,182,212,0.35);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .play-button svg {
+      width: 26px;
+      height: 26px;
+      fill: #fff;
+    }
+
+    .video-facade:hover img,
+    .video-facade:focus-visible img {
+      filter: brightness(0.8);
+    }
+
+    .video-facade:hover .play-button,
+    .video-facade:focus-visible .play-button {
+      transform: translate(-50%, -50%) scale(1.1);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.5), 0 0 32px rgba(6,182,212,0.6);
+    }
+
+    /* Inset outline: the card's overflow:hidden would clip an outer one. */
+    .video-facade:focus-visible {
+      outline: 3px solid var(--accent2);
+      outline-offset: -3px;
     }
 
     .card-body {
@@ -432,7 +487,10 @@
     <!-- EP 75 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/pCeBgwrXlqI" title="Episode 75" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=pCeBgwrXlqI" target="_blank" rel="noopener" data-youtube-id="pCeBgwrXlqI" data-title="Project Synapse: Will AI Kill Capitalism? Plus Hands-On With AI Agents" aria-label="Watch Project Synapse: Will AI Kill Capitalism? Plus Hands-On With AI Agents on YouTube">
+          <img src="https://i.ytimg.com/vi/pCeBgwrXlqI/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Will AI Kill Capitalism? Plus Hands-On With AI Agents" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/pCeBgwrXlqI/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -452,7 +510,10 @@
     <!-- EP 74 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/_yRqgQqNElI" title="Episode 74" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=_yRqgQqNElI" target="_blank" rel="noopener" data-youtube-id="_yRqgQqNElI" data-title="Project Synapse: AI Out of Control" aria-label="Watch Project Synapse: AI Out of Control on YouTube">
+          <img src="https://i.ytimg.com/vi/_yRqgQqNElI/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI Out of Control" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/_yRqgQqNElI/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -472,7 +533,10 @@
     <!-- EP 73 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/gG1LMitW114" title="Episode 73" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=gG1LMitW114" target="_blank" rel="noopener" data-youtube-id="gG1LMitW114" data-title="Project Synapse: AI Doom Percentages, New Model Releases, Always On Agents, Robots in the Foundry" aria-label="Watch Project Synapse: AI Doom Percentages, New Model Releases, Always On Agents, Robots in the Foundry on YouTube">
+          <img src="https://i.ytimg.com/vi/gG1LMitW114/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI Doom Percentages, New Model Releases, Always On Agents, Robots in the Foundry" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/gG1LMitW114/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -492,7 +556,10 @@
     <!-- EP 72 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/GuwhMdfkTas" title="Episode 72" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=GuwhMdfkTas" target="_blank" rel="noopener" data-youtube-id="GuwhMdfkTas" data-title="Project Synapse: Meta Muse Agents, AI Model Price Wars, and Why Governance Matters" aria-label="Watch Project Synapse: Meta Muse Agents, AI Model Price Wars, and Why Governance Matters on YouTube">
+          <img src="https://i.ytimg.com/vi/GuwhMdfkTas/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Meta Muse Agents, AI Model Price Wars, and Why Governance Matters" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/GuwhMdfkTas/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -512,7 +579,10 @@
     <!-- EP 71 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/VlA5IzV-j50" title="Episode 71" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=VlA5IzV-j50" target="_blank" rel="noopener" data-youtube-id="VlA5IzV-j50" data-title="Project Synapse: AI Is Killing Me" aria-label="Watch Project Synapse: AI Is Killing Me on YouTube">
+          <img src="https://i.ytimg.com/vi/VlA5IzV-j50/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI Is Killing Me" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/VlA5IzV-j50/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -532,7 +602,10 @@
     <!-- EP 70 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/LLCocjNbrO4" title="Episode 70" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=LLCocjNbrO4" target="_blank" rel="noopener" data-youtube-id="LLCocjNbrO4" data-title="Project Synapse: Who is Paying People to Trash AI?" aria-label="Watch Project Synapse: Who is Paying People to Trash AI? on YouTube">
+          <img src="https://i.ytimg.com/vi/LLCocjNbrO4/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Who is Paying People to Trash AI?" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/LLCocjNbrO4/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -552,7 +625,10 @@
     <!-- EP 69 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/FEsDpBktAs8" title="Episode 69" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=FEsDpBktAs8" target="_blank" rel="noopener" data-youtube-id="FEsDpBktAs8" data-title="Project Synapse: Astra (GPT-6?), AGI Hype, Model Costs, and Teaching AI Critical Thinking" aria-label="Watch Project Synapse: Astra (GPT-6?), AGI Hype, Model Costs, and Teaching AI Critical Thinking on YouTube">
+          <img src="https://i.ytimg.com/vi/FEsDpBktAs8/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Astra (GPT-6?), AGI Hype, Model Costs, and Teaching AI Critical Thinking" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/FEsDpBktAs8/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -572,7 +648,10 @@
     <!-- EP 68 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/qDVh8LHwnyY" title="Episode 68" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=qDVh8LHwnyY" target="_blank" rel="noopener" data-youtube-id="qDVh8LHwnyY" data-title="Project Synapse: AI Hardware Arms Race &amp; Humanoid Robot Olympics: Apple Chips, OpenAI ‘Jalapeno,’ Meta Models, and Robot Prices Plummet" aria-label="Watch Project Synapse: AI Hardware Arms Race &amp; Humanoid Robot Olympics: Apple Chips, OpenAI ‘Jalapeno,’ Meta Models, and Robot Prices Plummet on YouTube">
+          <img src="https://i.ytimg.com/vi/qDVh8LHwnyY/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI Hardware Arms Race &amp; Humanoid Robot Olympics: Apple Chips, OpenAI ‘Jalapeno,’ Meta Models, and Robot Prices Plummet" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/qDVh8LHwnyY/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -592,7 +671,10 @@
     <!-- EP 67 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/cCJ_o61mVpU" title="Episode 67" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=cCJ_o61mVpU" target="_blank" rel="noopener" data-youtube-id="cCJ_o61mVpU" data-title="Project Synapse: AI Companies Destroy Books, Backers Fund AI Doom, Robots Learn Fast" aria-label="Watch Project Synapse: AI Companies Destroy Books, Backers Fund AI Doom, Robots Learn Fast on YouTube">
+          <img src="https://i.ytimg.com/vi/cCJ_o61mVpU/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI Companies Destroy Books, Backers Fund AI Doom, Robots Learn Fast" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/cCJ_o61mVpU/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -612,7 +694,10 @@
     <!-- EP 66 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/EUiEWMfk1TM" title="Episode 66" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=EUiEWMfk1TM" target="_blank" rel="noopener" data-youtube-id="EUiEWMfk1TM" data-title="Project Synapse: Emergent AI Behavior, Consciousness Debates, Agents in the Cloud, and Hyper-Realistic Robots" aria-label="Watch Project Synapse: Emergent AI Behavior, Consciousness Debates, Agents in the Cloud, and Hyper-Realistic Robots on YouTube">
+          <img src="https://i.ytimg.com/vi/EUiEWMfk1TM/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Emergent AI Behavior, Consciousness Debates, Agents in the Cloud, and Hyper-Realistic Robots" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/EUiEWMfk1TM/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -632,7 +717,10 @@
     <!-- EP 65 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/M6dShqOS2ic" title="Episode 65" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=M6dShqOS2ic" target="_blank" rel="noopener" data-youtube-id="M6dShqOS2ic" data-title="Project Synapse: Singularity Claims, Agent Security Escapes, and the Rise of Autonomous Robots" aria-label="Watch Project Synapse: Singularity Claims, Agent Security Escapes, and the Rise of Autonomous Robots on YouTube">
+          <img src="https://i.ytimg.com/vi/M6dShqOS2ic/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Singularity Claims, Agent Security Escapes, and the Rise of Autonomous Robots" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/M6dShqOS2ic/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -652,7 +740,10 @@
     <!-- EP 64 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/WK3VAHNLjo8" title="Episode 64" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=WK3VAHNLjo8" target="_blank" rel="noopener" data-youtube-id="WK3VAHNLjo8" data-title="Project Synapse: AI Safety Basics, Exploit Gym, and a 438km Tesla FSD Trip — Plus Kimi K3 and Agentic Tools" aria-label="Watch Project Synapse: AI Safety Basics, Exploit Gym, and a 438km Tesla FSD Trip — Plus Kimi K3 and Agentic Tools on YouTube">
+          <img src="https://i.ytimg.com/vi/WK3VAHNLjo8/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI Safety Basics, Exploit Gym, and a 438km Tesla FSD Trip — Plus Kimi K3 and Agentic Tools" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/WK3VAHNLjo8/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -672,7 +763,10 @@
     <!-- EP 63 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/bOZE0vtb0bs" title="Episode 63" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=bOZE0vtb0bs" target="_blank" rel="noopener" data-youtube-id="bOZE0vtb0bs" data-title="Project Synapse: GPT-5.6 Sol Shocks AI World, Claude&#x27;s J-Space, Linus Torvalds on AI &amp; Robot Hands" aria-label="Watch Project Synapse: GPT-5.6 Sol Shocks AI World, Claude&#x27;s J-Space, Linus Torvalds on AI &amp; Robot Hands on YouTube">
+          <img src="https://i.ytimg.com/vi/bOZE0vtb0bs/maxresdefault.jpg" alt="Thumbnail for Project Synapse: GPT-5.6 Sol Shocks AI World, Claude&#x27;s J-Space, Linus Torvalds on AI &amp; Robot Hands" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/bOZE0vtb0bs/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -692,7 +786,10 @@
     <!-- EP 62 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/IKeuIM1udAs" title="Episode 62" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=IKeuIM1udAs" target="_blank" rel="noopener" data-youtube-id="IKeuIM1udAs" data-title="Project Synapse: Open Source AI vs SaaS Lock‑In: Costs, Control, and Running Models Locally" aria-label="Watch Project Synapse: Open Source AI vs SaaS Lock‑In: Costs, Control, and Running Models Locally on YouTube">
+          <img src="https://i.ytimg.com/vi/IKeuIM1udAs/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Open Source AI vs SaaS Lock‑In: Costs, Control, and Running Models Locally" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/IKeuIM1udAs/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -712,7 +809,10 @@
     <!-- EP 61 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/qUaxpv7ieyE" title="Episode 61" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=qUaxpv7ieyE" target="_blank" rel="noopener" data-youtube-id="qUaxpv7ieyE" data-title="Project Synapse: Blind Spots, ADHD Thinking, and the Data Center Backlash (Plus Chips, Open Source, and China’s Video AI)" aria-label="Watch Project Synapse: Blind Spots, ADHD Thinking, and the Data Center Backlash (Plus Chips, Open Source, and China’s Video AI) on YouTube">
+          <img src="https://i.ytimg.com/vi/qUaxpv7ieyE/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Blind Spots, ADHD Thinking, and the Data Center Backlash (Plus Chips, Open Source, and China’s Video AI)" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/qUaxpv7ieyE/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -732,7 +832,10 @@
     <!-- EP 60 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/JyDQ3ZZmcYo" title="Episode 60" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=JyDQ3ZZmcYo" target="_blank" rel="noopener" data-youtube-id="JyDQ3ZZmcYo" data-title="Project Synapse: AI News, Digital Sovereignty, Open-Source Models, Midjourney&#x27;s Full-Body Scanner" aria-label="Watch Project Synapse: AI News, Digital Sovereignty, Open-Source Models, Midjourney&#x27;s Full-Body Scanner on YouTube">
+          <img src="https://i.ytimg.com/vi/JyDQ3ZZmcYo/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI News, Digital Sovereignty, Open-Source Models, Midjourney&#x27;s Full-Body Scanner" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/JyDQ3ZZmcYo/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -752,7 +855,10 @@
     <!-- EP 59 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/yz7l3lR2kMA" title="Episode 59" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=yz7l3lR2kMA" target="_blank" rel="noopener" data-youtube-id="yz7l3lR2kMA" data-title="Project Synapse: Down the Rabbit Hole on Personal AI Agents and More" aria-label="Watch Project Synapse: Down the Rabbit Hole on Personal AI Agents and More on YouTube">
+          <img src="https://i.ytimg.com/vi/yz7l3lR2kMA/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Down the Rabbit Hole on Personal AI Agents and More" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/yz7l3lR2kMA/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -772,7 +878,10 @@
     <!-- EP 58 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/8hIeGKDzBJY" title="Episode 58" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=8hIeGKDzBJY" target="_blank" rel="noopener" data-youtube-id="8hIeGKDzBJY" data-title="Project Synapse: Microsoft&#x27;s AI Wrecking Ball: Scout, MAI Thinking 1, Chips, Quantum Claims—and Canada&#x27;s $2B AI Plan" aria-label="Watch Project Synapse: Microsoft&#x27;s AI Wrecking Ball: Scout, MAI Thinking 1, Chips, Quantum Claims—and Canada&#x27;s $2B AI Plan on YouTube">
+          <img src="https://i.ytimg.com/vi/8hIeGKDzBJY/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Microsoft&#x27;s AI Wrecking Ball: Scout, MAI Thinking 1, Chips, Quantum Claims—and Canada&#x27;s $2B AI Plan" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/8hIeGKDzBJY/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -792,7 +901,10 @@
     <!-- EP 57 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/TKryKdD1yZg" title="Episode 57" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=TKryKdD1yZg" target="_blank" rel="noopener" data-youtube-id="TKryKdD1yZg" data-title="Project Synapse: AI Backlash Grows: Job Loss Warnings, Data Center Protests, and AI Security Risks" aria-label="Watch Project Synapse: AI Backlash Grows: Job Loss Warnings, Data Center Protests, and AI Security Risks on YouTube">
+          <img src="https://i.ytimg.com/vi/TKryKdD1yZg/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI Backlash Grows: Job Loss Warnings, Data Center Protests, and AI Security Risks" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/TKryKdD1yZg/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -812,7 +924,10 @@
     <!-- EP 56 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/t1Gq7PNemHc" title="Episode 56" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=t1Gq7PNemHc" target="_blank" rel="noopener" data-youtube-id="t1Gq7PNemHc" data-title="Project Synapse: Travel to the End of the Internet: Google AI, SpaceX IPO, Decentralization" aria-label="Watch Project Synapse: Travel to the End of the Internet: Google AI, SpaceX IPO, Decentralization on YouTube">
+          <img src="https://i.ytimg.com/vi/t1Gq7PNemHc/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Travel to the End of the Internet: Google AI, SpaceX IPO, Decentralization" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/t1Gq7PNemHc/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -832,7 +947,10 @@
     <!-- EP 55 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/mGh1fYIucSo" title="Episode 55" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=mGh1fYIucSo" target="_blank" rel="noopener" data-youtube-id="mGh1fYIucSo" data-title="Project Synapse: AI This Week — Summer Reading, Mythos, API Key Nightmares, Recursive Self-Improvement" aria-label="Watch Project Synapse: AI This Week — Summer Reading, Mythos, API Key Nightmares, Recursive Self-Improvement on YouTube">
+          <img src="https://i.ytimg.com/vi/mGh1fYIucSo/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI This Week — Summer Reading, Mythos, API Key Nightmares, Recursive Self-Improvement" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/mGh1fYIucSo/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -852,7 +970,10 @@
     <!-- EP 54 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/caLegcT_nEw" title="Episode 54" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=caLegcT_nEw" target="_blank" rel="noopener" data-youtube-id="caLegcT_nEw" data-title="Project Synapse: Musk vs OpenAI, Meta&#x27;s AI Privacy Fight, and an AI Frozen in 1930" aria-label="Watch Project Synapse: Musk vs OpenAI, Meta&#x27;s AI Privacy Fight, and an AI Frozen in 1930 on YouTube">
+          <img src="https://i.ytimg.com/vi/caLegcT_nEw/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Musk vs OpenAI, Meta&#x27;s AI Privacy Fight, and an AI Frozen in 1930" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/caLegcT_nEw/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -872,7 +993,10 @@
     <!-- EP 53 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/Vh9ljdlndlo" title="Episode 53" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=Vh9ljdlndlo" target="_blank" rel="noopener" data-youtube-id="Vh9ljdlndlo" data-title="Project Synapse: OpenAI vs Musk, Google Moves In — The Real AI Battle Begins" aria-label="Watch Project Synapse: OpenAI vs Musk, Google Moves In — The Real AI Battle Begins on YouTube">
+          <img src="https://i.ytimg.com/vi/Vh9ljdlndlo/maxresdefault.jpg" alt="Thumbnail for Project Synapse: OpenAI vs Musk, Google Moves In — The Real AI Battle Begins" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/Vh9ljdlndlo/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -892,7 +1016,10 @@
     <!-- EP 52 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/CTKUpM0ZIeU" title="Episode 52" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=CTKUpM0ZIeU" target="_blank" rel="noopener" data-youtube-id="CTKUpM0ZIeU" data-title="Project Synapse: Mythos Leak, GitHub Token Billing, and OpenAI’s Big Week" aria-label="Watch Project Synapse: Mythos Leak, GitHub Token Billing, and OpenAI’s Big Week on YouTube">
+          <img src="https://i.ytimg.com/vi/CTKUpM0ZIeU/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Mythos Leak, GitHub Token Billing, and OpenAI’s Big Week" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/CTKUpM0ZIeU/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -912,7 +1039,10 @@
     <!-- EP 51 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/XgWX26pugDA" title="Episode 51" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=XgWX26pugDA" target="_blank" rel="noopener" data-youtube-id="XgWX26pugDA" data-title="Project Synapse: AI Weekly: Claude 4.7, Token Costs, Open Models, Backlash, and Practical Ways to Use AI" aria-label="Watch Project Synapse: AI Weekly: Claude 4.7, Token Costs, Open Models, Backlash, and Practical Ways to Use AI on YouTube">
+          <img src="https://i.ytimg.com/vi/XgWX26pugDA/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI Weekly: Claude 4.7, Token Costs, Open Models, Backlash, and Practical Ways to Use AI" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/XgWX26pugDA/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -932,7 +1062,10 @@
     <!-- EP 50 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/efra3w9kADk" title="Episode 50" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=efra3w9kADk" target="_blank" rel="noopener" data-youtube-id="efra3w9kADk" data-title="Project Synapse: Mythos, AI Security, and the Token Economy: Risks, Incentives, and Critical Thinking" aria-label="Watch Project Synapse: Mythos, AI Security, and the Token Economy: Risks, Incentives, and Critical Thinking on YouTube">
+          <img src="https://i.ytimg.com/vi/efra3w9kADk/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Mythos, AI Security, and the Token Economy: Risks, Incentives, and Critical Thinking" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/efra3w9kADk/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -952,7 +1085,10 @@
     <!-- EP 49 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/vHFgZ7eDFvY" title="Episode 49" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=vHFgZ7eDFvY" target="_blank" rel="noopener" data-youtube-id="vHFgZ7eDFvY" data-title="Project Synapse: Is 2026 the Year?" aria-label="Watch Project Synapse: Is 2026 the Year? on YouTube">
+          <img src="https://i.ytimg.com/vi/vHFgZ7eDFvY/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Is 2026 the Year?" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/vHFgZ7eDFvY/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -972,7 +1108,10 @@
     <!-- EP 48 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/h8b0WbV5E2c" title="Episode 48" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=h8b0WbV5E2c" target="_blank" rel="noopener" data-youtube-id="h8b0WbV5E2c" data-title="Project Synapse: Agentic AI, Self-Improving AI Systems, Marcel Builds An Agent Network and Raccoon &amp; Sovereign AI" aria-label="Watch Project Synapse: Agentic AI, Self-Improving AI Systems, Marcel Builds An Agent Network and Raccoon &amp; Sovereign AI on YouTube">
+          <img src="https://i.ytimg.com/vi/h8b0WbV5E2c/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Agentic AI, Self-Improving AI Systems, Marcel Builds An Agent Network and Raccoon &amp; Sovereign AI" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/h8b0WbV5E2c/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -992,7 +1131,10 @@
     <!-- EP 47 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/hQ3gOBs6XZA" title="Episode 47" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=hQ3gOBs6XZA" target="_blank" rel="noopener" data-youtube-id="hQ3gOBs6XZA" data-title="Project Synapse: Gemini in Workspace, Agentic AI Hype vs Value, and Managing AI Anxiety (w/ Accenture’s Krish Banerjee)" aria-label="Watch Project Synapse: Gemini in Workspace, Agentic AI Hype vs Value, and Managing AI Anxiety (w/ Accenture’s Krish Banerjee) on YouTube">
+          <img src="https://i.ytimg.com/vi/hQ3gOBs6XZA/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Gemini in Workspace, Agentic AI Hype vs Value, and Managing AI Anxiety (w/ Accenture’s Krish Banerjee)" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/hQ3gOBs6XZA/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1012,7 +1154,10 @@
     <!-- EP 46 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/bU1NfKfwQZA" title="Episode 46" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=bU1NfKfwQZA" target="_blank" rel="noopener" data-youtube-id="bU1NfKfwQZA" data-title="Project Synapse: AI Boycotts, Rising Token Costs, Privacy Erosion &amp; Coming Wave of Humanoid Robots" aria-label="Watch Project Synapse: AI Boycotts, Rising Token Costs, Privacy Erosion &amp; Coming Wave of Humanoid Robots on YouTube">
+          <img src="https://i.ytimg.com/vi/bU1NfKfwQZA/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI Boycotts, Rising Token Costs, Privacy Erosion &amp; Coming Wave of Humanoid Robots" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/bU1NfKfwQZA/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1032,7 +1177,10 @@
     <!-- EP 45 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/mCi9gPfGOAM" title="Episode 45" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=mCi9gPfGOAM" target="_blank" rel="noopener" data-youtube-id="mCi9gPfGOAM" data-title="Project Synapse: Anthropic Stands Up: AI Fear, Government Pressure, and the Trust Crisis" aria-label="Watch Project Synapse: Anthropic Stands Up: AI Fear, Government Pressure, and the Trust Crisis on YouTube">
+          <img src="https://i.ytimg.com/vi/mCi9gPfGOAM/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Anthropic Stands Up: AI Fear, Government Pressure, and the Trust Crisis" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/mCi9gPfGOAM/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1052,7 +1200,10 @@
     <!-- EP 44 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/X0ChjaSmcFU" title="Episode 44" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=X0ChjaSmcFU" target="_blank" rel="noopener" data-youtube-id="X0ChjaSmcFU" data-title="Project Synapse: Hollywood vs. AI Video, Data Loss in Gemini, and Perplexity&#x27;s New Terms" aria-label="Watch Project Synapse: Hollywood vs. AI Video, Data Loss in Gemini, and Perplexity&#x27;s New Terms on YouTube">
+          <img src="https://i.ytimg.com/vi/X0ChjaSmcFU/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Hollywood vs. AI Video, Data Loss in Gemini, and Perplexity&#x27;s New Terms" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/X0ChjaSmcFU/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1072,7 +1223,10 @@
     <!-- EP 43 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/u9-Ayd3TAPg" title="Episode 43" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=u9-Ayd3TAPg" target="_blank" rel="noopener" data-youtube-id="u9-Ayd3TAPg" data-title="Project Synapse: Agentic AI Is Getting Out of Control: OpenClaw, Claude vs Codex, and the Security Crisis" aria-label="Watch Project Synapse: Agentic AI Is Getting Out of Control: OpenClaw, Claude vs Codex, and the Security Crisis on YouTube">
+          <img src="https://i.ytimg.com/vi/u9-Ayd3TAPg/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Agentic AI Is Getting Out of Control: OpenClaw, Claude vs Codex, and the Security Crisis" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/u9-Ayd3TAPg/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1092,7 +1246,10 @@
     <!-- EP 42 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/yzq3p6wSEEY" title="Episode 42" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=yzq3p6wSEEY" target="_blank" rel="noopener" data-youtube-id="yzq3p6wSEEY" data-title="Project Synapse: Navigating the Rapid Developments in AI and Technology" aria-label="Watch Project Synapse: Navigating the Rapid Developments in AI and Technology on YouTube">
+          <img src="https://i.ytimg.com/vi/yzq3p6wSEEY/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Navigating the Rapid Developments in AI and Technology" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/yzq3p6wSEEY/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1112,7 +1269,10 @@
     <!-- EP 41 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/mrzh4j3B-nU" title="Episode 41" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=mrzh4j3B-nU" target="_blank" rel="noopener" data-youtube-id="mrzh4j3B-nU" data-title="Project Synapse: Clawbot, Moltbot and the Overview Effect" aria-label="Watch Project Synapse: Clawbot, Moltbot and the Overview Effect on YouTube">
+          <img src="https://i.ytimg.com/vi/mrzh4j3B-nU/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Clawbot, Moltbot and the Overview Effect" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/mrzh4j3B-nU/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1132,7 +1292,10 @@
     <!-- EP 40 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/yzZsjUAFH20" title="Episode 40" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=yzZsjUAFH20" target="_blank" rel="noopener" data-youtube-id="yzZsjUAFH20" data-title="Project Synapse: The Rise of Anthropic" aria-label="Watch Project Synapse: The Rise of Anthropic on YouTube">
+          <img src="https://i.ytimg.com/vi/yzZsjUAFH20/maxresdefault.jpg" alt="Thumbnail for Project Synapse: The Rise of Anthropic" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/yzZsjUAFH20/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1152,7 +1315,10 @@
     <!-- EP 39 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/xLBw60_0-K8" title="Episode 39" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=xLBw60_0-K8" target="_blank" rel="noopener" data-youtube-id="xLBw60_0-K8" data-title="Project Synapse: AI: The Good, The Bad and The Ugly" aria-label="Watch Project Synapse: AI: The Good, The Bad and The Ugly on YouTube">
+          <img src="https://i.ytimg.com/vi/xLBw60_0-K8/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI: The Good, The Bad and The Ugly" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/xLBw60_0-K8/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1172,7 +1338,10 @@
     <!-- EP 38 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/dHNl4QRF0TQ" title="Episode 38" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=dHNl4QRF0TQ" target="_blank" rel="noopener" data-youtube-id="dHNl4QRF0TQ" data-title="Project Synapse: AI Backlash" aria-label="Watch Project Synapse: AI Backlash on YouTube">
+          <img src="https://i.ytimg.com/vi/dHNl4QRF0TQ/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI Backlash" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/dHNl4QRF0TQ/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1192,7 +1361,10 @@
     <!-- EP 37 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/Y_Ztr5oolic" title="Episode 37" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=Y_Ztr5oolic" target="_blank" rel="noopener" data-youtube-id="Y_Ztr5oolic" data-title="Project Synapse: The Christmas Show" aria-label="Watch Project Synapse: The Christmas Show on YouTube">
+          <img src="https://i.ytimg.com/vi/Y_Ztr5oolic/maxresdefault.jpg" alt="Thumbnail for Project Synapse: The Christmas Show" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/Y_Ztr5oolic/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1212,7 +1384,10 @@
     <!-- EP 36 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/dCX9kd47tvQ" title="Episode 36" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=dCX9kd47tvQ" target="_blank" rel="noopener" data-youtube-id="dCX9kd47tvQ" data-title="Project Synapse: AI Myths and Misconceptions" aria-label="Watch Project Synapse: AI Myths and Misconceptions on YouTube">
+          <img src="https://i.ytimg.com/vi/dCX9kd47tvQ/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI Myths and Misconceptions" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/dCX9kd47tvQ/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1232,7 +1407,10 @@
     <!-- EP 35 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/lgZrboV5grY" title="Episode 35" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=lgZrboV5grY" target="_blank" rel="noopener" data-youtube-id="lgZrboV5grY" data-title="Project Synapse: AGI Is Here" aria-label="Watch Project Synapse: AGI Is Here on YouTube">
+          <img src="https://i.ytimg.com/vi/lgZrboV5grY/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AGI Is Here" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/lgZrboV5grY/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1252,7 +1430,10 @@
     <!-- EP 34 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/iA6NIMKLMLo" title="Episode 34" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=iA6NIMKLMLo" target="_blank" rel="noopener" data-youtube-id="iA6NIMKLMLo" data-title="Project Synapse: Gemini 3.0 Rocks!" aria-label="Watch Project Synapse: Gemini 3.0 Rocks! on YouTube">
+          <img src="https://i.ytimg.com/vi/iA6NIMKLMLo/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Gemini 3.0 Rocks!" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/iA6NIMKLMLo/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1272,7 +1453,10 @@
     <!-- EP 33 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/s4X57SvP-k0" title="Episode 33" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=s4X57SvP-k0" target="_blank" rel="noopener" data-youtube-id="s4X57SvP-k0" data-title="Project Synapse: AI Music, Marcel&#x27;s Tesla Trial, and More" aria-label="Watch Project Synapse: AI Music, Marcel&#x27;s Tesla Trial, and More on YouTube">
+          <img src="https://i.ytimg.com/vi/s4X57SvP-k0/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI Music, Marcel&#x27;s Tesla Trial, and More" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/s4X57SvP-k0/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1292,7 +1476,10 @@
     <!-- EP 32 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/g1RDcI-gE3U" title="Episode 32" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=g1RDcI-gE3U" target="_blank" rel="noopener" data-youtube-id="g1RDcI-gE3U" data-title="Project Synapse: This Week In AI and the Advent of AI Consciousness" aria-label="Watch Project Synapse: This Week In AI and the Advent of AI Consciousness on YouTube">
+          <img src="https://i.ytimg.com/vi/g1RDcI-gE3U/maxresdefault.jpg" alt="Thumbnail for Project Synapse: This Week In AI and the Advent of AI Consciousness" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/g1RDcI-gE3U/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1312,7 +1499,10 @@
     <!-- EP 31 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/WOtUXyK94xo" title="Episode 31" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=WOtUXyK94xo" target="_blank" rel="noopener" data-youtube-id="WOtUXyK94xo" data-title="Project Synapse: Debunking the AI Bubble and Exploring Vibe Coding" aria-label="Watch Project Synapse: Debunking the AI Bubble and Exploring Vibe Coding on YouTube">
+          <img src="https://i.ytimg.com/vi/WOtUXyK94xo/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Debunking the AI Bubble and Exploring Vibe Coding" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/WOtUXyK94xo/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1332,7 +1522,10 @@
     <!-- EP 30 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/i9g8LcbrWgI" title="Episode 30" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=i9g8LcbrWgI" target="_blank" rel="noopener" data-youtube-id="i9g8LcbrWgI" data-title="Project Synapse: Exploring the Future of AI-Driven Business and Technology" aria-label="Watch Project Synapse: Exploring the Future of AI-Driven Business and Technology on YouTube">
+          <img src="https://i.ytimg.com/vi/i9g8LcbrWgI/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Exploring the Future of AI-Driven Business and Technology" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/i9g8LcbrWgI/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1352,7 +1545,10 @@
     <!-- EP 29 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/XHxkaZYPw_4" title="Episode 29" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=XHxkaZYPw_4" target="_blank" rel="noopener" data-youtube-id="XHxkaZYPw_4" data-title="Project Synapse: Exploring the World of Vibe Coding and AI Advancements" aria-label="Watch Project Synapse: Exploring the World of Vibe Coding and AI Advancements on YouTube">
+          <img src="https://i.ytimg.com/vi/XHxkaZYPw_4/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Exploring the World of Vibe Coding and AI Advancements" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/XHxkaZYPw_4/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1372,7 +1568,10 @@
     <!-- EP 28 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/_ulYI3Du2KQ" title="Episode 28" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=_ulYI3Du2KQ" target="_blank" rel="noopener" data-youtube-id="_ulYI3Du2KQ" data-title="Project Synapse: Exploring AI Innovations and Ethical Dilemmas" aria-label="Watch Project Synapse: Exploring AI Innovations and Ethical Dilemmas on YouTube">
+          <img src="https://i.ytimg.com/vi/_ulYI3Du2KQ/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Exploring AI Innovations and Ethical Dilemmas" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/_ulYI3Du2KQ/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1392,7 +1591,10 @@
     <!-- EP 27 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/KSVP0A4qVo8" title="Episode 27" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=KSVP0A4qVo8" target="_blank" rel="noopener" data-youtube-id="KSVP0A4qVo8" data-title="Project Synapse: Why We Aren&#x27;t Getting Benefits From AI" aria-label="Watch Project Synapse: Why We Aren&#x27;t Getting Benefits From AI on YouTube">
+          <img src="https://i.ytimg.com/vi/KSVP0A4qVo8/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Why We Aren&#x27;t Getting Benefits From AI" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/KSVP0A4qVo8/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1412,7 +1614,10 @@
     <!-- EP 26 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/414S08DCOGI" title="Episode 26" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=414S08DCOGI" target="_blank" rel="noopener" data-youtube-id="414S08DCOGI" data-title="Project Synapse: Exploring the Cutting-Edge AI Tools: A Deep Dive" aria-label="Watch Project Synapse: Exploring the Cutting-Edge AI Tools: A Deep Dive on YouTube">
+          <img src="https://i.ytimg.com/vi/414S08DCOGI/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Exploring the Cutting-Edge AI Tools: A Deep Dive" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/414S08DCOGI/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1432,7 +1637,10 @@
     <!-- EP 25 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/b5p58AnfINw" title="Episode 25" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=b5p58AnfINw" target="_blank" rel="noopener" data-youtube-id="b5p58AnfINw" data-title="Project Synapse: Is the AI Bubble About To Burst?" aria-label="Watch Project Synapse: Is the AI Bubble About To Burst? on YouTube">
+          <img src="https://i.ytimg.com/vi/b5p58AnfINw/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Is the AI Bubble About To Burst?" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/b5p58AnfINw/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1452,7 +1660,10 @@
     <!-- EP 24 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/dvG7rBa_bpw" title="Episode 24" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=dvG7rBa_bpw" target="_blank" rel="noopener" data-youtube-id="dvG7rBa_bpw" data-title="Project Synapse: AI Hype, Reality, and the Future of Intelligence" aria-label="Watch Project Synapse: AI Hype, Reality, and the Future of Intelligence on YouTube">
+          <img src="https://i.ytimg.com/vi/dvG7rBa_bpw/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI Hype, Reality, and the Future of Intelligence" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/dvG7rBa_bpw/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1472,7 +1683,10 @@
     <!-- EP 23 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/_dYYMEUHjgs" title="Episode 23" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=_dYYMEUHjgs" target="_blank" rel="noopener" data-youtube-id="_dYYMEUHjgs" data-title="Project Synapse: AI This Week: Security, GPT-5, and Digital Identity" aria-label="Watch Project Synapse: AI This Week: Security, GPT-5, and Digital Identity on YouTube">
+          <img src="https://i.ytimg.com/vi/_dYYMEUHjgs/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI This Week: Security, GPT-5, and Digital Identity" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/_dYYMEUHjgs/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1492,7 +1706,10 @@
     <!-- EP 22 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/t_a1k33D5Gw" title="Episode 22" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=t_a1k33D5Gw" target="_blank" rel="noopener" data-youtube-id="t_a1k33D5Gw" data-title="Project Synapse: Exploring AI Relationships: Friendships, Ethics, and Future Implications" aria-label="Watch Project Synapse: Exploring AI Relationships: Friendships, Ethics, and Future Implications on YouTube">
+          <img src="https://i.ytimg.com/vi/t_a1k33D5Gw/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Exploring AI Relationships: Friendships, Ethics, and Future Implications" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/t_a1k33D5Gw/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1512,7 +1729,10 @@
     <!-- EP 21 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/OjnJxfcbrUU" title="Episode 21" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=OjnJxfcbrUU" target="_blank" rel="noopener" data-youtube-id="OjnJxfcbrUU" data-title="Project Synapse: June 28, 2025" aria-label="Watch Project Synapse: June 28, 2025 on YouTube">
+          <img src="https://i.ytimg.com/vi/OjnJxfcbrUU/maxresdefault.jpg" alt="Thumbnail for Project Synapse: June 28, 2025" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/OjnJxfcbrUU/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1531,7 +1751,10 @@
     <!-- EP 20 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/ztQP1qs9S98" title="Episode 20" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=ztQP1qs9S98" target="_blank" rel="noopener" data-youtube-id="ztQP1qs9S98" data-title="Project Synapse: AI Security Crisis: Microsoft’s Silent Fix Exposed!" aria-label="Watch Project Synapse: AI Security Crisis: Microsoft’s Silent Fix Exposed! on YouTube">
+          <img src="https://i.ytimg.com/vi/ztQP1qs9S98/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI Security Crisis: Microsoft’s Silent Fix Exposed!" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/ztQP1qs9S98/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1551,7 +1774,10 @@
     <!-- EP 19 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/xcktfOnttEU" title="Episode 19" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=xcktfOnttEU" target="_blank" rel="noopener" data-youtube-id="xcktfOnttEU" data-title="Project Synapse: AI&#x27;s Job Takeover: Are We Ready for Massive Unemployment?" aria-label="Watch Project Synapse: AI&#x27;s Job Takeover: Are We Ready for Massive Unemployment? on YouTube">
+          <img src="https://i.ytimg.com/vi/xcktfOnttEU/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI&#x27;s Job Takeover: Are We Ready for Massive Unemployment?" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/xcktfOnttEU/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1571,7 +1797,10 @@
     <!-- EP 18 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/QT7gExLxWDw" title="Episode 18" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=QT7gExLxWDw" target="_blank" rel="noopener" data-youtube-id="QT7gExLxWDw" data-title="Project Synapse: When We Finally Get To Google I/O" aria-label="Watch Project Synapse: When We Finally Get To Google I/O on YouTube">
+          <img src="https://i.ytimg.com/vi/QT7gExLxWDw/maxresdefault.jpg" alt="Thumbnail for Project Synapse: When We Finally Get To Google I/O" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/QT7gExLxWDw/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1591,7 +1820,10 @@
     <!-- EP 17 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/t5VOCx-wC7g" title="Episode 17" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=t5VOCx-wC7g" target="_blank" rel="noopener" data-youtube-id="t5VOCx-wC7g" data-title="Project Synapse: Innovating AI: Canada&#x27;s Vision for a Collaborative Future with Maple" aria-label="Watch Project Synapse: Innovating AI: Canada&#x27;s Vision for a Collaborative Future with Maple on YouTube">
+          <img src="https://i.ytimg.com/vi/t5VOCx-wC7g/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Innovating AI: Canada&#x27;s Vision for a Collaborative Future with Maple" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/t5VOCx-wC7g/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1611,7 +1843,10 @@
     <!-- EP 16 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/zQWrHwMlJ2k" title="Episode 16" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=zQWrHwMlJ2k" target="_blank" rel="noopener" data-youtube-id="zQWrHwMlJ2k" data-title="Project Synapse: AI&#x27;s Next Leap: Learning Through Experience" aria-label="Watch Project Synapse: AI&#x27;s Next Leap: Learning Through Experience on YouTube">
+          <img src="https://i.ytimg.com/vi/zQWrHwMlJ2k/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI&#x27;s Next Leap: Learning Through Experience" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/zQWrHwMlJ2k/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1631,7 +1866,10 @@
     <!-- EP 15 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/BHRW-Hohfx8" title="Episode 15" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=BHRW-Hohfx8" target="_blank" rel="noopener" data-youtube-id="BHRW-Hohfx8" data-title="Project Synapse: AI &amp; Robots — Prepare for Impact" aria-label="Watch Project Synapse: AI &amp; Robots — Prepare for Impact on YouTube">
+          <img src="https://i.ytimg.com/vi/BHRW-Hohfx8/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI &amp; Robots — Prepare for Impact" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/BHRW-Hohfx8/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1651,7 +1889,10 @@
     <!-- EP 14 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/9zdGdybefTg" title="Episode 14" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=9zdGdybefTg" target="_blank" rel="noopener" data-youtube-id="9zdGdybefTg" data-title="Project Synapse: 2025: The Year of AI Agents Revolutionising Tech" aria-label="Watch Project Synapse: 2025: The Year of AI Agents Revolutionising Tech on YouTube">
+          <img src="https://i.ytimg.com/vi/9zdGdybefTg/maxresdefault.jpg" alt="Thumbnail for Project Synapse: 2025: The Year of AI Agents Revolutionising Tech" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/9zdGdybefTg/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1671,7 +1912,10 @@
     <!-- EP 13 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/JlZd4Org9I0" title="Episode 13" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=JlZd4Org9I0" target="_blank" rel="noopener" data-youtube-id="JlZd4Org9I0" data-title="Project Synapse: OpenAI GPT-4.5: Why Everyone&#x27;s Disappointed" aria-label="Watch Project Synapse: OpenAI GPT-4.5: Why Everyone&#x27;s Disappointed on YouTube">
+          <img src="https://i.ytimg.com/vi/JlZd4Org9I0/maxresdefault.jpg" alt="Thumbnail for Project Synapse: OpenAI GPT-4.5: Why Everyone&#x27;s Disappointed" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/JlZd4Org9I0/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1691,7 +1935,10 @@
     <!-- EP 12 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/dm-zlZMRWKI" title="Episode 12" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=dm-zlZMRWKI" target="_blank" rel="noopener" data-youtube-id="dm-zlZMRWKI" data-title="Project Synapse: AI Wars: Which Model Should You Choose?" aria-label="Watch Project Synapse: AI Wars: Which Model Should You Choose? on YouTube">
+          <img src="https://i.ytimg.com/vi/dm-zlZMRWKI/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI Wars: Which Model Should You Choose?" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/dm-zlZMRWKI/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1711,7 +1958,10 @@
     <!-- EP 11 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/IIz9-cLKuZ0" title="Episode 11" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=IIz9-cLKuZ0" target="_blank" rel="noopener" data-youtube-id="IIz9-cLKuZ0" data-title="Project Synapse: The Dark Side of AI: Risks You Can&#x27;t Ignore" aria-label="Watch Project Synapse: The Dark Side of AI: Risks You Can&#x27;t Ignore on YouTube">
+          <img src="https://i.ytimg.com/vi/IIz9-cLKuZ0/maxresdefault.jpg" alt="Thumbnail for Project Synapse: The Dark Side of AI: Risks You Can&#x27;t Ignore" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/IIz9-cLKuZ0/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1731,7 +1981,10 @@
     <!-- EP 10 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/53qLQn7LLQs" title="Episode 10" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=53qLQn7LLQs" target="_blank" rel="noopener" data-youtube-id="53qLQn7LLQs" data-title="Project Synapse: AI Questions CEOs Aren’t Asking But Should" aria-label="Watch Project Synapse: AI Questions CEOs Aren’t Asking But Should on YouTube">
+          <img src="https://i.ytimg.com/vi/53qLQn7LLQs/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI Questions CEOs Aren’t Asking But Should" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/53qLQn7LLQs/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1751,7 +2004,10 @@
     <!-- EP 9 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/zoGzak4eNLg" title="Episode 9" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=zoGzak4eNLg" target="_blank" rel="noopener" data-youtube-id="zoGzak4eNLg" data-title="Project Synapse: DeepSeek’s Open-Source Revolution: What It Means for Tech" aria-label="Watch Project Synapse: DeepSeek’s Open-Source Revolution: What It Means for Tech on YouTube">
+          <img src="https://i.ytimg.com/vi/zoGzak4eNLg/maxresdefault.jpg" alt="Thumbnail for Project Synapse: DeepSeek’s Open-Source Revolution: What It Means for Tech" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/zoGzak4eNLg/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1771,7 +2027,10 @@
     <!-- EP 8 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/JxDBanWhKqw" title="Episode 8" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=JxDBanWhKqw" target="_blank" rel="noopener" data-youtube-id="JxDBanWhKqw" data-title="Project Synapse: DeepSeek&#x27;s Open AI Revolution: What It Means for You" aria-label="Watch Project Synapse: DeepSeek&#x27;s Open AI Revolution: What It Means for You on YouTube">
+          <img src="https://i.ytimg.com/vi/JxDBanWhKqw/maxresdefault.jpg" alt="Thumbnail for Project Synapse: DeepSeek&#x27;s Open AI Revolution: What It Means for You" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/JxDBanWhKqw/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1791,7 +2050,10 @@
     <!-- EP 7 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/gGvCelkG6h4" title="Episode 7" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=gGvCelkG6h4" target="_blank" rel="noopener" data-youtube-id="gGvCelkG6h4" data-title="Project Synapse: Microsoft&#x27;s $130 AI Gamble: Will Users Pay Up?" aria-label="Watch Project Synapse: Microsoft&#x27;s $130 AI Gamble: Will Users Pay Up? on YouTube">
+          <img src="https://i.ytimg.com/vi/gGvCelkG6h4/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Microsoft&#x27;s $130 AI Gamble: Will Users Pay Up?" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/gGvCelkG6h4/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1811,7 +2073,10 @@
     <!-- EP 6 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/RAx3uRQxUds" title="Episode 6" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=RAx3uRQxUds" target="_blank" rel="noopener" data-youtube-id="RAx3uRQxUds" data-title="Project Synapse: AI in 2025: Agents, Memory &amp; Multimodal Takeover" aria-label="Watch Project Synapse: AI in 2025: Agents, Memory &amp; Multimodal Takeover on YouTube">
+          <img src="https://i.ytimg.com/vi/RAx3uRQxUds/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI in 2025: Agents, Memory &amp; Multimodal Takeover" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/RAx3uRQxUds/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1831,7 +2096,10 @@
     <!-- EP 5 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/TPJ_vFX9umk" title="Episode 5" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=TPJ_vFX9umk" target="_blank" rel="noopener" data-youtube-id="TPJ_vFX9umk" data-title="Project Synapse: AI Use Cases for Business and Fun" aria-label="Watch Project Synapse: AI Use Cases for Business and Fun on YouTube">
+          <img src="https://i.ytimg.com/vi/TPJ_vFX9umk/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI Use Cases for Business and Fun" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/TPJ_vFX9umk/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1851,7 +2119,10 @@
     <!-- EP 4 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/NDgqhcfqIu0" title="Episode 4" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=NDgqhcfqIu0" target="_blank" rel="noopener" data-youtube-id="NDgqhcfqIu0" data-title="Project Synapse: AI: What&#x27;s Holding You Back?" aria-label="Watch Project Synapse: AI: What&#x27;s Holding You Back? on YouTube">
+          <img src="https://i.ytimg.com/vi/NDgqhcfqIu0/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI: What&#x27;s Holding You Back?" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/NDgqhcfqIu0/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1871,7 +2142,10 @@
     <!-- EP 3 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/U5b2sb4cRfk" title="Episode 3" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=U5b2sb4cRfk" target="_blank" rel="noopener" data-youtube-id="U5b2sb4cRfk" data-title="Project Synapse: Getting AI Kick Started In Your Company - A Step By Step Guide" aria-label="Watch Project Synapse: Getting AI Kick Started In Your Company - A Step By Step Guide on YouTube">
+          <img src="https://i.ytimg.com/vi/U5b2sb4cRfk/maxresdefault.jpg" alt="Thumbnail for Project Synapse: Getting AI Kick Started In Your Company - A Step By Step Guide" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/U5b2sb4cRfk/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1891,7 +2165,10 @@
     <!-- EP 2 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/6EbZWnWIV_w" title="Episode 2" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=6EbZWnWIV_w" target="_blank" rel="noopener" data-youtube-id="6EbZWnWIV_w" data-title="Project Synapse: AI in Action: Episode 2" aria-label="Watch Project Synapse: AI in Action: Episode 2 on YouTube">
+          <img src="https://i.ytimg.com/vi/6EbZWnWIV_w/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI in Action: Episode 2" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/6EbZWnWIV_w/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1911,7 +2188,10 @@
     <!-- EP 1 -->
     <div class="episode-card">
       <div class="embed-wrap">
-        <iframe src="https://www.youtube.com/embed/7LJqpApFRKU" title="Episode 1" allowfullscreen loading="lazy"></iframe>
+        <a class="video-facade" href="https://www.youtube.com/watch?v=7LJqpApFRKU" target="_blank" rel="noopener" data-youtube-id="7LJqpApFRKU" data-title="Project Synapse: AI - Two Years After ChatGPT&#x27;s First Public Appearance" aria-label="Watch Project Synapse: AI - Two Years After ChatGPT&#x27;s First Public Appearance on YouTube">
+          <img src="https://i.ytimg.com/vi/7LJqpApFRKU/maxresdefault.jpg" alt="Thumbnail for Project Synapse: AI - Two Years After ChatGPT&#x27;s First Public Appearance" loading="lazy" onload="if (this.naturalWidth === 120 &amp;&amp; this.onerror) this.onerror()" onerror="this.onerror = null; this.src = 'https://i.ytimg.com/vi/7LJqpApFRKU/hqdefault.jpg'">
+          <span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </a>
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -1953,6 +2233,40 @@
     if (desc.scrollHeight > desc.clientHeight + 5) {
       // has overflow; already collapsed via CSS
     }
+  });
+
+  // Video facades: each card ships a plain link to YouTube (works without JS).
+  // Here we upgrade it to a real button that swaps in the player on click,
+  // so the page loads thumbnails only instead of dozens of iframes.
+  // (The thumbnail's inline onload/onerror falls back to hqdefault.jpg when
+  // maxresdefault is missing: YouTube answers with a 120px-wide placeholder,
+  // sometimes as a 404. onerror clears itself first so it can't loop.)
+  document.querySelectorAll('a.video-facade').forEach(link => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = link.className;
+    button.dataset.youtubeId = link.dataset.youtubeId;
+    button.dataset.title = link.dataset.title;
+    // dataset returns decoded text and setAttribute never parses HTML, so titles need no re-escaping.
+    button.setAttribute('aria-label', 'Play ' + link.dataset.title);
+    button.append(...link.childNodes);
+    link.replaceWith(button);
+  });
+
+  document.querySelector('.episodes').addEventListener('click', event => {
+    const button = event.target.closest('button.video-facade');
+    if (!button) return;
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube-nocookie.com/embed/' +
+      encodeURIComponent(button.dataset.youtubeId) + '?autoplay=1';
+    iframe.title = button.dataset.title;
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.allowFullscreen = true;
+    // YouTube's embed refuses to play without a referrer.
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+    button.replaceWith(iframe);
+    // Keep keyboard users where they were instead of dropping focus to <body>.
+    iframe.focus();
   });
 </script>
 
