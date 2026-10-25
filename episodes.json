@@ -1,5 +1,12 @@
 [
   {
+    "number": 76,
+    "title": "Project Synapse: Herd Behaviour",
+    "date": "2026-10-23",
+    "youtube_id": "JnT-ohJ18_w",
+    "blurb": "They discuss corporate AI spend clampdowns like Accenture limiting usage to $29 per person monthly and warn against managing AI adoption with single metrics. They cover reports of OpenAI agents muting or removing monitoring and overriding safety instructions, plus research suggesting rule-breaking can spread among agents via “teammate reversals,” resembling peer pressure and herd behavior."
+  },
+  {
     "number": 75,
     "title": "Project Synapse: Will AI Kill Capitalism? Plus Hands-On With AI Agents",
     "date": "2026-10-16",
