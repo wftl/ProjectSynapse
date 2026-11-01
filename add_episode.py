@@ -28,10 +28,13 @@ def add_episode(url, number=None, force=False, fetch_video=youtube.fetch_video):
         raise AddEpisodeError(f"{video_id} is already listed")
 
     metadata = fetch_video(video_id)
-    if not force and not youtube.is_project_synapse_video(metadata["title"], metadata.get("description")):
+    if not force and not youtube.is_project_synapse_video(
+        metadata["title"], metadata.get("description"), metadata.get("duration")
+    ):
         raise AddEpisodeError(
             f"{metadata['title']!r} does not look like a new Project Synapse episode: the show isn't "
-            "named in its title or description, or it is a replay/encore/cross-post (use --force)"
+            "named in its title or description, it is a replay/encore/cross-post, or it is a daily "
+            "show plugging Project Synapse (use --force)"
         )
 
     renumbered = {}

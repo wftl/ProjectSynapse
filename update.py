@@ -2,7 +2,8 @@
 """Find new Project Synapse episodes on @technewsday, add them, and rebuild index.html.
 
 Only videos whose title or description mentions "Project Synapse" (and that
-aren't replays, encores or Cybersecurity Today cross-posts) and that were
+aren't replays, encores, Cybersecurity Today cross-posts or daily Hashtag
+Trending shows that only plug it in their description) and that were
 published after the newest listed episode are added, numbered on from the
 highest episode in publication order. Older unlisted videos are reported but left
 alone: inserting one renumbers every later episode, which needs a human
@@ -17,9 +18,6 @@ import synapse_youtube as youtube
 
 SEARCH_LIMIT = 40
 RECENT_UPLOADS_LIMIT = 80
-# Episodes run about an hour (the shortest is 48 minutes) and the daily shows
-# 5-20 minutes, so a short listing that doesn't name the show isn't worth fetching.
-MIN_EPISODE_SECONDS = 40 * 60
 
 
 def discover_candidates(channel_id, log):
@@ -56,8 +54,9 @@ def worth_fetching(listing):
         return False
     if youtube.mentions_project_synapse(listing["title"]) or youtube.mentions_project_synapse(listing["description"]):
         return True
-    # Channel tabs give no description, so a long video might still name the show in its own.
-    return listing["duration"] is None or listing["duration"] >= MIN_EPISODE_SECONDS
+    # Channel tabs give no description, so a long video might still name the show in its own;
+    # a short one is a daily show.
+    return listing["duration"] is None or listing["duration"] >= youtube.MIN_EPISODE_SECONDS
 
 
 def select_new_episodes(candidates, episodes, ignored_ids, fetch_video, log):
@@ -77,9 +76,11 @@ def select_new_episodes(candidates, episodes, ignored_ids, fetch_video, log):
             continue
         metadata = fetch_video(video_id)
         # Flat listings carry stale titles and truncated descriptions; verify against the real ones.
-        if not youtube.is_project_synapse_video(metadata["title"], metadata.get("description")):
+        if not youtube.is_project_synapse_video(
+            metadata["title"], metadata.get("description"), metadata.get("duration")
+        ):
             log(f"skip {video_id}: {metadata['title']!r} is not a new Project Synapse episode "
-                "(show not named, or a replay/encore/cross-post)")
+                "(show not named, a replay/encore/cross-post, or a daily show plugging it)")
             continue
         published = youtube.show_date(metadata)
         if published <= newest_date:

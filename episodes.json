@@ -1,24 +1,10 @@
 [
   {
-    "number": 79,
+    "number": 77,
     "title": "Project Synapse: Very Scary AI: The Halloween Edition",
     "date": "2026-10-30",
     "youtube_id": "vdrxg08bZOw",
     "blurb": "In this Halloween edition of Project Synapse, the hosts banter about costumes, including a Hermes/Mercury “AI agent,” and Marcel demos Tesla’s Halloween mode. In a lightning round, they discuss Canada’s $1.6B investment in Cohere and its large Command A+ model, plus concerns about AI-driven security vulnerabilities, agent boundary-crossing incidents, Cloudflare AI response data leakage, and banks warning against letting personal agents handle banking."
-  },
-  {
-    "number": 78,
-    "title": "Project Synapse: Anthropic IPO Announced, Brazil Threatens Social Media Regulation",
-    "date": "2026-10-26",
-    "youtube_id": "-G1xDAGcTPY",
-    "blurb": "Anthropic has filed for a Nasdaq IPO—and its disclosures include agreements to spend up to $120.5 billion on SpaceX computing through 2029. Claude’s maker is growing rapidly, but securing the infrastructure behind AI comes at an enormous cost. On Hashtag Trending for Tuesday, October 27, 2026, Jim Love examines Anthropic’s surging revenue, why its reported losses need accounting context, and computing commitments now reported above $600 billion. No IPO price or confirmed trading date has been announced, and cancellation provisions mean the full SpaceX amount is not guaranteed."
-  },
-  {
-    "number": 77,
-    "title": "Project Synapse: Who Controls Starlink?",
-    "date": "2026-10-26",
-    "youtube_id": "9k2kpUTKbvo",
-    "blurb": "Elon Musk acknowledges restrictions on civilian Starlink use in Ukraine, saying offensive drone strikes violated SpaceX’s terms. Ukraine disputes his explanation, raising questions about who controls satellite communications during a war. On Hashtag Trending for Monday, October 26, 2026, Jim Love examines the Starlink controversy, Anthropic’s Claude Duet personal agent, China’s expanding satellite internet network, and refund demands over Deloitte’s AI-assisted university merger report."
   },
   {
     "number": 76,

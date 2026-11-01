@@ -36,6 +36,48 @@ class EpisodeFilterTest(unittest.TestCase):
             "AI Anxiety", "A special edition of Project Synapse shared with Cybersecurity Today listeners."))
 
 
+class DailyNewsShowFilterTest(unittest.TestCase):
+    """Daily Hashtag Trending shows plug Project Synapse in their sign-off (Ep 77/78 mistake)."""
+
+    STARLINK_DESCRIPTION = (
+        "Elon Musk acknowledges restrictions on civilian Starlink use in Ukraine.\n\n"
+        "On Hashtag Trending for Monday, October 26, 2026, Jim Love examines the Starlink controversy.\n\n"
+        "11:36 Project Synapse and Wrap-Up\n\n"
+        "For practical discussions about AI, visit projectsynapse.ca and join the Discord community.\n\n"
+        "Subscribe to Hashtag Trending for daily technology news with Jim Love."
+    )
+
+    def test_rejects_daily_dateline_even_without_duration(self):
+        self.assertFalse(youtube.is_project_synapse_video("Who Controls Starlink?", self.STARLINK_DESCRIPTION))
+
+    def test_rejects_daily_sign_off_alone(self):
+        self.assertFalse(youtube.is_project_synapse_video(
+            "Anthropic IPO Announced",
+            "PROJECT SYNAPSE\nVisit https://projectsynapse.ca.\n"
+            "Subscribe to Hashtag Trending for daily tech news with Jim Love."))
+
+    def test_rejects_short_video_named_only_in_description(self):
+        self.assertFalse(youtube.is_project_synapse_video(
+            "Anthropic IPO Announced", "Join the Project Synapse Discord.", duration=700))
+        self.assertTrue(youtube.is_project_synapse_video(
+            "Anthropic IPO Announced", "Join the Project Synapse Discord.", duration=youtube.MIN_EPISODE_SECONDS))
+
+    def test_title_naming_the_show_overrides_daily_markers_and_duration(self):
+        self.assertTrue(youtube.is_project_synapse_video(
+            "Project Synapse: Who Controls Starlink?", self.STARLINK_DESCRIPTION, duration=700))
+
+    def test_episode_descriptions_naming_hashtag_trending_are_kept(self):
+        # Real episode descriptions whose titles don't name the show (Eps 3, 30).
+        for description in (
+            "In this episode of Hashtag Trending's weekend edition, join Jim Love, Marcel Gagné, and "
+            "John Pinard in their third recorded meeting for Project Synapse.",
+            "In this episode of Hashtag Trending, titled 'Project Synapse,' host Jim Love...",
+            "On Project Synapse for Saturday, September 12, Jim... Hashtag Trending thanks Meter for "
+            "supporting this podcast.",
+        ):
+            self.assertTrue(youtube.is_project_synapse_video("Exploring AI", description, duration=4189), description)
+
+
 class FormatTitleTest(unittest.TestCase):
     def test_prefixes_titles_without_the_show_name(self):
         self.assertEqual(youtube.format_title("AI Backlash"), "Project Synapse: AI Backlash")

@@ -22,6 +22,8 @@ IGNORED_IDS_PATH = Path(__file__).resolve().parent / "ignored_ids.txt"
 MAX_BLURB_CHARS = 600
 PARAGRAPH_MIN_CHARS = 200
 SUBPROCESS_TIMEOUT_SECONDS = 300
+# Episodes run about an hour (the shortest is 48 minutes) and the daily shows 5-20 minutes.
+MIN_EPISODE_SECONDS = 40 * 60
 
 SHOW_NAME = "Project Synapse"
 # \s* so the #ProjectSynapse hashtag in descriptions counts as a mention.
@@ -30,6 +32,15 @@ _SHOW_NAME_RE = re.compile(r"project\s*synapse", re.IGNORECASE)
 _RERUN_RE = re.compile(r"\b(replay|encore|rerun|re-run)\b", re.IGNORECASE)
 # Episodes re-published under the Cybersecurity Today show name.
 _CROSS_POST_RE = re.compile(r"cyber\s*security\s+today", re.IGNORECASE)
+# The daily Hashtag Trending news show's dateline ("On Hashtag Trending for Monday,
+# October 26, 2026, Jim Love examines...") and sign-off ("Subscribe to Hashtag Trending
+# for daily technology news"). Episode descriptions often name Hashtag Trending, which
+# hosts the show, but never in these forms.
+_DAILY_NEWS_RE = re.compile(
+    r"hashtag\s*trending\s+for\s+(?:mon|tues|wednes|thurs|fri|satur|sun)day\b"
+    r"|\bdaily\s+(?:technology|tech)\s+news\b",
+    re.IGNORECASE,
+)
 # The show name at either end of a title, with whatever separator joins it to the rest.
 _LEADING_SHOW_NAME_RE = re.compile(r"^project\s*synapse\b[\s:|\-–—]*", re.IGNORECASE)
 _TRAILING_SHOW_NAME_RE = re.compile(r"[\s:|&\-–—]*\(?\s*project\s*synapse\s*\)?$", re.IGNORECASE)
@@ -81,10 +92,24 @@ def is_rerun_or_cross_post(title, description=""):
     )
 
 
-def is_project_synapse_video(title, description=""):
-    """True for a new episode: the show is named in the title or description, and it isn't a re-run."""
-    mentioned = mentions_project_synapse(title) or mentions_project_synapse(description)
-    return mentioned and not is_rerun_or_cross_post(title, description)
+def is_daily_news_show(title, description=""):
+    return bool(_DAILY_NEWS_RE.search(title) or _DAILY_NEWS_RE.search(description or ""))
+
+
+def is_project_synapse_video(title, description="", duration=None):
+    """True for a new episode: the show is named, and it isn't a re-run.
+
+    A title naming the show is enough. A description-only mention is not when the
+    video is a daily news show plugging Project Synapse in its sign-off: one in the
+    daily format, or shorter than any episode (duration None means unknown).
+    """
+    if is_rerun_or_cross_post(title, description):
+        return False
+    if mentions_project_synapse(title):
+        return True
+    if not mentions_project_synapse(description) or is_daily_news_show(title, description):
+        return False
+    return duration is None or duration >= MIN_EPISODE_SECONDS
 
 
 def format_title(title):

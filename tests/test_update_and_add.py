@@ -33,6 +33,13 @@ VIDEOS = {
                             "The month's top security stories."),
     "crossPostII": metadata("crossPostII", "AI in Action: Project Synapse. Cyber Security Today", 1789000000),
     "replayJJJJJ": metadata("replayJJJJJ", "Gemini 3.0 Rocks!", 1789000000, "A replay of Project Synapse."),
+    "dailyPlugKK": dict(metadata("dailyPlugKK", "Who Controls Starlink?", 1792180703,  # 2026-10-16
+                                 "On Hashtag Trending for Monday, October 26, 2026, Jim Love examines...\n"
+                                 "For practical discussions about AI, visit projectsynapse.ca."),
+                        duration=701),
+    "shortPlugLL": dict(metadata("shortPlugLL", "Anthropic IPO Announced", 1792180703,
+                                 "Join the Project Synapse Discord."),
+                        duration=700),
 }
 
 
@@ -91,6 +98,14 @@ class SelectNewEpisodesTest(unittest.TestCase):
         # The cross-post is recognisable from its listing title, so it is never fetched.
         self.assertEqual(sorted(fetched), ["longDailyHH", "replayJJJJJ"])
         self.assertTrue(any("replayJJJJJ" in message for message in messages))
+
+    def test_skips_daily_shows_plugging_project_synapse(self):
+        # RSS listings carry the full description, so these get past worth_fetching and are fetched.
+        candidates = {video_id: youtube.listing(video_id, VIDEOS[video_id]["title"], VIDEOS[video_id]["description"])
+                      for video_id in ("dailyPlugKK", "shortPlugLL")}
+        messages = []
+        self.assertEqual(update.select_new_episodes(candidates, EXISTING, set(), VIDEOS.get, messages.append), [])
+        self.assertTrue(all(any(video_id in message for message in messages) for video_id in candidates))
 
     def test_short_unnamed_listings_are_not_fetched(self):
         candidates = {"dailyFFFFFF": youtube.listing("dailyFFFFFF", "Tech News Day: chips", duration=640.0)}
@@ -176,6 +191,13 @@ class AddEpisodeTest(unittest.TestCase):
         for video_id in ("crossPostII", "replayJJJJJ"):
             with self.assertRaises(add_episode.AddEpisodeError):
                 add_episode.add_episode(video_id, fetch_video=self.fetch)
+
+    def test_rejects_daily_shows_plugging_project_synapse_unless_forced(self):
+        for video_id in ("dailyPlugKK", "shortPlugLL"):
+            with self.assertRaises(add_episode.AddEpisodeError):
+                add_episode.add_episode(video_id, fetch_video=self.fetch)
+        episode, _ = add_episode.add_episode("dailyPlugKK", force=True, fetch_video=self.fetch)
+        self.assertEqual(episode["youtube_id"], "dailyPlugKK")
 
     def test_rejects_taken_number(self):
         with self.assertRaises(add_episode.AddEpisodeError):
