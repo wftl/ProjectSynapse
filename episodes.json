@@ -1,5 +1,12 @@
 [
   {
+    "number": 78,
+    "title": "Project Synapse: Switching Sides",
+    "date": "2026-11-06",
+    "youtube_id": "TbwKslnNBDE",
+    "blurb": "Project Synapse opens with a humorous AI-generated song about tech CEOs and introduces guest David Colombo, who at 19 disclosed TeslaMate flaws that enabled remote control of Teslas in 13 countries, later advising organizations like GSK and KnowBe4 and founding Alaris Security. Colombo recounts growing up in rural Germany, learning to code, finding early vulnerabilities, and explains why TeslaMate and ecosystem tokens were attractive targets, noting weak scoping and suspicious-request detection."
+  },
+  {
     "number": 77,
     "title": "Project Synapse: Very Scary AI: The Halloween Edition",
     "date": "2026-10-30",
