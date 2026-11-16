@@ -116,7 +116,9 @@ class RenderTest(unittest.TestCase):
         self.assertNotIn("stat-number", page)
         self.assertRegex(
             page,
-            r'<a href="https://www\.youtube\.com/@technewsday" target="_blank" rel="noopener">@technewsday</a></span>\s*</p>',
+            r'<a href="https://www\.youtube\.com/@technewsday" target="_blank" rel="noopener">@technewsday</a></span>'
+        r'<span class="stats-sep" aria-hidden="true">·</span>\s*'
+        r'<span class="stats-item"><a href="https://projectsynapse\.ca/feed\.xml"[^>]*>RSS</a></span>\s*</p>',
         )
 
     def test_single_year_range(self):
