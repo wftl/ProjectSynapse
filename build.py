@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerate index.html from episodes.json and the templates/ directory."""
+"""Regenerate index.html and feed.xml from episodes.json and the templates/ directory."""
 
 import html
 import json
@@ -8,9 +8,12 @@ import sys
 from datetime import date
 from pathlib import Path
 
+import feed
+
 ROOT = Path(__file__).resolve().parent
 EPISODES_PATH = ROOT / "episodes.json"
 OUTPUT_PATH = ROOT / "index.html"
+FEED_PATH = ROOT / "feed.xml"
 PAGE_TEMPLATE_PATH = ROOT / "templates" / "page.html"
 CARD_TEMPLATE_PATH = ROOT / "templates" / "card.html"
 
@@ -136,7 +139,7 @@ def render_page(episodes, page_template, card_template):
     })
 
 
-def build(episodes_path=EPISODES_PATH, output_path=OUTPUT_PATH):
+def build(episodes_path=EPISODES_PATH, output_path=OUTPUT_PATH, feed_path=FEED_PATH):
     episodes = load_episodes(episodes_path)
     page = render_page(
         episodes,
@@ -144,12 +147,13 @@ def build(episodes_path=EPISODES_PATH, output_path=OUTPUT_PATH):
         CARD_TEMPLATE_PATH.read_text(encoding="utf-8"),
     )
     Path(output_path).write_text(page, encoding="utf-8")
+    Path(feed_path).write_text(feed.render_feed(episodes), encoding="utf-8")
     return len(episodes)
 
 
 def main():
     count = build()
-    print(f"Wrote {OUTPUT_PATH.name} with {count} episodes")
+    print(f"Wrote {OUTPUT_PATH.name} and {FEED_PATH.name} with {count} episodes")
     return 0
 
 

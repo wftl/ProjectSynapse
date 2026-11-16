@@ -9,8 +9,12 @@ A static page (`index.html`) listing every episode of Project Synapse from the
 `episodes.json`, and the markup lives in `templates/page.html` and `templates/card.html`.
 
 ```sh
-./build.py                 # regenerate index.html from episodes.json
+./build.py                 # regenerate index.html and feed.xml from episodes.json
 ```
+
+`feed.xml` is an RSS 2.0 feed of every episode, newest first (`feed.py`), linked from the
+page head and footer. Its `lastBuildDate` is the newest episode's date rather than the
+build time, so rebuilding unchanged data leaves it byte-for-byte identical.
 
 Each episode in `episodes.json` has `number`, `title`, `date` (ISO `YYYY-MM-DD`),
 `youtube_id` and `blurb` (plain text; `build.py` HTML-escapes it). The episode
@@ -69,7 +73,7 @@ Videos that look like episodes but aren't (cross-posts, re-uploads, specials) go
 ## Weekly automatic update (systemd user timer)
 
 `deploy/run-update.sh` runs `update.py` and the tests. If anything changed, it
-commits `episodes.json` and `index.html` and, only when something new was committed, runs `git push origin HEAD`. It refuses
+commits `episodes.json`, `index.html` and `feed.xml` and, only when something new was committed, runs `git push origin HEAD`. It refuses
 to run if the checked-out branch isn't `$SYNAPSE_BRANCH` (default `master`)
 or if those files have uncommitted edits.
 
@@ -95,4 +99,4 @@ python3 -m unittest discover -s tests
 ```
 
 The tests use only the standard library and never touch the network. One test fails
-if `index.html` is out of date with `episodes.json`.
+if `index.html` or `feed.xml` is out of date with `episodes.json`.

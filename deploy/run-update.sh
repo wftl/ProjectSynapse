@@ -7,7 +7,7 @@ set -euo pipefail
 
 repo_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 expected_branch="${SYNAPSE_BRANCH:-master}"
-data_files=(episodes.json index.html)
+data_files=(episodes.json index.html feed.xml)
 
 cd "$repo_dir"
 
@@ -24,7 +24,9 @@ fi
 python3 update.py
 python3 -m unittest discover -s tests -q
 
-if git diff --quiet HEAD -- "${data_files[@]}"; then
+# Stage first: git diff/commit ignore a feed.xml that isn't tracked yet.
+git add -- "${data_files[@]}"
+if git diff --cached --quiet HEAD -- "${data_files[@]}"; then
     echo "No changes to commit."
     exit 0
 fi
