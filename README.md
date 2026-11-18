@@ -21,6 +21,38 @@ Each episode in `episodes.json` has `number`, `title`, `date` (ISO `YYYY-MM-DD`)
 count and year range in the stats bar come from the data. Cards with a blurb under
 200 characters get no "Read more" button.
 
+## Audio podcast feed
+
+`podcast.xml` is the audio RSS feed for podcast directories:
+<https://projectsynapse.ca/podcast.xml>. It uses Jim Love's original Libsyn/Blubrry
+enclosures and keeps only titles containing "Project Synapse" (case-insensitive).
+It is separate from the YouTube archive and `feed.xml`.
+
+```sh
+python3 podcast.py             # refresh from the latest Hashtag Trending RSS
+python3 podcast.py --backfill  # one-off import of the public Libsyn archive RSS, then refresh
+```
+
+`podcast_episodes.json` is a persistent dictionary keyed by Libsyn GUID. Keep it
+under version control along with `podcast.xml`: matching GUIDs receive source
+updates, and stored episodes are never automatically deleted when they leave
+Jim's short feed. Repeated refreshes with unchanged source data produce identical
+files. Network or source-validation failures leave both existing files untouched.
+
+Backfill uses Libsyn's `/rss/size/200/search/Project%20Synapse` endpoint, which
+provides real RSS GUIDs, enclosures, byte lengths, dates, and durations. On
+November 17, 2026 it exposed 100 search results, including 65 matching titles back
+to November 2, 2024; HTML archive search page 21 was empty. Other search results
+only mention the show in their descriptions and are excluded. The `?limit=1000`
+and `?full=1` feed variants still returned only five items. This imports the
+discoverable matching audio, which can differ from the YouTube episode list.
+
+Before submitting to directories, supply `podcast-cover.jpg` at the site root
+(a square JPG/PNG, 1400–3000 pixels per side), or update `COVER_ART_URL` in
+`podcast.py`. No suitable artwork is currently in this repo. `OWNER_EMAIL` is an
+empty TODO constant; set it to the real owner email if needed. The owner name is
+present, and `itunes:email` is emitted only when configured.
+
 ## Adding episodes
 
 ```sh
@@ -72,8 +104,10 @@ Videos that look like episodes but aren't (cross-posts, re-uploads, specials) go
 
 ## Weekly automatic update (systemd user timer)
 
-`deploy/run-update.sh` runs `update.py` and the tests. If anything changed, it
-commits `episodes.json`, `index.html` and `feed.xml` and, only when something new was committed, runs `git push origin HEAD`. It refuses
+`deploy/run-update.sh` runs `update.py`, the audio podcast refresh, and the tests.
+A failed podcast refresh logs a warning and continues with the existing podcast
+files. If anything changed, it commits `episodes.json`, `index.html`, `feed.xml`,
+`podcast_episodes.json`, and `podcast.xml` and, only when something new was committed, runs `git push origin HEAD`. It refuses
 to run if the checked-out branch isn't `$SYNAPSE_BRANCH` (default `master`)
 or if those files have uncommitted edits.
 
@@ -99,4 +133,6 @@ python3 -m unittest discover -s tests
 ```
 
 The tests use only the standard library and never touch the network. One test fails
-if `index.html` or `feed.xml` is out of date with `episodes.json`.
+if `index.html` or `feed.xml` is out of date with `episodes.json`; audio feed tests
+also check `podcast.xml` against the persisted podcast data and use fixture XML
+for refresh, filtering, metadata preservation, and failure handling.

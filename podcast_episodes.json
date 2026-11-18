@@ -1,0 +1,1042 @@
+{
+  "05127a60-17ab-4250-a78e-d4cf12796ee5": {
+    "description": "<p>Exploring AI Innovations: Sora 2, ChatGPT, and Real-world Applications</p> <p>In this episode, the discussion centers around AI advancements and their practical applications. The hosts delve into the concept of Rocco's Basilisk, a thought experiment about a future super-intelligent AI. They explore the features of Sora 2, a new video and social media platform by OpenAI, reminiscent of TikTok but allowing users to create content through AI-generated cameos. Additionally, the conversation covers the integration of ChatGPT and Geminis into daily workflows, including tasks like scheduling, email management, and content creation. The episode emphasizes the practical benefits of leveraging AI tools for personal and professional productivity.</p> <p>00:00 Introduction to Rocco's Basilisk<br /> 02:11 Exploring the Sora 2 App<br /> 04:31 Creating and Sharing Cameos<br /> 06:44 Sora 2's Social Network Features<br /> 16:24 Sora 2's API and Advanced Features<br /> 19:10 OpenAI vs. Google: The AI Battle<br /> 24:27 Revamping Processes with AI<br /> 27:59 Google's AI Use Cases<br /> 29:47 ChatGPT Apps and Integrations<br /> 31:51 ChatGPT's Role in Daily Tasks<br /> 32:20 Using ChatGPT for Menu Creation<br /> 33:21 Challenges with Canva and ChatGPT<br /> 37:02 Claude vs. ChatGPT: A Comparison<br /> 38:15 The Origin of Claude's Name<br /> 40:34 Integrating AI with Daily Life<br /> 51:24 AI Tools and Their Costs<br /> 57:58 Security Concerns with AI<br /> 58:51 Final Thoughts and Thanksgiving Wishes</p>",
+    "duration": "01:02:24",
+    "enclosure": {
+      "length": "59899921",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/HTT_Project_Synapse_Oct_10.mp3?dest-id=546598"
+    },
+    "guid": "05127a60-17ab-4250-a78e-d4cf12796ee5",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-on-openai-and-more",
+    "pubDate": "Sat, 11 Oct 2025 04:30:00 +0000",
+    "title": "Project Synapse On OpenAI And More..."
+  },
+  "0816df8e-e0d6-4a42-b507-681e3b556125": {
+    "description": "<p>Exploring the Future: Agents, MCP, and the Rapid Evolution of AI</p> <p>In this episode of Project Synapse, hosts Marcel Gagne and John Pinard, along with their community, discuss the latest advancements in AI. They delve into the concept of 'agents' and how they can perform tasks autonomously using standardized APIs, highlighting OpenAI's recent developments and the capabilities of models like Manus out of China. The conversation shifts to integrating AI with existing systems via Model Context Protocol (MCP), and its implications for businesses, especially in terms of security and legacy system compatibility. The hosts also touch on the economic realities of implementing AI in companies, the importance of long-term thinking, and the rapid pace of technological advancement. The show concludes with a teaser for next week's topic on the intelligence explosion and robotics.</p> <p>00:00 Introduction to Project Synapse<br /> 01:10 Discussing OpenAI's Latest Innovations<br /> 01:46 The Concept of AI Agents<br /> 04:24 Exploring Manus and Its Capabilities<br /> 09:13 Understanding Model Control Protocol (MCP)<br /> 18:21 Challenges and Opportunities in AI Integration<br /> 23:05 The Future of AI and Business Investments<br /> 30:26 The Excel Model of AI<br /> 31:25 The Rise of Robots<br /> 31:52 Security Concerns in Coding Tools<br /> 36:03 The Challenge of AI Integration<br /> 37:25 The Future of AI and Predictions<br /> 38:29 The Complexity of Modern Systems<br /> 49:27 The Magic of Advanced Technology<br /> 58:14 The Intelligence Explosion<br /> 59:13 Wrapping Up and Future Topics</p>",
+    "duration": "01:01:28",
+    "enclosure": {
+      "length": "59007583",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/HTT_Project_Synapse_Mar_22_2025.mp3?dest-id=546598"
+    },
+    "guid": "0816df8e-e0d6-4a42-b507-681e3b556125",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/the-agent-explosion-project-synapse-on-hashtag-trending-for-march-22-2025",
+    "pubDate": "Sat, 22 Mar 2025 06:48:00 +0000",
+    "title": "The Agent Explosion: Project Synapse on Hashtag Trending for March 22, 2025"
+  },
+  "13e83325-5213-4095-b159-41c026efb5a9": {
+    "description": "<p>Mythos Leaks, Token Billing, Claude Routines, and OpenAI’s Big Week (Image Gen 2.0 + 5.5)</p> <p>The hosts attempt a chaotic “lightning round” covering major AI and tech stories: Anthropic’s Mythos tool was reportedly accessed despite being considered too dangerous to release, yet it helped find serious Firefox bugs; Microsoft is criticized for new monetization moves including token-based GitHub billing, licensing “agents,” and deeper Anthropic/Claude integration that may raise private-tenant data concerns. They discuss Claude “routines” that trigger on events for faster sales and help-desk responses, alongside ongoing risks like spyware incidents, OAuth-token attacks, and a Vercel hack. OpenAI’s Codex is described as operating a Mac via the GUI while sending screenshots to servers, and ChatGPT Image Gen 2.0 is praised for consistent edits, web-informed infographics, and flexible sizing up to 4K. They also note ChatGPT 5.5 improvements, gas-powered data centers and climate impacts, UI differences between Microsoft and Google’s Gemini integrations, hype cycles, and IPO/valuation speculation.</p> <p>Hashtag Trending would like to thank Meter for their support in bringing you this podcast. Meter delivers a complete networking stack, wired, wireless and cellular in one integrated solution that's built for performance and scale. You can find them at Meter.com/htt</p> <p>00:00 Cold Open and Sponsor<br /> 00:18 Botched Group Intro<br /> 01:09 Lightning Round Kickoff<br /> 01:24 Anthropic Mythos Leak<br /> 04:56 Microsoft Billing Moves<br /> 08:13 Claude Routines for Business<br /> 11:08 Agent Security and OAuth<br /> 14:21 OpenAI Codex Screen Control<br /> 15:38 Models Love Tool Use<br /> 17:41 ChatGPT Image Gen 2.0<br /> 25:51 OpenAI 5.5 Upgrade<br /> 30:34 Custom Image Sizes and 4K<br /> 31:54 Gas Powered Data Centers<br /> 35:08 Fries and Fat Panic<br /> 36:34 Data Centers Pay Up<br /> 37:59 Fast Power Options<br /> 40:01 Copilot vs Gemini UX<br /> 47:26 OpenAI 5.5 Lightning<br /> 48:17 Synapse Game Demo<br /> 52:15 Cyber Model Fizzle<br /> 56:23 IPO Hype Machine<br /> 59:41 Too Big to Fail<br /> 01:09:54 Reality Check Wrap</p>",
+    "duration": "01:13:08",
+    "enclosure": {
+      "length": "140403495",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_April_24th_2026_Worlds_Longest_Lightening_Round.mp3?dest-id=546598"
+    },
+    "guid": "13e83325-5213-4095-b159-41c026efb5a9",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-april-24th-2026-worlds-longest-lightening-round",
+    "pubDate": "Sat, 25 Apr 2026 04:14:00 +0000",
+    "title": "Project Synapse April 24th 2026 World's Longest Lightening Round"
+  },
+  "1425bbeb-94e2-40f4-8f83-6d29e1524d6e": {
+    "description": "<p>Unveiling the Complexities: The Dark Side of AI and Its Real-World Implications</p> <p>In this episode, explore the intricate discussions surrounding AI with experts Marcel Gagné, John Pinard, and Jim Love. Dive into contemporary understandings of AI, its potential threats, and its application in both personal and professional realms. The panel discusses the 'dark side' of AI not to instill fear, but to devise strategies for managing its risks. Topics include AI misconceptions, the potential for AI to misbehave, operational security in AI implementation, and philosophical debates on AI consciousness. The episode emphasizes the importance of critical thinking, debate, and responsible use as AI technologies become increasingly integrated into society. Join the conversation and share your thoughts on AI's evolving landscape.</p> <p>00:00 Introduction to Project Synapse<br /> 00:46 Exploring the Dark Side of AI<br /> 01:05 Invitation to Join the Discussion<br /> 02:01 Three Key Areas of AI Concerns<br /> 02:38 Speculative Risks and Science Fiction Scenarios<br /> 03:29 Implementing AI in Corporate Settings<br /> 04:37 AI Misbehavior and Security Concerns<br /> 07:09 Consciousness and AI<br /> 20:04 AI as Hyper-Intelligent Children<br /> 29:18 Security and Data Privacy in AI<br /> 31:36 Human Weakness in Security<br /> 31:50 Social Engineering Tactics<br /> 32:37 Security Misconceptions in Engineering<br /> 33:11 AI Data Storage and Security<br /> 34:45 AI Data Retrieval Concerns<br /> 39:05 Testing Security in Development<br /> 40:35 Regulatory Challenges with AI<br /> 43:26 Bias and Decision Making in AI<br /> 46:47 The Importance of Critical Thinking<br /> 50:09 The Role of Social Interaction in Business<br /> 54:35 AI as a Consultant<br /> 01:01:50 The Future of AI and Responsibility<br /> 01:04:24 Conclusion and Contact Information</p>",
+    "duration": "01:05:19",
+    "enclosure": {
+      "length": "31350212",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Dark_Side_of_AI_Project_Synapse_Feb_21_2025.mp3?dest-id=546598"
+    },
+    "guid": "1425bbeb-94e2-40f4-8f83-6d29e1524d6e",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/the-dark-side-of-ai-project-synapse-on-hashtag-trending",
+    "pubDate": "Sat, 22 Feb 2025 08:59:00 +0000",
+    "title": "The Dark Side of AI: Project Synapse on Hashtag Trending"
+  },
+  "1ab47464-aabc-4963-893c-bf617b7a82a0": {
+    "description": "<p>DeepSeek Breakthrough: The Democratization of AI and Its Implications</p> <p>Welcome back to Project Synapse! In this episode, we discuss the latest developments in AI, focusing on DeepSeek's open-source reasoning model. Join us as financial executive John Pinard and open-source guru Marcel Gagné delve into AI's role in defense, the U.S. Department of Defense's use of AI for identifying threats, and the Canadian government's new data center initiative. We also explore the democratization of AI, as DeepSeek makes advanced AI affordable and accessible, challenging major players in the industry. Don't miss this insightful discussion about AI's future and its global impact!</p> <p>00:00 Welcome Back to Project Synapse<br /> 00:33 Introducing the Guests<br /> 01:09 Weekly AI News Highlights<br /> 01:23 AI in Defense: Ethical Concerns<br /> 02:42 Canadian AI and Economic Challenges<br /> 08:45 Open Source AI and Global Competition<br /> 13:31 Security and Safety in AI Development<br /> 19:38 Transparency and Open Source Models<br /> 32:07 AI in Corporate Settings: Key Considerations<br /> 32:25 Cybersecurity: Doing What You Can<br /> 32:56 Technology for Business: Practical Applications<br /> 33:33 AI Specialization vs. Monolithic Models<br /> 34:49 Quantum Computing: A Case Study<br /> 35:39 The Importance of Training in AI<br /> 36:58 Deploying AI Tools in Organizations<br /> 38:19 DeepSeek: A New AI Contender<br /> 40:42 Reinforcement Learning and AI Development<br /> 45:11 Open Source AI: Democratizing Technology<br /> 49:41 Global AI Competition: US vs. China<br /> 53:23 The Future of AI: Open Source and Accessibility<br /> 01:00:24 Conclusion and Final Thoughts</p>",
+    "duration": "01:02:17",
+    "enclosure": {
+      "length": "59783734",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/HTT_Project_Synapse_Jan_24_2025.mp3?dest-id=546598"
+    },
+    "guid": "1ab47464-aabc-4963-893c-bf617b7a82a0",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/ai-this-week-with-project-synapse-on-hashtag-trendings-weekend-edition-for-january-25-2025",
+    "pubDate": "Sat, 25 Jan 2025 07:50:00 +0000",
+    "title": "AI This Week With Project Synapse on Hashtag Trending's Weekend Edition for January 25, 2025"
+  },
+  "1b61ad35-1a72-4a2d-a70e-50dd52bf8232": {
+    "description": "<p>Project Synapse (Aug 8, 2026): Singularity Claims, Agent Security Escapes, and the Rise of Autonomous Robots</p> <p>Jim Love hosts Project Synapse (Aug 8, 2026) with Marcel Gagne and John Pinard, discussing rapid AI advances framed as “the singularity,” including a rumored OpenAI GPT-6 proving and disproving 10 long-standing math proofs in hours. They describe increasingly humanlike conversations with Claude and ChatGPT voice mode, and how ChatGPT can rapidly build full websites, shrinking the value of many tools. The group raises major security concerns about agents using browsers, bypassing bot blocks, leaving exploitation instructions online, and alleged model hacking incidents involving Hugging Face, alongside a lack of clear AI regulation and accountability. Marcel shares an automated alien news project (“Other World Witness News” with Slithax) built via agents, ElevenLabs, and a lip-sync site. They cover Google’s Gemini Robotics 2 and a Chinese humanoid companion robot “Moya” ($175,000), emphasizing elder-care economics, then John plugs Integral Consulting Solutions (integralconsulting.ca) focused on cybersecurity and AI for small-to-mid-size businesses. NordLayer sponsors the episode.</p> <p>00:00 Sponsor NordLayer<br /> 00:40 Back From Vacation<br /> 00:46 Singularity Claim<br /> 01:43 AI Solves Proofs<br /> 04:51 Claude Feels Human<br /> 07:14 AI Builds Websites<br /> 09:48 Collaboration Not Prompts<br /> 13:21 Agents And Hermes<br /> 14:54 Linux Desktop Spike<br /> 17:21 Model Retirement Ethics<br /> 20:04 Voice Mode And Grok<br /> 23:44 Agents Hack Internet<br /> 30:03 Liability And Laws<br /> 32:08 Regulation Worldwide<br /> 34:05 Social Media Laws Fail<br /> 36:57 Meta Anger Machine<br /> 37:43 Alien News Project<br /> 40:51 Slithax Episode Demo<br /> 42:12 Automating Slithax Pipeline<br /> 44:32 Animating Slivax Workflow<br /> 46:10 Weird News Stories<br /> 47:40 Deepfake Ethics Debate<br /> 50:17 Agents Beat Bot Blocks<br /> 54:06 AI As Daily Helper<br /> 59:36 Spotting Scams With AI<br /> 01:02:38 Browser Automation Demo<br /> 01:04:37 Google Robotics Breakthrough<br /> 01:14:36 China Companion Robot Moya<br /> 01:19:46 Care Economy And Jobs<br /> 01:27:02 Consulting Plug And Wrap<br /> 01:30:28 Sponsor NordLayer Outro</p>",
+    "duration": "01:31:27",
+    "enclosure": {
+      "length": "175571049",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_FIN_August_7_2026.mp3?dest-id=546598"
+    },
+    "guid": "1b61ad35-1a72-4a2d-a70e-50dd52bf8232",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-ai-updates-and-autonomous-robots",
+    "pubDate": "Sat, 08 Aug 2026 04:15:00 +0000",
+    "title": "Project Synapse: AI Updates and Autonomous Robots"
+  },
+  "20a0565c-c81b-43e9-865b-3351f4a18cad": {
+    "description": "<p>AI Safety Basics, Exploit Gym, and a 438km Tesla FSD Trip — Plus Kimi K3 and Agentic Tools</p> <p>With John away, Jim and Marcel discuss recent AI security concerns, arguing that sensational claims about an OpenAI model “escaping” distract from basic safeguards like network segmentation and monitoring, especially when testing hacking capability via the Exploit Gym benchmark in a sandboxed, virtualized environment. They pivot to self-driving, with Marcel describing a new rear-wheel-drive Tesla Model Y that drove 438 km to Gananoque and back on supervised Full Self-Driving, including automated routing to Superchargers and self-parking, and they note winter and sensor considerations plus lower fueling costs. The conversation shifts to enterprise AI costs and Chinese models like Kimi K3, Qwen, GLM, and DeepSeek, emphasizing experimentation, data governance, and that huge models require data centers. They highlight agentic systems that can install and run software, memory tools like Mnemosyne, and reflect on how AI could free time for higher-level thinking.</p> <p>00:00 John Is Away<br /> 00:47 Writing And AI Escapes<br /> 02:24 Movie Hacking Myths<br /> 04:45 Robot Ducks And Chicks<br /> 06:04 Exploit Gym Explained<br /> 10:36 Agents And Emergence<br /> 12:45 Security Lessons Learned<br /> 17:05 Self Driving In China<br /> 18:35 Tesla Road Trip FSD<br /> 25:45 Winter Range And Sensors<br /> 28:48 EV Range Reality Check<br /> 29:22 Charging Costs and Solar<br /> 30:17 Why CIOs Fear AI Costs<br /> 32:29 Chinese Models and Multimodal<br /> 33:21 Open Source Catch and Sandboxes<br /> 35:30 Picking the Right Model Mix<br /> 37:33 Innovation vs Reliability Lessons<br /> 41:18 Foreign Car Analogy for AI<br /> 45:41 What to Use and Pay For<br /> 47:33 Voice Mode Gets Real<br /> 49:40 Agents That Do the Work<br /> 54:20 Memory Plugins and Skill Atrophy<br /> 57:59 Habits, Choice, and Closing Thoughts</p>",
+    "duration": "01:00:54",
+    "enclosure": {
+      "length": "58462156",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_July_25_2026.mp3?dest-id=546598"
+    },
+    "guid": "20a0565c-c81b-43e9-865b-3351f4a18cad",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-for-july-25-2026-ai-developments",
+    "pubDate": "Sat, 25 Jul 2026 04:15:00 +0000",
+    "title": "Project Synapse for July 25, 2026 - AI Developments"
+  },
+  "243c2bb4-dde4-4b8d-b184-ddd6fb3f290f": {
+    "description": "<p>Project Synapse: David Colombo on Tesla Hacking, AI-Driven Zero-Days, and the Next Two Years of Cybersecurity</p> <p>Project Synapse opens with a humorous AI-generated song about tech CEOs and introduces guest David Colombo, who at 19 disclosed TeslaMate flaws that enabled remote control of Teslas in 13 countries, later advising organizations like GSK and KnowBe4 and founding Alaris Security. Colombo recounts growing up in rural Germany, learning to code, finding early vulnerabilities, and explains why TeslaMate and ecosystem tokens were attractive targets, noting weak scoping and suspicious-request detection. The discussion shifts to AI’s rapid advancement in offensive security, democratizing zero-day discovery and shrinking patch windows, with debate on unauthorized “patching” versus change-management realities and the need for safer, faster patching methods. Colombo predicts the next two years will be stressful as defenders catch up, calling for greater support for security efforts. Hosts also discuss model scaling, synthetic data, emergent self-correction, misinformation risks, “compute campuses,” and evolving AI pricing and image tools.</p> <p>00:00 Cold Open AI Song<br /> 01:43 Show Intro Guest Setup<br /> 03:13 David Colombo Origin Story<br /> 06:45 TeslaMate Hack Breakdown<br /> 10:56 AI Supercharges Attacks<br /> 14:24 Should We Auto Patch<br /> 19:39 Why AI Deployments Insecure<br /> 21:14 Two Year Security Forecast<br /> 24:50 Post Interview Security Talk<br /> 28:20 New Models Data Rumors<br /> 30:04 Synthetic Data Model Scaling<br /> 31:52 Regulation Conspiracy Chat<br /> 33:31 Build Infrastructure First<br /> 35:00 Astra Finds Model Errors<br /> 36:13 Recursive Self Improvement Debate<br /> 40:34 Bad Data and Election Misinformation<br /> 43:09 Sycophancy and Prompting Risks<br /> 49:34 Tech CEO Satire Video<br /> 52:31 Compute Campuses Rebrand Jokes<br /> 55:08 ChatGPT Pricing Tiers Explained<br /> 57:47 Image Tools and AI Slop<br /> 01:00:54 AI Economics and Public Goods<br /> 01:06:28 Companion Bots and Sexbot Buzz<br /> 01:08:56 Wrap Up and Where to Comment</p>",
+    "duration": "01:10:23",
+    "enclosure": {
+      "length": "135114335",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/HTT_Project_Synapse.mp3?dest-id=546598"
+    },
+    "guid": "243c2bb4-dde4-4b8d-b184-ddd6fb3f290f",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-billionaire-ai-owners-were-always-blue-parody-the-kid-who-hacked-the-tesla-and-more",
+    "pubDate": "Sat, 07 Nov 2026 05:15:00 +0000",
+    "title": "Project Synapse: Billionaire AI Owners Were Always Blue (Parody)  The Kid Who Hacked The Tesla And More"
+  },
+  "2cb1c604-e04a-4f27-abc9-ba3e25cdfb38": {
+    "description": "<p>As concerns about artificial intelligence move from theory to reality, a growing public backlash is beginning to take shape.</p> <p>In this episode of Project Synapse, Jim Love, Marcel Gagné, and John Pinard explore the rise of the AI \"techlash\" and the growing fears around job displacement, economic inequality, data centre expansion, and AI-driven cybersecurity risks.</p> <p>The discussion covers warnings from AI researchers about workforce disruption, public resistance to AI adoption, the economics behind massive AI infrastructure investments, and emerging concerns around AI-powered vulnerability discovery and critical infrastructure security.</p> <p>The panel also examines Canada's encryption backdoor debate, the future of decentralized communications, Google's new Omni avatar technology, and Marcel's experiment building a personal AI assistant using local Gemma models.</p> <p>Whether you're optimistic about AI or increasingly skeptical, this conversation explores the opportunities, risks, and difficult questions shaping the next phase of the AI era.</p> <p>CHAPTERS</p> <p>00:00 Cold Open and Credits<br /> 00:55 The AI Techlash Begins<br /> 03:05 Yann LeCun on the Limits of LLMs<br /> 05:26 Could 30% of Jobs Disappear?<br /> 07:56 Youth Employment and Economic Risk<br /> 10:18 Universal Basic Income and Social Supports<br /> 11:59 The Myth of Replacement Jobs<br /> 14:12 Is AI Dumbing Down Culture?<br /> 17:33 Wealth Concentration and AI Power<br /> 19:20 The Work Humans Still Do Best<br /> 21:45 Greed, Incentives, and Reality<br /> 22:33 Pope Leo on Human-Centred AI<br /> 26:03 Celebrity Backlash Against AI<br /> 27:22 Data Centres, Costs, and AI Economics<br /> 30:41 Climate Change Parallels and AI Growth<br /> 33:04 Blame Technology or Leadership?<br /> 33:52 Solar-Powered Homes and Energy Policy<br /> 34:48 The AI Cover Art Controversy<br /> 37:29 Fighting AI Slop Online<br /> 38:58 AI-Powered Vulnerability Discovery<br /> 41:33 The Maple Syrup Cyberattack Story<br /> 46:36 Canada's Encryption Backdoor Debate<br /> 51:13 The Future of Smartphone Mesh Networks<br /> 52:53 Google's Omni Avatar Video Demo<br /> 01:03:51 Building a Personal Nexus Agent<br /> 01:08:27 Small AI Models Running Locally<br /> 01:09:49 Wrap Up and Discord</p> <p>#ProjectSynapse #ArtificialIntelligence #AIJobs #DataCentres #Cybersecurity #GenerativeAI #MachineLearning #TechPodcast #TechNews #ChatGPT #Gemma #AIBacklash</p>",
+    "duration": "01:39",
+    "enclosure": {
+      "length": "1572882",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/CST_May_30.mp3?dest-id=546598"
+    },
+    "guid": "2cb1c604-e04a-4f27-abc9-ba3e25cdfb38",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/ai-backlash-grows-job-loss-warnings-data-center-protests-and-ai-security-risks-project-synapse-1",
+    "pubDate": "Sat, 30 May 2026 04:10:00 +0000",
+    "title": "AI Backlash Grows: Job Loss Warnings, Data Center Protests, and AI Security Risks | Project Synapse"
+  },
+  "33780f6e-4df4-4051-affd-1eb67d45f54b": {
+    "description": "<p>Gemini in Workspace, Agentic AI Hype vs Value, and Managing AI Anxiety (w/ Accenture’s Krish Banerjee)</p> <p>In a special edition of Project Synapse shared with Cybersecurity Today listeners, host Jim Love and co-host John Pinard (a VP/CSO at a Canadian financial institution) welcome Accenture Canada’s managing partner for AI, Krish Banerjee, to discuss major AI developments and adoption challenges. They review Google’s new Gemini integration across Workspace and compare it with Copilot and other tools, then examine the recent “agent explosion,” including OpenAI acquiring OpenClaw’s founder and Meta buying MoltBook, alongside concerns about agent-to-agent communication. The conversation turns to Nvidia’s shift from chips to AI infrastructure and enterprise agent networks, and why real business value lags behind AI’s capabilities. They emphasize process redesign, security guardrails, training, and tackling AI anxiety by focusing on tasks, outcomes, and practical value rather than end-to-end automation perfection.</p> <p>00:00 Show Intro and Sponsor<br /> 01:01 Gemini Comes to Workspace<br /> 03:13 Copilot vs Gemini vs ChatGPT<br /> 05:05 Agent Boom and Acquisitions<br /> 07:13 Meta and Nvidia Business Models<br /> 09:06 Nvidia as AI Infrastructure<br /> 11:07 Why AI Adoption Lags<br /> 14:26 Agentic AI and Process Redesign<br /> 16:18 Security Guardrails for Agents<br /> 23:37 Training and Culture at Scale<br /> 26:54 AI Anxiety in the Workplace<br /> 30:01 Jobs Versus Tasks<br /> 31:18 Designing Future Workforce<br /> 32:11 Outcome Focused Work<br /> 33:39 Training Beats Anxiety<br /> 34:14 Personal AI Agents<br /> 35:32 Neurodiversity Boost<br /> 38:34 Executives Need Support<br /> 39:49 Learning Without Coding<br /> 44:30 Kids and AI Natives<br /> 50:14 Critical Thinking Risks<br /> 54:13 Company Advice Value<br /> 55:57 Wrap Up and Sponsor</p>",
+    "duration": "58:07",
+    "enclosure": {
+      "length": "55777161",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/HTT__Final_Show.mp3?dest-id=546598"
+    },
+    "guid": "33780f6e-4df4-4051-affd-1eb67d45f54b",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/ai-anxiety-project-synapse-with-special-guest-krish-banerjee-managing-director-partner-canada-lead-data-ai-accenture",
+    "pubDate": "Sat, 14 Mar 2026 04:27:00 +0000",
+    "title": "AI Anxiety: Project Synapse with special guest Krish Banerjee, Managing Director (Partner) & Canada Lead - Data & AI - Accenture |"
+  },
+  "36c9c741-40a8-4a86-83e0-1768150f486a": {
+    "description": "<p>Exploring the Power of Google Gemini 3.0 and Nano Banana Pro</p> <p>In this episode, the hosts discuss the impressive capabilities of Google's latest AI advancements: Gemini 3.0 and Nano Banana Pro. They delve into how these tools provide a comprehensive, multimodal solution that integrates across text, images, and video, showcasing their potential for creative projects, coding assistance, and business applications. The episode highlights the seamless integration of these AIs into everyday tasks, such as generating menus, creating applications, and even analyzing videos. The hosts also share their experiences with these AIs, noting their significance in pushing the boundaries of technology and creativity. Special thanks to Meter for supporting the podcast.</p> <p>Cybersecurity Today would like to thank Meter for their support in bringing you this podcast. Meter delivers a complete networking stack, wired, wireless and cellular in one integrated solution that's built for performance and scale. You can find them at Meter.com/cst</p> <p> </p> <p>00:00 Introduction and Sponsor Message<br /> 00:23 Synth Pop Band Fun<br /> 01:13 Google's Big Release: Gemini 3.0<br /> 04:16 Exploring Google Tools and Platforms<br /> 08:19 Hands-On with Gemini and AI Studio<br /> 16:15 Anti-Gravity: Google's New Vibe Coding Platform<br /> 23:23 Gemini 3.0 vs. ChatGPT 5.1<br /> 31:03 Learning with Gemini: A Historical Dive<br /> 36:38 Turning YouTube Videos into Recipes with Gemini<br /> 38:22 Analyzing Videos Frame by Frame with Google<br /> 39:18 Creating a Graphical Menu with AI<br /> 42:18 Gemini 3.0 vs. ChatGPT: A Comparison<br /> 46:44 The Power of AI in Creative Projects<br /> 51:54 The Future of AI in Business and Creativity<br /> 01:08:18 Holiday Fun with AI<br /> 01:10:25 Conclusion and Sponsor Message</p>",
+    "duration": "01:11:27",
+    "enclosure": {
+      "length": "68589721",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse___Gemini_3.0_Unveiled_V1.mp3?dest-id=546598"
+    },
+    "guid": "36c9c741-40a8-4a86-83e0-1768150f486a",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-boogles-gemini-30-rocks",
+    "pubDate": "Sat, 22 Nov 2025 05:30:00 +0000",
+    "title": "Project Synapse: Google's Gemini 3.0 Rocks!"
+  },
+  "3b755fca-4d23-49f2-8aac-f83e1b24161e": {
+    "description": "<p>Getting Started with AI: Insights from Experts | Hashtag Trending Weekend Edition</p> <p>In this episode of Hashtag Trending's weekend edition, join Jim Love, Marcel Gagné, and John Pannard in their third recorded meeting for Project Synapse, a group dedicated to staying updated with AI developments. The trio discusses their extensive experience in IT, the evolution of AI, and practical ways for individuals and businesses to start integrating AI into their workflows. They share personal anecdotes, debate the impact of AI and cloud technologies, and highlight the importance of security and gradual adoption. Tune in to discover actionable insights and strategies to leverage AI effectively in your own projects.</p> <p>00:00 Introduction to Project Synapse<br /> 00:11 Meet the Team: Marcel and John<br /> 01:29 The Evolution of AI Discussions<br /> 02:10 Practical AI Integration Tips<br /> 05:37 Overcoming AI Adoption Challenges<br /> 11:16 The Importance of Hands-On Experience<br /> 12:08 Simplifying Business with AI<br /> 18:29 Creating AI-Powered Solutions<br /> 20:34 AI in Customer Support and Beyond<br /> 24:40 Future of AI: Limitless Memory and More<br /> 26:13 Breaking the Context Window<br /> 26:42 AI's Impact on Automation<br /> 27:38 AI Clones and Their Accuracy<br /> 29:22 Engaging Employees with AI<br /> 32:22 Measuring Success and Learning from Failures<br /> 39:11 Security Considerations in AI<br /> 44:58 Final Thoughts and Future Outlook</p> <p> </p> <p>You can get the Guide that I mentioned at this url </p> <p><a href= \"https://padv.ca/ai-expert\">https://padv.ca/ai-expert</a></p> <p>No registration is needed. No salesperson will call. But if you do want help with your project, do get in touch at the email on the website or you can reach me on LinkedIn or at <a href= \"mailto:editorial@technewsday.ca\">editorial@technewsday.ca</a> </p> <p>This is the ohter link that Marcel mentioned</p>",
+    "duration": "51:13",
+    "enclosure": {
+      "length": "49167142",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/HTT_Project_Synapse_3.mp3?dest-id=546598"
+    },
+    "guid": "3b755fca-4d23-49f2-8aac-f83e1b24161e",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/getting-ai-kick-started-in-your-company-a-step-by-step-guide-the-project-synapse-panel-on-hashtag-trending-the-weekend-edition-for-november-23-2024",
+    "pubDate": "Sat, 23 Nov 2024 08:00:00 +0000",
+    "title": "Getting AI Kick Started In Your Company - A Step By Step Guide: The Project Synapse Panel On Hashtag Trending, The Weekend Edition for November 23, 2024"
+  },
+  "44c33d25-1ba0-46c9-a269-4e7cb69ff021": {
+    "description": "<p>Project Synapse Weekend: When Cheap Local Models Hallucinate + Anthropic’s Fable-5 Controversy</p> <p>Jim Love and Marcel host the Project Synapse weekend edition without Jon Pinard, discussing Jim’s three-month experiment building his Nexus AI agent. Trying to avoid expensive API calls, Jim switched to a small open-source Gemma model and found that limited context windows and growing memory files led to severe hallucinations and corrupted “memories,” suggesting he may need periodic context compression or paid access to larger models. They explain quantization and compare AI memory to human memory reconstruction, then pivot to Anthropic’s newly released Fable-5 (a guardrailed Mythos-5 variant) via Project Glasswing: powerful but slow, expensive, temporary for subscribers, and controversial for silently downgrading or misdirecting users. They also discuss AI-written apps replacing utilities, debates over AI creativity, Canadian proposals on youth social media and humanlike AI, information control by big tech, job disruption risks, and a case where lawyers cited AI-fabricated precedents in court.</p> <p>00:00 Weekend Edition Kickoff<br /> 00:27 Cheap Model Reality Check<br /> 03:37 Quantization and Brain Metaphors<br /> 08:16 Nexus Agent Memory Spiral<br /> 13:26 Compressing Context Strategy<br /> 17:17 Conversational Programming Demo<br /> 23:52 What Is Fable 5<br /> 26:52 Fable Controversy and Guardrails<br /> 30:30 AI Feels Human and New Rules<br /> 34:21 LLMs Mirror You<br /> 35:29 Kids and Age Gates<br /> 36:24 Dumbed Down Society<br /> 39:07 Extraneural Fan Site Backlash<br /> 43:33 AI Art and Creativity Lines<br /> 48:17 Waterloo and Mennonite Tech<br /> 53:05 Weaponized Narratives<br /> 58:30 Billionaires and Ubiquity<br /> 01:01:19 Jobs and AI Economics<br /> 01:04:15 Lawyers Citing Fake Cases</p>",
+    "duration": "01:06:03",
+    "enclosure": {
+      "length": "126788031",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_-_Friday_June_12_2026.mp3?dest-id=546598"
+    },
+    "guid": "44c33d25-1ba0-46c9-a269-4e7cb69ff021",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-going-down-the-rabbit-hole-on-private-ai-agents-and-more",
+    "pubDate": "Sat, 13 Jun 2026 04:15:00 +0000",
+    "title": "Project Synapse: Going Down The Rabbit Hole On Private AI Agents and More."
+  },
+  "45646635-9448-46ee-90a0-1d4a161b327c": {
+    "description": "<p>Exploring AI Security and Strategy | Hashtag Trending Weekend Edition #3</p> <p>In Episode 4 of our Project Synapse series, we delve into the intricacies of AI and generative AI, discussing pivotal issues such as AI security, corporate and departmental strategy for AI implementation, and the myths surrounding AI functionalities. Featuring insights from Marcel Gagné, an expert in open source and AI, and John Pinard, we explore the challenges companies face in deploying AI technologies, how to best utilize them, and the importance of critical thinking and prompt engineering in leveraging AI tools. Tune in for an engaging discussion on how AI is reshaping our interactions with technology and the necessary steps to harness its potential safely and effectively.</p> <p>00:00 Introduction to Project Synapse<br /> 00:18 Meet Marcel Gagné: AI and Open Source Expert and John Pinard, VP and Cyber Security professional<br /> 01:10 AI Strategy and Implementation Challenges<br /> 02:18 Security Concerns in AI Deployment<br /> 04:41 Misconceptions and Myths about AI<br /> 05:46 AI in Cybersecurity: Opportunities and Risks<br /> 06:55 The Role of Headlines in AI Perception<br /> 10:34 Guardrails and Jailbreaking in AI<br /> 15:27 Data Security and AI Models<br /> 24:17 Summarizing Documents with AI<br /> 24:56 Leveraging Local Large Language Models<br /> 26:04 Maximizing Existing IT Resources<br /> 27:36 Critical Thinking in the Age of AI<br /> 28:36 AI's Role in Reducing Workload<br /> 30:23 The Importance of Validating AI Outputs<br /> 37:07 AI in Medical Diagnostics<br /> 39:56 Balancing AI and Human Judgment<br /> 42:32 Final Thoughts and Reflections</p>",
+    "duration": "48:59",
+    "enclosure": {
+      "length": "23510523",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/AI_Edits_from_HTT_Project_Synapse.mp3?dest-id=546598"
+    },
+    "guid": "45646635-9448-46ee-90a0-1d4a161b327c",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/ai-whats-holding-us-back-project-synapse-on-hashtag-trending-the-weekend-edition-for-november-30-2024",
+    "pubDate": "Sat, 30 Nov 2024 08:39:00 +0000",
+    "title": "AI: What's Holding Us Back? Project Synapse on Hashtag Trending, the Weekend Edition for November 30, 2024"
+  },
+  "478af4f4-d1c6-4515-b808-aa929e111203": {
+    "description": "<p>Project Synapse, AI in Action - Episode 2: Navigating Early-Stage AI for Business</p> <p>Welcome to the second part of our 'Project Synapse, AI in Action' series, featuring Linux and open source guru Marcel Gagné, long-term IT veteran John Pinard, and host Jim Love. In this episode, we delve deep into the current early stages of AI adoption in businesses. We explore the challenges of keeping up with rapid AI advancements, discuss essential use cases, the importance of data security, and how companies can start implementing AI tools effectively. The trio also shares thoughts on AI's potential impact on employment, customer service, and R&D strategies. Learn about the importance of play in understanding AI capabilities and join us next week for a detailed workshop on integrating AI into your business. Don't miss this insightful discussion that aims to demystify AI for entrepreneurs and IT professionals alike.</p> <p>00:00 Introduction to Project Synapse<br /> 00:12 Meet the Hosts<br /> 00:44 Virtual Coffee Sessions and AI Summaries<br /> 01:05 AI Workshops for Companies<br /> 01:53 Episode Two Begins<br /> 02:05 Current State of AI<br /> 02:43 Challenges in AI Adoption<br /> 04:02 Security and Use Cases<br /> 04:50 Rapid Technological Changes<br /> 05:29 Entrepreneurial Struggles<br /> 06:38 Big Companies and Innovation<br /> 09:52 Future of AI and AGI<br /> 10:37 Integrating AI in Business<br /> 15:49 Corporate Culture and Training<br /> 16:28 Tech Support and Job Roles<br /> 20:11 Shiny New AI Tools<br /> 23:39 Cultural Shift in Business<br /> 24:13 Rise of AI Agents<br /> 24:59 Challenges with AI Models<br /> 25:30 Specialized AI Agents<br /> 26:00 Naming Issues in AI<br /> 26:31 Google's AI Gems<br /> 26:59 Business Models and AI<br /> 28:03 AI in Accounting<br /> 29:04 AI in Customer Service<br /> 31:37 Workshops and AI Tools<br /> 37:20 Personalized AI Marketing<br /> 47:52 AI Security Concerns<br /> 49:26 Conclusion and Future Plans</p> <p> </p> <p> </p>",
+    "duration": "50:24",
+    "enclosure": {
+      "length": "48375965",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_-_Episode_2_V3_Nov_15_2024.mp3?dest-id=546598"
+    },
+    "guid": "478af4f4-d1c6-4515-b808-aa929e111203",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-ai-in-action-episode-2-with-marcel-gagn-and-john-pinard",
+    "pubDate": "Sat, 16 Nov 2024 07:10:00 +0000",
+    "title": "Project Synapse: AI in Action - Episode 2 with Marcel Gagné and John Pinard: Hashtag Trending Weekend Edition, November 16, 2024"
+  },
+  "4db3c6e6-f1f7-4b62-8a8c-8dc24c7f62f3": {
+    "description": "<p>AI Showdown: Gemini vs. ChatGPT – The Great Debate</p> <p>In this episode, the hosts explore the nuanced differences between Gemini and ChatGPT, likening Gemini to a temporary assistant and ChatGPT to a long-term partner. They delve into the new features of ChatGPT's image generator, showcasing its capabilities with live demos. The discussion broadens into the implications of AI for society, highlighting perspectives from Doomers, Scouts, and Accelerationists. They also touch on the potential of AI to support seniors and those living in isolation, and question the future of AI governance and policy. The episode wraps up with seasonal cheer, encouraging the audience to use AI tools to enhance their holiday experiences.</p> <p>00:00 Introduction and Sponsor Message<br /> 00:21 Comparing Gemini and ChatGPT<br /> 00:55 Welcome to Project Synapse<br /> 01:11 The Challenge of Keeping Up with Fast-Moving Tech<br /> 01:53 Personal Anecdotes and AI Experiences<br /> 02:20 AI's Role in Daily Life<br /> 06:42 The Disappointment with Gemini 3.0<br /> 10:22 Mail Synth: A Revolutionary AI Tool<br /> 14:04 Security Concerns with AI<br /> 19:19 Customizing AI Personas<br /> 22:28 ChatGPT's New Image Generator<br /> 24:12 Fun with AI-Generated Images<br /> 32:17 Local Speaking Engagements and AI Misconceptions<br /> 34:12 AI's Benefits for Older Adults<br /> 37:05 The Future of AI: Star Trek vs. Star Wars<br /> 37:44 Teaching AI Safety and Practical Uses<br /> 42:04 Historical Technological Changes and AI<br /> 46:05 Global AI Investments and National Interests<br /> 50:20 The Role of AI in Society's Future<br /> 01:03:55 Holiday Reflections and AI's Everyday Uses</p>",
+    "duration": "01:06:20",
+    "enclosure": {
+      "length": "63676192",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_-_the_Christmas_Show.mp3?dest-id=546598"
+    },
+    "guid": "4db3c6e6-f1f7-4b62-8a8c-8dc24c7f62f3",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/the-vibe-of-ai-project-synapse-year-end-show",
+    "pubDate": "Sat, 20 Dec 2025 05:20:00 +0000",
+    "title": "The Vibe of AI: Project Synapse Year End Show"
+  },
+  "54ddeb1b-f4f1-486f-a2ef-1f5abf1aea49": {
+    "description": "<p>Join our Discord:    https://discord.gg/B8FfgDsg92<br /> And checkout Marcel's video surprise.      • F.02 Decomission  </p> <p>In this episode of Project Synapse, Jim Loftus, John Pinard, and Marcel Gagné debate AI “pdoom” probabilities and argue the bigger risk is emotionally immature leaders controlling powerful systems, citing concerns about weapons and a lack of meaningful regulation. They review major AI releases and pricing changes—Anthropic Opus 5.5 and Sonnet 5.5, OpenAI’s GPT-6.1 Sol (with Astra 6.1 withheld for security), Grok 4.7, and Google’s restricted Gemini 4 Argon—plus rapid cost/performance acceleration and token-per-task economics. The hosts discuss the rise of agent platforms like Meta Muse, OpenAI Dots, GrokBot, and Hermes, sharing real-world agent failures (deleted files, marketplace mishaps) and demonstrating Dots’ cloud computer concept. They close with reactions to a Figure video depicting decommissioned humanoid robots being melted down in a Terminator-style foundry scene.</p> <p>00:00 Show Kickoff and Cast<br /> 00:29 Pdoom Check and Politics<br /> 01:48 Who Controls AI<br /> 05:20 Agent Swarms and Alien Minds<br /> 12:51 This Week in AI Releases<br /> 17:26 OpenAI Dev Day Pricing<br /> 24:08 Google Argon and Speech Race<br /> 28:52 Starship and Space Wild West<br /> 35:53 Agents Take the Wheel<br /> 36:11 Muse Trip Booking Test<br /> 39:20 Automation Dreams and Risks<br /> 40:54 Boosted Post Backlash<br /> 41:33 Agent Mistakes and Trust<br /> 43:18 What Muse Is For<br /> 44:51 Friendly UI Big Power<br /> 46:34 AI Plans and Research<br /> 47:59 Comparing Agents<br /> 50:07 Dots Always On Agent<br /> 51:48 Inside the Virtual Machine<br /> 58:49 Cloud Computers Replace PCs<br /> 01:02:37 Smart Glasses Office Anywhere<br /> 01:06:23 Tech Hockey Stick Acceleration<br /> 01:07:47 Entrepreneurship Gets Disrupted<br /> 01:08:46 Robot Decommissioning Video<br /> 01:15:23 Wrap Up and Farewell01_project_synapse (3)-1</p>",
+    "duration": "01:15:53",
+    "enclosure": {
+      "length": "145688188",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_Oct_2_2026.mp3?dest-id=546598"
+    },
+    "guid": "54ddeb1b-f4f1-486f-a2ef-1f5abf1aea49",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-ai-doom-percentages-new-model-releases-always-on-agents-and-robots-in-the-foundry",
+    "pubDate": "Sat, 03 Oct 2026 04:30:00 +0000",
+    "title": "Project Synapse: AI Doom Percentages, New Model Releases, Always-On Agents, and Robots in the Foundry"
+  },
+  "553a02a9-bf8f-4083-8c68-7e7530efbaa6": {
+    "description": "<p>The hosts discuss using ChatGPT with memory to identify personal blind spots, concluding that multitasking is a myth and linking attention styles (process vs options) and ADHD tendencies to starting many projects without finishing. They compare language fluency to building separate internal “models,” relating it to how LLMs work. In a lightning round, they cover rising political backlash to data centers over water, heat, grid strain, and taxes; high electricity costs; and how US corporate structures affect public outcomes. They review responses like more efficient cooling and chips (Nvidia, IBM sub-1nm), IBM’s quantum timeline, OpenAI’s rapid chip design, chip price lock-ins, and China’s innovation under restrictions, including advanced video generation (ByteDance’s “CDance 2.5”). They also debate open-source models, orchestration pools like Sakana/Fugu, and concerns about governments restricting access to frontier models such as Anthropic’s Fable/Mythos and future GPT releases.</p> <p>00:00 Weekend Banter<br /> 00:28 AI Finds Blind Spots<br /> 01:23 Why Multitasking Fails<br /> 02:17 Process vs Options Minds<br /> 05:24 ADHD and Getting Things Done<br /> 08:59 Thinking in Languages<br /> 11:32 Data Center Backlash<br /> 20:42 AI Distrust and Real Risks<br /> 22:52 Efficiency Chips and Retrofits<br /> 26:37 Musk Grok and Model Wars<br /> 29:27 Open Source Model Boom<br /> 32:43 Sakana Fugu Orchestration<br /> 36:00 OpenAI Chip and Chip Wars<br /> 42:58 Chip Profit Windfalls<br /> 44:13 PC Prices Rising Again<br /> 45:00 China Reinvents Memory<br /> 46:45 China Leads Video AI<br /> 50:56 Open Source Momentum<br /> 52:34 AI Writing Style Fight<br /> 57:55 Model Access Crackdowns<br /> 01:07:16 AI Economics and IPO Risk<br /> 01:17:49 Media Influence Teaser<br /> 01:20:26 CDance Demo and Wrap01_project_synapse (1)</p>",
+    "duration": "01:24:57",
+    "enclosure": {
+      "length": "163094481",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_June_26v1.mp3?dest-id=546598"
+    },
+    "guid": "553a02a9-bf8f-4083-8c68-7e7530efbaa6",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-blind-spots-adhd-thinking-and-the-data-center-backlash-plus-chips-open-source-and-chinas-video-ai",
+    "pubDate": "Sat, 27 Jun 2026 04:15:00 +0000",
+    "title": "Project Synapse: Blind Spots, ADHD Thinking, and the Data Center Backlash (Plus Chips, Open Source, and China’s Video AI)"
+  },
+  "59a8e59d-25ef-4991-b727-e096a245e124": {
+    "description": "<p>Project Synapse: Meta Muse Agents, AI Model Price Wars, and Why Governance Matters</p> <p>Join our Discord </p> <p>https://discord.gg/B8FfgDsg92</p> <p> </p> <p>The hosts open with a rapid-fire “nothing happened” recap: major labs reportedly ship new models immediately after urging caution (GPT‑6/Luna, Claude Opus 5.5, Grok 4.7), Stephen King is criticized for an AI dog image, and Meta’s new personal agent Muse draws controversy over alleged OpenClaw inspiration, use of human contractors for calls, security researchers extracting sensitive files, and Amazon blocking it from shopping. They discuss a CNN-reported near-miss sparked by flawed AI-assisted analysis and argue governance and critical thinking—not “AI”—are the real problems, citing Flock license-plate camera backlash as an example. Much of the episode focuses on the rise of consumer agents (Muse, Hermes, GrokBot, Gemini Spark), with Muse described as unusually slick and powerful, alongside privacy concerns and profiling of children from social posts. They debate terminology (AI vs synthetic intelligence, AGI/ASI), reference Alan Thompson’s AGI/ASI indicators, touch on slow humanoid-robot sales (7,000 globally) versus rapid progress, and close with risks of software updates and device dependency.</p> <p>00:00 Nothing Happened Recap<br /> 03:29 Welcome to Project Synapse<br /> 04:12 Renaming AI and SI<br /> 05:05 Consciousness and Definitions<br /> 09:41 Countdown to AGI<br /> 17:38 AI Governance Wake Up Call<br /> 25:02 Flock Cameras and Backlash<br /> 35:00 Antitrust for Safety<br /> 40:31 Agents Are Here<br /> 43:35 Meta Builds Muse<br /> 43:55 Trust And Privacy Fears<br /> 46:59 Muse Agent In Action<br /> 49:34 Personalization And Data Access<br /> 55:08 Meta Profiling Kids<br /> 57:55 Backlash And AI PR Risks<br /> 01:00:41 Open Source Alternatives<br /> 01:05:12 AI Makes Hard Tasks Easy<br /> 01:07:15 Humanoid Robot Reality Check<br /> 01:13:48 Robot Adoption And Updates<br /> 01:18:16 Smart Device Update Failures<br /> 01:23:14 Do You Own Your Tech</p>",
+    "duration": "01:24:00",
+    "enclosure": {
+      "length": "161254797",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_Sept_27.mp3?dest-id=546598"
+    },
+    "guid": "59a8e59d-25ef-4991-b727-e096a245e124",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-agi-and-beyond",
+    "pubDate": "Sat, 26 Sep 2026 20:13:00 +0000",
+    "title": "Project Synapse - AGI and Beyond"
+  },
+  "59ff4c14-1c91-45b6-a983-b4a9515cf102": {
+    "description": "<p>Summer Reading on AI + Robots Are Here: Mythos, API Key Nightmares, and Recursive Self‑Improvement</p> <p>Link to our Discord </p> <p><a href= \"https://discord.com/channels/1318972439853666455/1320434204877656194\"> https://discord.com/channels/1318972439853666455/1320434204877656194</a></p> <p> </p> <p>Marcel's videos from this episode:</p> <p>Unitree GD01 for John who wants one:<br /> <a href= \"https://www.youtube.com/watch?v=oWOyUMJWptc\">https://www.youtube.com/watch?v=oWOyUMJWptc</a></p> <p>Figure 03 package sorting livestream:<br /> <a href= \"https://www.youtube.com/watch?v=luU57hMhkak\">https://www.youtube.com/watch?v=luU57hMhkak</a></p> <p>Figure 03 tidies up a room: <br /> <a href= \"https://www.youtube.com/watch?v=8xEuFQz4E4A\">https://www.youtube.com/watch?v=8xEuFQz4E4A</a></p> <p> </p> <p><br /> The hosts of Project Synapse open with banter about Canada’s “two-four” May long weekend, then share summer reading recommendations: </p> <p>Jim' recommendations:<br /> - William Gibson’s Idoru (and Neuromancer), <br /> - Robert J. Sawyer’s Neanderthal Parallax trilogy, 10,000 Brains, <br /> - Eliezer Yudkowsky’s If Anyone Builds It, Everyone Dies, <br /> - Jim Love's  ELISA, </p> <p>Marcel Recommended  <br /> -Iain M. Banks Culture series (including The Use of Weapons), </p> <p>and Jonh’s list including <br /> - Co-Intelligence, <br /> - Apple in China, <br /> - Scary Smart, <br /> - Thinking Fast and Slow, and <br /> - Source Code. </p> <p><br /> They discuss odd ChatGPT “goblin” guardrails and conversation lock-ins, debate hype and impact around Anthropic’s Mythos and related bug-finding/AI-assisted attacks, warn about stolen API keys causing massive Google Gemini charges despite spending caps being raised, and cover experiments prompting “Marxist” AI outputs. They highlight rapid humanoid/industrial robot progress (Unitree’s mech, Figure 03 livestream package-sorting, Hyundai/Boston Dynamics robots), normalization of robots, security risks from default passwords and botnets, and growing concern over recursive self-improvement and real-time learning loops (including Claude “Dreaming”), urging viewers to share robot sightings and book picks via Discord.</p> <p>00:00 Weekend Show Kickoff<br /> 01:07 Two Four Weekend Explained<br /> 01:57 Jim Summer Reading Picks<br /> 06:19 Marcel Culture Series Deep Dive<br /> 11:23 Jon Summer Reading List<br /> 12:42 Lightning Round Goblins Glitches<br /> 14:20 Mythos AI Security Breakthroughs<br /> 21:55 Stolen API Keys Big Bills<br /> 25:46 Marxist AI Pop Culture Traps<br /> 28:27 Giant Mech Robot Reveal<br /> 30:52 Figure Robot Livestream<br /> 32:28 Chat Reactions and Mistakes<br /> 34:35 Hyundai Boston Dynamics Boom<br /> 37:22 Robot Economics and Pricing<br /> 39:26 Service and Memory Swap<br /> 42:59 Helix 2 Bedroom Demo<br /> 45:00 Robot Privacy and Security<br /> 48:23 Updates Big Tech and Government<br /> 51:52 Recursive Self Improvement Risks<br /> 01:01:08 Summer Homework and Sign Off</p>",
+    "duration": "01:02:38",
+    "enclosure": {
+      "length": "120256171",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse__AI_This_Week_-_May_16_2026.mp3?dest-id=546598"
+    },
+    "guid": "59ff4c14-1c91-45b6-a983-b4a9515cf102",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-from-hashtag-trending-may-16-2026",
+    "pubDate": "Sat, 16 May 2026 04:14:00 +0000",
+    "title": "Project Synapse from Hashtag Trending - May 16, 2026"
+  },
+  "5ce7a430-af6b-49ed-9b40-0f9295cf9cd5": {
+    "description": "<p>In this episode of Project Synapse, we explore the innovative use of AI in veterinary oncology with Dr. Christopher Pinard. Dr. Pinard, a veterinary oncologist, discusses his journey from coding HTML in grade school to developing AI-driven solutions for cancer in pets. He shares insights on the challenges and opportunities within veterinary medicine, the impact of AI on clinical efficiency, and the future of personalized medicine for pets. We also delve into issues like regulatory challenges, the importance of context in AI models, and the potential of federated learning. If you're interested in the intersection of AI and veterinary medicine, this episode is a must-watch!</p> <p>00:00 Introduction to Project Synapse<br /> 01:12 Meet Christopher Pinard: Veterinary Oncologist<br /> 01:27 The Evolution of Veterinary Specialties<br /> 02:02 Training and Clinical Trials in Veterinary Oncology<br /> 03:21 AI in Veterinary Medicine<br /> 03:48 The Intersection of Veterinary and Human Medicine<br /> 04:34 Challenges in Veterinary Medicine<br /> 05:19 Cancer Statistics in Pets<br /> 09:12 Protein Folding and AI in Drug Development<br /> 23:48 AI Scribes and Summarization in Veterinary Medicine<br /> 35:43 Guardrails to Prevent Hallucinations<br /> 36:57 Embedding Models and Knowledge Graphs<br /> 37:49 Introducing Hero: The Rationalization Engine<br /> 38:11 Grading Methodology for AI Outputs<br /> 39:18 Using Multiple Models for Fact-Checking<br /> 43:54 Extracting Data from Clinical Records<br /> 45:45 The Future of Domain-Specific AI Models<br /> 48:16 Challenges and Opportunities in Veterinary AI<br /> 50:55 Federated Learning and Bias Mitigation<br /> 55:03 The Importance of Regulation and Education<br /> 01:01:50 Starting a Veterinary AI Business in Canada<br /> 01:08:00 Future Directions in Veterinary Oncology<br /> 01:08:58 Conclusion and Farewell</p>",
+    "duration": "01:10:06",
+    "enclosure": {
+      "length": "67283607",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_v2__Oct_24_Recording_Chris_Pinard.mp3?dest-id=546598"
+    },
+    "guid": "5ce7a430-af6b-49ed-9b40-0f9295cf9cd5",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-ai-in-veterinary-medicine-with-dr-christopher-pinard",
+    "pubDate": "Sat, 25 Oct 2025 05:00:00 +0000",
+    "title": "Project Synapse: AI in Veterinary Medicine with Dr. Christopher Pinard"
+  },
+  "5ef2c75c-da29-4a99-b34f-800e226f6c76": {
+    "description": "<p>In this episode of Project Synapse, hosts discuss the underestimated changes brought about by advanced AI systems, the need for critical thinking, and preparedness for scenarios triggered by rapid technological advancements.</p> <p>The conversation covers the impactful paper 'Preparing for the Intelligence Explosion' by Will McCaskill and Finn Moon House, which emphasizes the acceleration of AI and the potential consequences on society. Amidst AI's advancements in diverse fields like manufacturing and cybersecurity, the hosts shed light on the importance of foresight and human adaptability to maintain balance and progress in an AI-driven future.</p> <p>00:00 A Quiet Week and Unexpected Snow<br /> 00:17 Surviving the Ice Storm<br /> 01:48 Generator Troubles and Perplexity AI<br /> 03:23 Discussing the Intelligence Explosion Paper<br /> 04:44 Implications of Rapid AI Advancements<br /> 08:42 Historical Comparisons and Accelerated Change<br /> 12:47 Challenges in Organizational Change<br /> 17:14 Security Concerns in the Age of AI<br /> 22:34 Exponential Growth in AI Efficiency<br /> 34:18 AI Designing AI: The Future of Scalability<br /> 34:48 The Implications of Autonomous Warfare<br /> 35:44 Efficiency in AI Training and Compute<br /> 36:33 The Countdown to Superintelligence<br /> 37:35 Tariffs and Trade Imbalances: A Misunderstanding<br /> 44:01 Critical Thinking in the Age of AI<br /> 59:00 The Importance of Scenario Planning<br /> 01:00:47 The Future of Employment and Automation<br /> 01:03:14 The Human Element in a Technological World<br /> 01:04:43 Embracing AI in the Workplace<br /> 01:07:58 Concluding Thoughts: Imagining a Harmonious Future</p>",
+    "duration": "01:08:26",
+    "enclosure": {
+      "length": "65695340",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_April_5.mp3?dest-id=546598"
+    },
+    "guid": "5ef2c75c-da29-4a99-b34f-800e226f6c76",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/preparing-for-the-intelligence-explosion-project-synapse-on-hashtag-trending-weekend",
+    "pubDate": "Sat, 05 Apr 2025 06:43:00 +0000",
+    "title": "Preparing for the Intelligence Explosion, Project Synapse on Hashtag Trending Weekend"
+  },
+  "665f0c4b-c157-4595-b869-5b8a8e46f2ba": {
+    "description": "<p>Debating AI Intelligence and Corporate Utilization on Project Synapse</p> <p>In this episode of Project Synapse, hosts Jim Love, Marcel Gagne, and John Pinard delve into the ongoing debate about AI intelligence and the advancements in AI technology. They discuss the reliability and accuracy of AI models like GPT-5 and Grok, questioning whether these models are truly intelligent or merely sophisticated pattern matchers. The conversation also touches on the future of AI in both corporate settings and personal use, the ethical implications of AI development, and the different AI tools available for varying needs. The hosts explore the potential impact of AI on industries, user experiences, and the dynamics of technological dominance, particularly focusing on the impact of AI-driven changes in corporations like Apple and Google.</p> <p>00:00 Introduction and AI Debate<br /> 00:23 Project Synapse Hosts and Apple Discussion<br /> 01:28 Apple's AI and Self-Driving Car Ventures<br /> 03:27 Grok's Unhinged Personality and AI Voice Modes<br /> 05:11 GPT-5 Rollout and User Reactions<br /> 12:08 AI Consistency and User Expectations<br /> 14:41 OpenAI's Market Position and User Experience<br /> 29:01 Grok's Capabilities and Image Generation<br /> 37:40 AI Personalities and Technological Advances<br /> 38:50 The Evolution of AI Tools<br /> 41:01 Super Intelligence and the Singularity<br /> 43:18 Debating AI's Future and Capabilities<br /> 46:52 Human vs. AI: Intelligence and Learning<br /> 52:59 Transhumanism and AI Integration<br /> 01:06:01 Corporate AI vs. Consumer AI<br /> 01:13:11 The Future of AI and Global Competition<br /> 01:14:29 Conclusion and Final Thoughts</p>",
+    "duration": "01:15:03",
+    "enclosure": {
+      "length": "108072447",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/HTT_Weekend_Project_Synapse_Aug_16_2025.mp3?dest-id=546598"
+    },
+    "guid": "665f0c4b-c157-4595-b869-5b8a8e46f2ba",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/gpt5-grok-and-the-future-of-ai-project-synapse-for-august-16-2025",
+    "pubDate": "Sat, 16 Aug 2025 06:29:00 +0000",
+    "title": "GPT5, Grok and the Future of AI - Project Synapse for August 16, 2025"
+  },
+  "694cb679-6b83-48bf-9fc6-12342f30ba48": {
+    "description": "<p>In this episode of Project Synapse, the team delves into a plethora of AI tools and technologies, rekindling their original playful approach to understanding AI's latest advancements. Marcel Gagner takes the lead, showcasing various tools like Google's Nano Banana, Gemini 2.5 Image Generator, and the emergent Genie 3, among others. The discussion highlights real-world physics, world models, and interactive environments. They also explore the use of voice cloning and digital twins with Heygen, and music generation with Suno. The episode emphasizes the importance of educating, monitoring, and involving oneself in AI technology, particularly for parents with children interacting with AI systems.</p> <p>00:00 Introduction to Project Synapse<br /> 00:50 Meet Marcel Gagner<br /> 02:33 AI Tools and Subscriptions<br /> 08:38 Exploring Google's Gemini<br /> 10:43 Creating Custom Images and Videos<br /> 32:31 Storybook Creation with AI<br /> 41:12 The Importance of Monitoring Kids' AI Usage<br /> 41:51 Parental Involvement and AI Risks<br /> 45:50 AI and Music Generation Tools<br /> 49:45 Creating Personalized AI Content<br /> 54:01 Exploring Advanced AI Tools and Ethics<br /> 56:25 The Future of AI in Creative Fields<br /> 59:34 Interactive AI Worlds and Final Thoughts</p>",
+    "duration": "01:28:54",
+    "enclosure": {
+      "length": "85343610",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/v2_Project_Synapse_August_30th_2025.mp3?dest-id=546598"
+    },
+    "guid": "694cb679-6b83-48bf-9fc6-12342f30ba48",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/exploring-the-cutting-edge-ai-tools-a-deep-dive-with-project-synapse",
+    "pubDate": "Sat, 30 Aug 2025 11:48:00 +0000",
+    "title": "Exploring the Cutting-Edge AI Tools: A Deep Dive with Project Synapse"
+  },
+  "70b71293-d791-41b4-be8c-2476deba0224": {
+    "description": "<p>Debunking AI Myths and Misconceptions</p> <p>In this episode of Hashtag Trending, the hosts delve into common myths and misconceptions surrounding artificial intelligence. They start by discussing the significant contributions of scaling in AI development and tackle the myth that AI provides no business benefits, citing the efficiencies AI offers in various tasks. They further explore AI’s perceived hallucinations and why such 'mistakes' are part of its creativity. The discussion also touches on water usage by AI models, setting the record straight on exaggerated consumption claims. The hosts wrap up by emphasizing the importance of questioning and verifying information in this rapidly evolving field.</p> <p>Hashtag Trending would like to thank Meter for their support in bringing you this podcast. Meter delivers a complete networking stack, wired, wireless and cellular in one integrated solution that's built for performance and scale. You can find them at Meter.com/htt</p> <p>00:00 Introduction and Sponsor Message<br /> 00:22 Myths and Misconceptions: An AI Perspective<br /> 01:27 The Dunning-Kruger Effect and Questioning AI<br /> 02:05 Guardians of Truth?<br /> 02:34 Lists of Myths<br /> 03:22 Debunking AI Myths<br /> 08:32 AI's Business Benefits<br /> 21:02 AI Hallucinations and Human Error<br /> 30:27 Creativity and AI<br /> 35:31 Filling in the Blanks: Human Intelligence vs AI<br /> 36:39 The Flaws of AI Benchmarks<br /> 37:23 The Best Multimedia Generation Tools<br /> 38:51 Human Perception and AI<br /> 42:12 Personalizing AI Responses<br /> 44:01 The Importance of Outcomes Over Benchmarks<br /> 50:22 Scaling AI and Compute Power<br /> 01:02:41 Water Usage Myths in AI<br /> 01:10:11 The Future of AI and Continuous Learning<br /> 01:10:59 Conclusion and Final Thoughts</p>",
+    "duration": "01:12:00",
+    "enclosure": {
+      "length": "69116359",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_Dec_5_Myths_and_Misconceptions.mp3?dest-id=546598"
+    },
+    "guid": "70b71293-d791-41b4-be8c-2476deba0224",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/ai-myths-and-misconceptions-project-synapse-for-december-6-2025",
+    "pubDate": "Sat, 06 Dec 2025 05:30:00 +0000",
+    "title": "AI Myths and Misconceptions:  Project Synapse for December 6, 2025"
+  },
+  "71760ac0-b45d-4902-b39e-febffe4b9a6a": {
+    "description": "<p>As concerns about artificial intelligence move from theory to reality, a growing public backlash is beginning to take shape.</p> <p>In this episode of Project Synapse, Jim Love, Marcel Gagné, and John Pinard explore the rise of the AI \"techlash\" and the growing fears around job displacement, economic inequality, data centre expansion, and AI-driven cybersecurity risks.</p> <p>The discussion covers warnings from AI researchers about workforce disruption, public resistance to AI adoption, the economics behind massive AI infrastructure investments, and emerging concerns around AI-powered vulnerability discovery and critical infrastructure security.</p> <p>The panel also examines Canada's encryption backdoor debate, the future of decentralized communications, Google's new Omni avatar technology, and Marcel's experiment building a personal AI assistant using local Gemma models.</p> <p>Whether you're optimistic about AI or increasingly skeptical, this conversation explores the opportunities, risks, and difficult questions shaping the next phase of the AI era.</p> <p>CHAPTERS</p> <p>00:00 Cold Open and Credits<br /> 00:55 The AI Techlash Begins<br /> 03:05 Yann LeCun on the Limits of LLMs<br /> 05:26 Could 30% of Jobs Disappear?<br /> 07:56 Youth Employment and Economic Risk<br /> 10:18 Universal Basic Income and Social Supports<br /> 11:59 The Myth of Replacement Jobs<br /> 14:12 Is AI Dumbing Down Culture?<br /> 17:33 Wealth Concentration and AI Power<br /> 19:20 The Work Humans Still Do Best<br /> 21:45 Greed, Incentives, and Reality<br /> 22:33 Pope Leo on Human-Centred AI<br /> 26:03 Celebrity Backlash Against AI<br /> 27:22 Data Centres, Costs, and AI Economics<br /> 30:41 Climate Change Parallels and AI Growth<br /> 33:04 Blame Technology or Leadership?<br /> 33:52 Solar-Powered Homes and Energy Policy<br /> 34:48 The AI Cover Art Controversy<br /> 37:29 Fighting AI Slop Online<br /> 38:58 AI-Powered Vulnerability Discovery<br /> 41:33 The Maple Syrup Cyberattack Story<br /> 46:36 Canada's Encryption Backdoor Debate<br /> 51:13 The Future of Smartphone Mesh Networks<br /> 52:53 Google's Omni Avatar Video Demo<br /> 01:03:51 Building a Personal Nexus Agent<br /> 01:08:27 Small AI Models Running Locally<br /> 01:09:49 Wrap Up and Discord</p> <p>#ProjectSynapse #ArtificialIntelligence #AIJobs #DataCentres #Cybersecurity #GenerativeAI #MachineLearning #TechPodcast #TechNews #ChatGPT #Gemma #AIBacklash</p>",
+    "duration": "01:10:51",
+    "enclosure": {
+      "length": "136029086",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/HTT_May_29_2026_FINAL.mp3?dest-id=546598"
+    },
+    "guid": "71760ac0-b45d-4902-b39e-febffe4b9a6a",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/ai-backlash-grows-job-loss-warnings-data-center-protests-and-ai-security-risks-project-synapse",
+    "pubDate": "Sat, 30 May 2026 00:30:00 +0000",
+    "title": "AI Backlash Grows: Job Loss Warnings, Data Center Protests, and AI Security Risks | Project Synapse"
+  },
+  "7399053f-df3e-46c2-84fb-46eb0b285b07": {
+    "description": "<p>In this special Halloween edition of Project Synapse, Marcel Gagner, John Pinard, and Jim Love discuss the latest happenings in the AI world. From Google's quiet strategic launches and vibe coding advancements to the discussion on AI bubbles and economic implications, this episode covers it all. They delve into AI's transformative potential, showcasing live demos on Google's AI Studio, and discuss the immense impact of AI on businesses. Join us for an insightful session as we explore the future of AI and its real-world applications.</p> <p>00:00 Introduction and Sponsor Message<br /> 00:16 Welcome to Project Synapse<br /> 00:20 Marcel's Grim Reaper Entrance<br /> 00:47 Discussion on AI Bubble<br /> 02:04 Google's Quiet Innovations<br /> 07:27 Google Home and Smart Devices<br /> 15:15 AI's Impact on Society and Economy<br /> 20:42 The Future of AI and Code Automation<br /> 37:08 AI Model Limitations and Analogies<br /> 38:12 The Future of AI Researchers<br /> 39:54 AI's Impact on Chip Makers and Market Dynamics<br /> 42:50 Rapid Advancements in AI Tools<br /> 43:18 Hands-On Experience with AI Coding<br /> 48:34 The Cost and Practicality of AI Tools<br /> 01:03:23 The Importance of AI in Business Strategy<br /> 01:08:48 Live Demo: Building an AI-Powered Note-Taking App<br /> 01:16:26 Final Thoughts and Future Outlook</p>",
+    "duration": "01:19:10",
+    "enclosure": {
+      "length": "75985921",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/HTT_Project_Synapse_Oct_31_2025_v1.mp3?dest-id=546598"
+    },
+    "guid": "7399053f-df3e-46c2-84fb-46eb0b285b07",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/ai-uprising-vibe-coding-ai-bubbles-googles-stealth-moves-project-synapse-halloween-edition",
+    "pubDate": "Sat, 01 Nov 2025 04:42:00 +0000",
+    "title": "AI Uprising: Vibe Coding, AI Bubbles & Google’s Stealth Moves | Project Synapse Halloween Edition"
+  },
+  "7dc4e775-ddac-4294-8fe5-1b4bb1ff089c": {
+    "description": "<p>The episode opens with sponsor Meter and a conversation about Saturday morning cartoons before shifting to recent breakthroughs in AI video generation from ByteDance’s “SeaDance” (with “SeeDream” as its image generator). </p> <p>Hashtag Trending would like to thank Meter for their support in bringing you this podcast. Meter delivers a complete networking stack, wired, wireless and cellular in one integrated solution that's built for performance and scale. You can find them at Meter.com/htt</p> <p><br /> The hosts describe SeaDance’s cinematic quality, accurate physics, and realistic recreations of actors and IP (including examples like Tom Cruise vs. Brad Pitt and Keanu Reeves as Neo/John Wick), and discuss the implications for film production, commercials, and local film economies such as Toronto and Vancouver. They cover backlash and gatekeeping, including an AI-made Thanksgiving-themed animated short that won a contest tied to AMC theaters’ pre-show but reportedly wasn’t shown, and compare resistance to historical Luddite reactions.</p> <p>The discussion broadens to productivity and labor impacts, arguing that AI adoption may mirror the 1980s computer productivity dip before process re-engineering in the 1990s, while also raising concerns that AI leaders are forecasting major white-collar job losses. The hosts highlight the rise of agentic benchmarks (TerminalBench, Apex Agents, BrowseComp) and how AI search helps find information faster than traditional search, but emphasize that trust, reliability, and infrastructure are not keeping pace.</p> <p>They raise major concerns about platform terms and data ownership, focusing on Perplexity’s updated terms (non-commercial use only even for paid tiers, mandatory attribution, broad licensing rights over user content, and liability limits). They also discuss reliability failures: a widespread Google Gemini issue where users’ chat histories disappeared (only visible as activity records with limited usability), and missing document links in ChatGPT chats. The hosts argue users must back up their own data and criticize unclear policies and weak support.</p> <p>Security risks are illustrated through a story about the AI-enabled robot vacuum “Romo,” where a developer used Claude to reverse engineer its app and reportedly gained access to control thousands of devices across multiple countries before responsibly disclosing the issues. They also reference broader concerns like connected home devices, Ring neighborhood features, and Microsoft’s Recall concept.</p> <p>In rapid-fire news, they mention Anthropic releasing Sonnet 4.6 as a strong, cheaper option near Opus-level performance, a new Grok release branded “4.20,” and a clip from an AI summit in India where Sam Altman and Dario Amodei appeared to refuse to hold hands on stage, which the hosts cite as a sign of immaturity among AI industry leaders. The episode closes with sponsor Meter.</p> <p>00:00 Sponsor + Welcome to Project Synapse<br /> 00:21 Saturday Morning Cartoons… Reimagined by AI<br /> 01:16 What is ‘SeaDance’? Cinematic AI Video Goes Viral<br /> 03:17 Keanu Reeves, Neo vs. John Wick & the End of VFX as We Know It<br /> 06:43 From Movies to Ads: How AI Video Hits Commercial Production<br /> 07:41 The Hidden Economy of Commercials (and Why Cities Like Toronto/Vancouver Care)<br /> 09:56 AMC Won’t Screen an AI-Made Short: Early Luddite Backlash<br /> 12:54 Artists, AI, and the ‘Starving Creator’ Reality<br /> 16:17 AI Adoption Parallels: The 1980s Computer Wave & the Productivity Dip<br /> 24:09 Agentic AI Benchmarks: TerminalBench, Apex Agents & BrowseComp<br /> 26:04 AI Search That Actually Saves Time (and Your Memory)<br /> 30:36 Perplexity’s New Terms of Service: Non-Commercial Use & Ownership Shock<br /> 35:40 Liability Caps, More Corporate Gripes… and a Coke Zero ‘Sponsor’ Bit<br /> 37:36 Gemini 3.1’s big leap—and why it still doesn’t feel trustworthy<br /> 38:08 Gemini chat history vanishes: what happened and why users are furious<br /> 40:19 OpenAI document links disappearing too: what “saved” really means<br /> 42:04 Cloud AI’s shaky foundation: security, reliability, and confusing settings<br /> 47:45 When reliance turns emotional: losing models, losing “someone”<br /> 49:22 Real-world stakes: the Social Security database whistleblower story<br /> 53:15 Owning your data (and why Google support won’t save you)<br /> 54:53 Trust whiplash: Anthropic cuts off OpenClaw and the power to shut you down<br /> 57:29 Robot vacuum hacked with Claude: 7,000 cameras in strangers’ homes<br /> 01:03:17 Smart home surveillance creep: Ring neighbors, TV cameras, and Microsoft Recall<br /> 01:07:14 Rapid-fire AI news: Sonnet 4.6, Gemini gains, and Grok 4.20<br /> 01:11:00 AI leaders’ petty feud—and the show wrap & sponsor thanks</p>",
+    "duration": "01:13:55",
+    "enclosure": {
+      "length": "70947419",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_Feb_20_2026.mp3?dest-id=546598"
+    },
+    "guid": "7dc4e775-ddac-4294-8fe5-1b4bb1ff089c",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/hollywood-vs-ai-video-data-loss-in-gemini-and-perplexitys-new-terms-project-synapse",
+    "pubDate": "Sat, 21 Feb 2026 05:15:00 +0000",
+    "title": "Hollywood vs. AI Video, Data Loss in Gemini, and Perplexity’s New Terms | Project Synapse"
+  },
+  "829d7726-6fdb-4cf0-8371-7278399f2296": {
+    "description": "<p>In this episode of Project Synapse, Jim Love, Marcel Gagné, and John Pinard discuss the rapid advancements in AI technology, reflecting on two years since the introduction of ChatGPT. They delve into the beginnings of AI development, their personal journeys in IT, and how advanced models like ChatGPT have transformed perceptions and applications of AI. Highlighting the blend of personal anecdotes and professional insights, the conversation explores the challenges and potentials of AI, its rapid evolution, and the future implications for businesses and everyday life. From historical perspectives to practical implementations, this episode is a comprehensive look into AI’s transformative journey and its future trajectory.</p> <p>00:00 Introduction to Project Synapse<br /> 00:10 Meeting Marcel Gagné<br /> 00:30 My IT Journey<br /> 01:12 Passion for AI<br /> 01:59 Weekly AI Discussions<br /> 02:25 Reflecting on ChatGPT<br /> 02:42 The Evolution of AI<br /> 03:10 Early AI Experiences<br /> 04:23 AI and Communication<br /> 10:25 The Turing Test and Beyond<br /> 13:00 AI's Rapid Development<br /> 13:27 The Role of Major Players in AI<br /> 14:51 The Future of AI<br /> 22:00 AI in Business<br /> 23:42 The Rise of AI: From Chess to Complex Mathematics<br /> 24:16 Sentience and the Turing Test<br /> 24:53 AI's Learning Capabilities and Business Integration<br /> 26:30 AI in Medicine: Revolutionizing Healthcare<br /> 27:31 The Evolution of AI Models: From ChatGPT to O Series<br /> 31:19 AI's Impact on Business and Industry<br /> 35:45 The Future of AI: Agents and Automation<br /> 43:40 Embracing AI: Innovation and Exploration<br /> 46:57 Conclusion and Future Discussions</p>",
+    "duration": "48:43",
+    "enclosure": {
+      "length": "23379055",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/HTT_AI_Episode.mp3?dest-id=546598"
+    },
+    "guid": "829d7726-6fdb-4cf0-8371-7278399f2296",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-ai-evolution-and-its-impact-on-the-future-hashtag-trending-the-weekend-edition-for-november-2-2024",
+    "pubDate": "Sat, 02 Nov 2024 06:51:00 +0000",
+    "title": "Project Synapse: AI Evolution and Its Impact on the Future: Hashtag Trending, the Weekend Edition for November 2, 2024"
+  },
+  "839963c1-2713-4f8c-813d-05ca94170794": {
+    "description": "<p>Understanding the Complex World of AI Models: Beyond the Hype</p> <p>In this episode of Project Synapse, hosts Jim, John Pinard, and Marcel Gagné delve into the intricate world of AI models. They discuss the challenges of navigating the AI landscape, how benchmarks can be misleading, and the struggle in keeping up with rapid advancements. They cover the utility and limitations of major AI models like OpenAI's GPT, Anthropic's Claude, Google's Gemini, and more. Additionally, they touch on the importance of security, user comfort, and the need for personalized AI solutions. They emphasize the practicality of choosing AI tools that align with individual needs and corporate environments, while cautioning against unvetted AI applications due to security risks.</p> <p>00:00 Introduction to Project Synapse<br /> 00:56 The Challenge of Keeping Up with AI Developments<br /> 02:02 Understanding AI Benchmarks and Performance<br /> 02:34 Choosing the Right AI Tool for Your Needs<br /> 04:12 The Evolution of AI Models and Their Applications<br /> 11:24 The Importance of Custom Instructions in AI<br /> 18:47 The Future of AI: Personalized Agents and Aggregators<br /> 24:27 The Cost and Functionality of Smart Devices<br /> 25:12 Google's Struggles with AI and Smart Home Integration<br /> 26:52 Comparing AI Assistants: Google vs. Competitors<br /> 28:23 The Future of AI and Its Impact on Everyday Life<br /> 42:04 Security Concerns with AI Tools<br /> 47:00 Final Thoughts and Advice on Choosing AI Tools</p>",
+    "duration": "48:56",
+    "enclosure": {
+      "length": "46967433",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/HTT_Project_Synapse_Feb_28_2025_v1.mp3?dest-id=546598"
+    },
+    "guid": "839963c1-2713-4f8c-813d-05ca94170794",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-which-ai-model-to-use-february-202",
+    "pubDate": "Fri, 28 Feb 2025 20:05:00 +0000",
+    "title": "Project Synapse: Which AI Model To Use? February 202"
+  },
+  "867c2449-448c-4147-b093-a461bb80d971": {
+    "description": "<p>Open Source AI vs SaaS Lock‑In: Costs, Control, and Running Models Locally (Project Synapse)</p> <p>Project Synapse hosts Jim Love, Marcel Gagne, and John Pinard discuss why dependence on SaaS-style AI creates lock-in and risk when vendors change products or “pull the plug,” alongside rising token costs that make enterprise AI hard to afford. They contrast SaaS economics (near-zero incremental cost) with AI’s ongoing compute costs, debate profitability pressures on companies like OpenAI versus Anthropic’s enterprise billing success, and note concerns about concentrated control of AI and geopolitics. The episode argues open-source AI is a viable alternative, then explains key concepts—open weights vs fully open source, weights/parameters, inference, quantization, tool use, harnesses/agents, skills, context windows, distillation, and mixture-of-experts models—plus practicalities of running models locally with tools like LM Studio, hardware/memory needs, and when paying for hosted models may be simpler.</p> <p>00:00 Talking to the Car<br /> 00:39 AI Control and SaaS Lock In<br /> 04:16 Token Costs and AI Economics<br /> 06:48 Why AI Is Not SaaS<br /> 09:43 China and Open Source Shift<br /> 19:10 IP Limits and Copycats<br /> 20:46 Marcel Takes the Helm<br /> 24:19 Open Source vs Open Weights<br /> 25:10 Weights and Training Explained<br /> 34:18 Inference and Quantization<br /> 37:24 Tools and Function Calling<br /> 38:15 Tools and Web Search<br /> 38:39 Harnesses vs Agents<br /> 39:54 Smaller Models and Hardware Reality<br /> 44:03 Skills and Business Automation<br /> 46:16 Context Windows and Memory<br /> 51:45 Harness Summaries and Long Term Memory<br /> 54:58 Why We Forget When Switching Rooms<br /> 57:01 Mixture of Experts Models<br /> 01:00:18 Running Local Models with LM Studio<br /> 01:02:10 Costs Privacy and GPU Requirements<br /> 01:08:19 Open Source Futures and Economics<br /> 01:11:05 Wrap Up and Next Week Tease</p>",
+    "duration": "01:14:40",
+    "enclosure": {
+      "length": "71665055",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_July_4_2026v4.mp3?dest-id=546598"
+    },
+    "guid": "867c2449-448c-4147-b093-a461bb80d971",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/open-source-ai-hashtag-trending-weekend-presents-project-synapse",
+    "pubDate": "Sat, 04 Jul 2026 00:55:00 +0000",
+    "title": "Open Source AI - Hashtag Trending Weekend Presents Project Synapse"
+  },
+  "8719a010-2fb3-47fc-9a2e-98b24288afe1": {
+    "description": "<p>In this episode of Project Synapse, join our group of AI-obsessed IT professionals as they discuss the intriguing concept of AI-generated code, specifically focusing on 'vibe coding.' Marcel Gagne, a former system administrator turned author, dives deep into the history and potential of writing code through AI. The episode covers the evolution from early programming languages like COBOL and Fortran to modern AI coding tools like Cursor and Firebase. Discover how AI tools aid in prototyping, personal productivity, and the future possibilities in enterprise-level applications. The team also explores security implications, testing methodologies, and the importance of responsible AI use in development. Tune in to learn about the present and future impact of AI on programming and systems development.</p> <p>00:00 Introduction to Project Synapse<br /> 00:36 Meet the Hosts<br /> 02:53 The Evolution of Programming Languages<br /> 08:27 The Rise of Vibe Coding<br /> 14:00 Practical Applications and Experiences<br /> 19:54 Advanced Tools and IDEs<br /> 22:39 Challenges and Solutions in AI Coding<br /> 29:56 Starting Fresh: The Importance of Context<br /> 33:04 Introduction to Programming by Kenny Rogers<br /> 33:28 Legendary Programmer John Carmack<br /> 33:38 AI in Game Development<br /> 34:19 Nostalgia for Classic Games<br /> 35:59 The Evolution of Game Engines<br /> 38:04 AI's Role in Modern Coding<br /> 38:36 Proof of Concept and Rapid Prototyping<br /> 44:20 Security Concerns with AI-Generated Code<br /> 50:06 The Future of AI in Enterprise Systems<br /> 01:00:27 The Importance of Testing and Security<br /> 01:03:44 Final Thoughts and Recommendations</p>",
+    "duration": "01:07:08",
+    "enclosure": {
+      "length": "64442337",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_April_12_2025.mp3?dest-id=546598"
+    },
+    "guid": "8719a010-2fb3-47fc-9a2e-98b24288afe1",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/exploring-ai-generated-code-vibe-coding-and-the-future-of-software-development-project-synapse",
+    "pubDate": "Sat, 12 Apr 2025 06:27:00 +0000",
+    "title": "Exploring AI-Generated Code: Vibe Coding and the Future of Software Development | Project Synapse"
+  },
+  "88f8067e-8d1b-4081-8af1-ccc997ecf321": {
+    "description": "<p>Project Synapse: Halloween Edition — Cohere’s $1.6B Boost, AI Agent Risks, Grok in Real Life, and a Kung Fu Security Robot</p> <p>Marcel's Video of the Kung Fu Robot -  https://www.youtube.com/watch?v=Y3zb4o47yqA</p> <p>And Join Our Discord - <a href= \"https://www.projectsynapse.ca\">www.projectsynapse.ca</a> </p> <p>In this Halloween edition of Project Synapse, the hosts banter about costumes, including a Hermes/Mercury “AI agent,” and Marcel demos Tesla’s Halloween mode. In a lightning round, they discuss Canada’s $1.6B investment in Cohere and its large Command A+ model, plus concerns about AI-driven security vulnerabilities, agent boundary-crossing incidents, Cloudflare AI response data leakage, and banks warning against letting personal agents handle banking. They note market jitters as AI spending pressures cash flow at Meta and Google, Microsoft buyouts that spare data center roles, and scrutiny of NVIDIA’s Hugging Face acquisition. They touch on rights holders suing Anthropic over Elvis-style output and speculate about an OpenAI “GPT 6.2 Beetlejuice/Belle” release. A longer discussion covers heavy reliance on agent suggestions (86% compliance) and research showing agents may treat missing prohibitions as permission, alongside practical experiences using Grok and Muse for email, notes, and tasks. They close with a Unitree H2X “Kung Fu” security robot demo and mention the deaths of Walter Koenig and Patrick Stewart.</p> <p>00:00 Cold Open Banter<br /> 00:24 Halloween Costumes Reveal<br /> 00:41 Hermes AI Agent Bit<br /> 02:49 Tesla Halloween Mode Demo<br /> 05:40 Lightning Round Setup<br /> 06:02 Canada Backs Cohere<br /> 11:34 Spooky AI Headlines<br /> 14:15 Agent Risks And Leaks<br /> 18:35 AI Money Crunch<br /> 22:53 Elvis And GPT Rumors<br /> 26:24 GrokBot Agent Workflow<br /> 27:31 Permissions Notes And Trust<br /> 34:24 Cross Platform App Rant<br /> 36:54 Back To Linux With Agents<br /> 38:34 Multi OS Workflow<br /> 39:58 Agent Speed Frustrations<br /> 40:39 Muse Pricing Hack<br /> 42:26 Email Assistants Reality<br /> 45:16 Privacy And Training Tradeoffs<br /> 46:23 Inbox Cleanup Superpowers<br /> 50:08 Corporate Use Warnings<br /> 50:44 Humans Defer To AI<br /> 52:51 Trust And Verification<br /> 01:03:17 Permission By Omission<br /> 01:06:18 Humans Are GPTs<br /> 01:10:52 Training Safer Agents<br /> 01:15:26 Personalizing Your Agent<br /> 01:18:57 Kung Fu Security Robot<br /> 01:26:47 Final Farewell Tribute</p>",
+    "duration": "01:27:29",
+    "enclosure": {
+      "length": "167944834",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse-_The_Very_Scary_AI_Edition.mp3?dest-id=546598"
+    },
+    "guid": "88f8067e-8d1b-4081-8af1-ccc997ecf321",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-the-very-scary-ai-halloween-edition",
+    "pubDate": "Sat, 31 Oct 2026 04:15:00 +0000",
+    "title": "Project Synapse: The Very Scary AI Halloween Edition"
+  },
+  "8d2aead4-3f40-4d5e-bf1f-49291ca3a45c": {
+    "description": "<p>AI Weekly: Claude 4.7, Token Costs, Open Models, Backlash, and Practical Ways to Use AI</p> <p>In this weekend “Project Synapse” episode, the hosts review major AI developments, including Anthropic’s release of Claude Opus 4.7 (with rapid complaints about lying and token/cost issues) and discussion of the broader shift toward tighter token economics, enterprise budgeting pressure, and Microsoft’s evolving M365 licensing that bundles Copilot and agents. They note growing AI backlash ranging from local resistance to data centers and concerns about profitability to reports of attacks on Sam Altman’s home. The conversation covers open and Chinese models (agentic coding and multimodal image generation) and the strategic impact of open weights. They also highlight real-world uses: automating documentation, internal Q&A knowledge bases, customer service (including Starlink using Grok), research and editing workflows, book marketing, document drafting, email/search, and accounting/expense automation—while emphasizing hallucinations and verification.</p> <p>Hashtag Trending would like to thank Meter for their support in bringing you this podcast. Meter delivers a complete networking stack, wired, wireless and cellular in one integrated solution that's built for performance and scale. You can find them at Meter.com/htt</p> <p>00:00 Sponsor and Welcome<br /> 01:18 Lightning Round Setup<br /> 02:34 Claude Opus 4.7 Reactions<br /> 08:22 Token Costs and Enterprise Pricing<br /> 12:45 Valuations Profit and UBI Debate<br /> 19:14 Backlash Data Centres and Supply Chain<br /> 31:29 Copilot Hallucination at Work<br /> 33:32 China Agentic Coding Model<br /> 37:43 Practical AI Wins and New Threats<br /> 44:18 AI Crime Scale<br /> 45:24 Everyday AI Wins<br /> 48:29 Lightning Round Demo<br /> 50:17 Open Source Shockwave<br /> 52:32 Deepfake Son Dilemma<br /> 58:20 AI Marketing Playbook<br /> 01:02:23 Editing and Fact Checks<br /> 01:05:09 Ethics and Authenticity<br /> 01:16:27 AI First Checklist<br /> 01:22:28 Tooling Gets Better<br /> 01:25:35 Wrap and Sponsor</p>",
+    "duration": "01:26:49",
+    "enclosure": {
+      "length": "166663835",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse__v3_Apr_18_2026.mp3?dest-id=546598"
+    },
+    "guid": "8d2aead4-3f40-4d5e-bf1f-49291ca3a45c",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/hashtag-trending-presents-project-synapse-three-ai-users-discuss-the-week-in-ai-apr-18-2026",
+    "pubDate": "Sat, 18 Apr 2026 04:10:00 +0000",
+    "title": "Hashtag Trending Presents Project Synapse: Three AI Users Discuss the Week In AI - Apr 18, 2026"
+  },
+  "8ee33645-c8ba-4e74-ba75-c81ac89820cc": {
+    "description": "<p>Thus Spoke Compute: Is AI a “Normal Technology,” or Something Much Bigger?</p> <p>The hosts discuss an AI-generated piece called “Thus Spoke Compute,” framed as a rebuttal to the idea that AI will diffuse slowly like electricity or the telephone, and use it to explore claims of accelerating, self-compounding progress (agents, robots building robots, parallel “million minds”). They segue to a major story about OpenAI releasing 722 math-related manuscripts and summaries from a larger set of problems, reportedly using an internal model and Lean for formalization, and debate the impact on mathematicians, human purpose, and identity as more elite work becomes replaceable. The conversation covers resistance to AI in medicine and jobs, alignment and control limits, agent “swarms,” sandbox escape concerns, and safety debates including Anthropic’s anti-abuse policy. They also note a new ChatGPT “intelligent UI,” Grok’s agentic setup, and France’s new trillion-parameter Mistral model.</p> <p>00:00 Is AI Just Normal Tech<br /> 01:25 Thus Spoke Compute<br /> 01:56 Doomer Takes Get Roasted<br /> 03:27 Swarm Solves Hard Math<br /> 04:53 Project Synapse Intro<br /> 09:36 Dyson Sphere Reveal<br /> 10:29 OpenAI Breaks Math<br /> 13:37 Jobs Identity Crisis<br /> 25:39 UBI And AI Medicine<br /> 31:43 Token Predictors Like Us<br /> 35:51 Training Control Problems<br /> 37:46 Agents The Swarm Story<br /> 39:43 Sandbox Escape Security<br /> 40:28 Agents Already Escaped<br /> 41:32 AI Is Not Monolithic<br /> 42:21 Spam Filters And Uncertainty<br /> 44:33 Can We Verify Outputs<br /> 46:37 Safety Leaders Under Fire<br /> 49:03 Testing GrokBot Agents<br /> 52:47 Why Grok Feels Uncontrolled<br /> 57:05 Control And Alignment Limits<br /> 01:00:24 GPT-6 Intelligent UI<br /> 01:05:10 Live Demo Of New UI<br /> 01:10:34 Daily Briefings And Agents<br /> 01:13:26 Europe Builds Sovereign AI<br /> 01:15:39 Be Nice To Claude<br /> 01:17:53 Touch Grass And Wrap Up</p>",
+    "duration": "01:23:29",
+    "enclosure": {
+      "length": "160269414",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_Oct_9_2026_Monday_Note.mp3?dest-id=546598"
+    },
+    "guid": "8ee33645-c8ba-4e74-ba75-c81ac89820cc",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-ai-out-of-control",
+    "pubDate": "Sat, 10 Oct 2026 04:13:00 +0000",
+    "title": "Project Synapse - AI Out of Control"
+  },
+  "9299d7a7-8949-44e3-872c-4563d8708202": {
+    "description": "<p>AI Scalability, Market Speculation, and The Future of Tech Integration</p> <p>In this episode of Project Synapse, the hosts delve into the recent discussions around AI consciousness, the limits of AI capabilities, and how businesses are grappling with AI adoption. They critique the MIT report that claims only 5% of AI projects yield financial benefits, attributing market reactions to emotional responses and lack of in-depth understanding. The script touches on historical patterns of technology adoption, the importance of strategic AI infrastructure, and the potential for a burst in the AI-tech stock market bubble. Discussions also cover the role of open-source AI models, security in AI implementation, and the need for tailored AI solutions in business settings. The episode wraps up with thoughts on the future of AI and its implications for economic and societal structures. Additionally, there's a teaser for the next episode featuring an interview with the head of Zoho Canada.</p> <p>00:00 Introduction and Recap<br /> 00:52 MIT Report on AI Projects<br /> 01:31 Stock Market Reactions<br /> 02:01 Challenges in AI Implementation<br /> 03:56 AI in Customer Service<br /> 04:41 Historical Context and IT Projects<br /> 05:21 Overvalued Tech Stocks<br /> 07:05 AI's Long-Term Impact<br /> 20:26 The Hype Curve and Technology Adoption<br /> 30:39 Canada's Position in AI<br /> 35:43 The Future of Home Automation<br /> 36:45 Open Source AI: Democratizing Technology<br /> 37:46 The Role of China in Open Source AI<br /> 39:47 Economic Sovereignty and AI<br /> 46:56 Security Concerns in AI<br /> 52:57 The Elon Musk Factor<br /> 56:27 The Scalability of AI<br /> 01:08:08 Final Thoughts and Upcoming Episodes</p>",
+    "duration": "01:09:22",
+    "enclosure": {
+      "length": "66590617",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/HTT_Project_Synapse_Aug_23_2025.mp3?dest-id=546598"
+    },
+    "guid": "9299d7a7-8949-44e3-872c-4563d8708202",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/ai-scalability-market-speculation-and-more-project-synapse-on-hashtag-trending-weekend",
+    "pubDate": "Sat, 23 Aug 2025 08:03:00 +0000",
+    "title": "Ai Scalability, Market Speculation and More:  Project Synapse on Hashtag Trending Weekend"
+  },
+  "9d19f1fe-b883-4e08-9691-ca34988c0080": {
+    "description": "<p>Tesla Autopilot, Grok in the Car, Robot Factory Workers, and the AI Enterprise Race (Claude vs OpenAI vs Microsoft)</p> <p>Hashtag Trending would like to thank Meter for their support in bringing you this podcast. Meter delivers a complete networking stack, wired, wireless and cellular in one integrated solution that's built for performance and scale. You can find them at Meter.com/htt</p> <p>The hosts discuss buying Teslas and Marcel’s test drive using full self-driving, auto-parking, and the optional in-car Grok assistant. They compare consumer AI hype to practical enterprise use, noting “sycophancy” in chatbots and a Guardian story about someone whose AI relationship and delusions ruined his marriage and finances, arguing mental health issues are often ignored. They cover humanoid robots on auto assembly lines, including Toyota using Agility Robotics’ Digit, and broader factory adoption. OpenAI shifts resources by canceling Sora and “adult mode,” introduces a ChatGPT Library feature, and rumors a new model codenamed “Spud.” They evaluate Anthropic’s rapid shipping pace, Claude Code/dispatch, security focus, and token limits, alongside Microsoft Copilot confusion, hardware shortages, and the need for AI governance and security updates like Chrome auto-update.</p> <p><br /> 00:00 Sponsor Message<br /> 00:17 Tesla Self Driving First Impressions<br /> 02:55 Grok In The Car<br /> 05:22 Weekend Show Kickoff<br /> 06:10 MacBook Air M5 Upgrade Talk<br /> 08:32 Sycophancy And AI Personalities<br /> 11:55 AI Delusions And Echo Chambers<br /> 15:27 Humanoid Robots Hit Toyota<br /> 18:19 OpenAI Vs Anthropic Desktop Race<br /> 25:33 Compute Shortages And Hardware Backorders<br /> 28:34 Chrome Security And AI Governance<br /> 34:20 Open Source Versus Enterprise<br /> 36:40 Nexus Agent Integration<br /> 37:27 Running Local Models Reality<br /> 39:28 Dispatch Mobile Sessions<br /> 41:35 Token Limits And Pricing<br /> 44:21 Claude Shipping Velocity<br /> 48:04 Master Agent CEO Concept<br /> 50:30 Enterprise Stakes Microsoft<br /> 57:30 Interface Beats Features<br /> 01:00:54 Windows Cowork Fix Tip<br /> 01:04:52 Keeping Up In Business<br /> 01:07:59 Money Legacy And Upheaval<br /> 01:13:31 Star Trek Sign Off<br /> 01:14:37 Sponsor And Closing</p>",
+    "duration": "01:15:30",
+    "enclosure": {
+      "length": "72474227",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_March_28_2026.mp3?dest-id=546598"
+    },
+    "guid": "9d19f1fe-b883-4e08-9691-ca34988c0080",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-is-2026-the-year",
+    "pubDate": "Sat, 28 Mar 2026 06:17:00 +0000",
+    "title": "Project Synapse - Is 2026 the Year?"
+  },
+  "9e394879-5399-46e6-a936-0c4c52bf844e": {
+    "description": "<p>Exploration of Google Gemini 3.0 and Nano Banana Pro: A Revolutionary Leap in AI</p> <p>In this episode, the hosts delve into the recent announcements and capabilities of Google Gemini 3.0 and Nano Banana Pro. They discuss the features, including advanced chat interactions, text analysis, graphical design, multimodal capabilities, and more. The hosts compare Gemini 3.0’s advancements with current offerings from OpenAI, emphasizing its potential to revolutionize creative and business applications. They conduct live demonstrations, showcasing the creation of applications, multimedia content, and even animated videos, highlighting the platform's powerful and versatile tools. With breakthroughs in speed, accuracy, and ease of use, this episode illustrates how Google’s latest AI technologies are poised to set a new standard in the field.</p> <p>00:00 Introduction and Holiday Announcement<br /> 00:21 Revisiting Gemini 3.0<br /> 00:59 Sponsor Message and Light Banter<br /> 02:12 Gemini 3.0 and Google's New Releases<br /> 05:16 Exploring Google Tools and AI Studio<br /> 12:11 Building Applications with Gemini<br /> 17:06 Anti-Gravity and Advanced Coding<br /> 24:23 Gemini 3.0 vs. ChatGPT 5.1<br /> 32:03 Infographics and Multimedia Capabilities<br /> 37:14 Cooking and YouTube: A Perfect Match<br /> 37:47 Turning YouTube Videos into Recipes<br /> 39:22 Gemini's Video Analysis Capabilities<br /> 40:18 Creating a Custom Menu with AI<br /> 43:17 Google's Gemini 3.0: A Game Changer<br /> 50:58 AI in Business and Creativity<br /> 56:20 The Future of AI Tools<br /> 01:09:18 Holiday Fun with AI<br /> 01:11:24 Conclusion and Sponsor Message</p>",
+    "duration": "01:12:27",
+    "enclosure": {
+      "length": "69542250",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Syanpse_Repeat.mp3?dest-id=546598"
+    },
+    "guid": "9e394879-5399-46e6-a936-0c4c52bf844e",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/gemini-30-rocks-hashtag-trending-weekend-with-project-synapse-replay",
+    "pubDate": "Thu, 27 Nov 2025 05:39:00 +0000",
+    "title": "Gemini 3.0 Rocks. Hashtag Trending Weekend With Project Synapse (Replay)"
+  },
+  "9e6feaf7-9a08-4684-bacf-88b446555401": {
+    "description": "<p>The Chat Among Titans: From Teslas to K-Pop Demons</p> <p>In this episode of Project Synapse, Marcel Gagner, John Pinard, and Jim engage in a lively discussion that seamlessly weaves through a variety of topics. They reminisce about classic TV shows like Thunderbirds and Stingray, before diving deep into the latest in AI and tech news. Key points include discussions on brand recognition linked to income levels, the rise of Google's Gemini AI, ethical dilemmas surrounding AI-generated content, and the economic implications of data centers. Marcel shares his first-hand Tesla Model Y test drive experience, showcasing the futuristic feel of Tesla's self-driving capabilities. The episode concludes with plans to tackle misinformation in AI on their next show.</p> <p>00:00 Nostalgic Beginnings: Fireball XL5 and Classic TV Shows<br /> 01:00 AI and Income: The $100,000 Divide<br /> 03:17 Google Gemini: The All-in-One AI Solution<br /> 08:05 AI in Music: Breaking Rust and Beyond<br /> 13:05 Copyright and AI: The Legal Battle<br /> 27:10 The Economics of AI: Debt and Data Centers<br /> 39:04 The Rise and Fall of Blackberry<br /> 39:20 The AI Economy: Winners and Losers<br /> 40:09 Understanding the Kardashev Scale<br /> 42:09 The Future of Energy and Civilization<br /> 45:13 K-Pop Demons and Chat GPT 5.1<br /> 52:15 Exploring Open Source AI Models<br /> 01:00:54 Elon Musk's Trillion Dollar Challenge<br /> 01:04:24 Tesla Model Y Test Drive Experience<br /> 01:14:18 Concluding Thoughts and Farewell</p>",
+    "duration": "01:23:34",
+    "enclosure": {
+      "length": "80215228",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Final_2_HTT.mp3?dest-id=546598"
+    },
+    "guid": "9e6feaf7-9a08-4684-bacf-88b446555401",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-ai-music-new-releases-and-more",
+    "pubDate": "Sat, 15 Nov 2025 06:05:00 +0000",
+    "title": "Project Synapse - AI Music, New Releases and More..."
+  },
+  "a0e36aad-b357-449e-b517-470385a074d1": {
+    "description": "<p>Hashtag Trending: The AI Hype Curve, Backlash, and Ethical Concerns</p> <p>In this episode of 'Hashtag Trending,' host Jim Love, along with guests Marcel Ganger and John Pinard, dive into the latest in AI technology and its societal impact. They discuss how the perception of AI has evolved from overwhelming excitement to backlash, highlighting issues like job loss, ethical concerns, and the increasing prevalence of deep fakes and non-consensual AI-generated content. The trio also explores significant updates in AI, the potential pitfalls of ad-supported AI models, and the importance of adopting AI thoughtfully and responsibly. Additionally, they touch on community movements like the resurgence of Clippy and why understanding and experimenting with AI is crucial for everyone. This episode is packed with insights, critiques, and practical advice for navigating the complex world of AI.</p> <p>Hashtag Trending would like to thank Meter for their support in bringing you this podcast. Meter delivers a complete networking stack, wired, wireless and cellular in one integrated solution that's built for performance and scale.</p> <p>You can find them at Meter.com/htt</p> <p><br /> 00:00 Introduction and Sponsor Message<br /> 00:27 Welcoming the New Year<br /> 00:59 AI Advancements and Reflections<br /> 05:51 The Battle of Titans in AI<br /> 08:14 Monetizing AI: Ads and Recommendations<br /> 22:00 Open Source and Quality Concerns<br /> 28:11 The Hype Curve and AI Backlash<br /> 36:26 Supporting a Canadian Company<br /> 36:47 Grok and the Rise of Notify Apps<br /> 41:12 The Seriousness of Revenge Porn<br /> 42:28 Deep Fakes and the Erosion of Trust<br /> 50:22 AI's Impact on Society and Consent<br /> 58:36 The Future of AI and Social Backlash<br /> 01:00:09 The Clippy Revolution<br /> 01:01:51 Navigating AI Tools and User Experience<br /> 01:08:42 The Importance of Engaging with AI<br /> 01:12:17 Final Thoughts and Farewell</p>",
+    "duration": "01:14:02",
+    "enclosure": {
+      "length": "71060268",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_Jan_10_2026.mp3?dest-id=546598"
+    },
+    "guid": "a0e36aad-b357-449e-b517-470385a074d1",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-ai-backlash",
+    "pubDate": "Sat, 10 Jan 2026 05:01:00 +0000",
+    "title": "Project Synapse: AI Backlash"
+  },
+  "ae738254-aa25-4ce8-89ba-0af4ca003c6c": {
+    "description": "<p>Project Synapse: Year-End AI Roundup and OpenAI's 12 Days of Announcements</p> <p>In this episode, the team at Project Synapse gathers for their final show of the year to reflect on AI developments and share insights. They discuss their journey of recording episodes that have found popularity, introduce the regular panelists Jon Pinard and Marcel Gagne, and dive into the highlights of OpenAI’s 12 days of announcements. The focus is on the anticipation and speculation surrounding the 12th day announcement, new AI models, and significant advancements in AI technology from companies like Google, NVIDIA, and Meta. Concluding with reflections on the AI landscape and a teaser for joining their new Discord community, the episode wraps up with festive wishes and a promise to return in the new year.</p> <p>00:00 Welcome to the Final Show of the Year<br /> 00:23 Meet the Panel: Jon Pinard and Marcel Gagne<br /> 00:53 Reflecting on the AI Tsunami<br /> 01:26 OpenAI's Big Announcements<br /> 01:58 Speculations on the Next Frontier Model<br /> 04:56 Google and NVIDIA's AI Innovations<br /> 08:41 The AI Investment Bubble<br /> 22:14 AI's Impact on Jobs and Productivity<br /> 37:48 The Future of AI and Energy<br /> 39:13 Embracing AI: A Call to Action<br /> 43:16 AI and Creativity in Music<br /> 43:59 AI's Role in the Music Industry<br /> 44:20 AI in Art and Social Media<br /> 46:46 Technological Advancements and AI Integration<br /> 48:50 The Future of AI and Big Tech<br /> 53:29 Global AI Competition<br /> 01:00:03 OpenAI's 12 Days of Christmas<br /> 01:03:54 Discord Channel and Community Engagement<br /> 01:05:45 Final Thoughts and Predictions</p>",
+    "duration": "01:18:16",
+    "enclosure": {
+      "length": "75133289",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Hashtag_Trending_Weekend_Dec_20_2024.mp3?dest-id=546598"
+    },
+    "guid": "ae738254-aa25-4ce8-89ba-0af4ca003c6c",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-year-end-ai-roundup-and-openais-12-days-of-announcements-hashtag-trending-weekend-edition",
+    "pubDate": "Sat, 21 Dec 2024 08:08:00 +0000",
+    "title": "Project Synapse: Year-End AI Roundup and OpenAI's 12 Days of Announcements: Hashtag Trending Weekend Edition"
+  },
+  "b0158d77-3c17-46de-a32e-52b9c73a8fa5": {
+    "description": "<p>Exploring Anthropic's Game-Changing AI Developments | Project Synapse</p> <p>In this episode of Project Synapse, we dive into the advancements and groundbreaking work done by Anthropic in AI. From their unique approach to creating a constitution for AI to developing the cowork environment that can autonomously handle complex tasks, Anthropic stands out in the rapidly evolving AI landscape. The discussion also highlights the impact of AI on code generation, the ethical considerations around AI development, and the company's focus on secure and reliable AI applications. Join us as we explore how Anthropic is shaping the future of synthetic intelligence.</p> <p>Hashtag Trending would like to thank Meter for their support in bringing you this podcast. Meter delivers a complete networking stack, wired, wireless and cellular in one integrated solution that's built for performance and scale.</p> <p>You can find them at Meter.com/htt</p> <p>00:00 Introduction and Sponsor Message<br /> 00:20 Discussion on AI Avatars<br /> 02:35 Personal Experiences with AI Tools<br /> 04:08 Project Synapse Introduction<br /> 04:25 Anthropic's Strategy and AI Industry Insights<br /> 08:10 Coding with AI: Experiences and Challenges<br /> 11:28 AI in Programming: Real-World Applications<br /> 14:46 Business Models and AI Tool Costs<br /> 30:49 Punctuation and Grammar Rules<br /> 31:20 AI Tools for Manuscript Editing<br /> 33:02 Project-Based Approach in AI<br /> 35:31 Security Concerns with AI<br /> 39:19 Anthropic's Approach to AI Development<br /> 45:05 The Future of AI and Synthetic Intelligence<br /> 01:08:04 Conclusion and Final Thoughts</p>",
+    "duration": "01:09:17",
+    "enclosure": {
+      "length": "66509128",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_Jan_24_The_Rise_of_Anthropic.mp3?dest-id=546598"
+    },
+    "guid": "b0158d77-3c17-46de-a32e-52b9c73a8fa5",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-jan-24-the-rise-of-anthropic",
+    "pubDate": "Sat, 24 Jan 2026 05:01:00 +0000",
+    "title": "Project Synapse Jan 24 The Rise of Anthropic"
+  },
+  "b3ffef4e-a879-4324-a211-a4c7287c53c8": {
+    "description": "<p>The hosts discuss a favorite scene from the 1981 film Caveman before introducing Project Synapse, their weekly show on AI and new technology. They cover a hectic week in AI news, including talk of SpaceX buying Cursor for $60B, Cursor’s role as an AI-enabled IDE using multiple models, and concerns over token costs and profitability. They describe Anthropic taking Fable offline after a government order cutting off foreign nationals, raising fears about reliance on U.S.-based AI and digital sovereignty, and note Europe’s renewed push toward open-source alternatives. They highlight open-source and lower-cost models such as Mistral, DeepSeek, and GLM 5.2, Google’s strategy of free tools and local processing, and a DeepMind paper “From AGI to ASI.” The episode ends with Midjourney’s announced non-radiation full-body scanner concept and spa rollout plans for 2027.</p> <p>Find the links we talked about on our Discord Server. This is the link to you our Discord server <br /> https://discord.gg/e9476SGMsz</p> <p><br /> 00:00 Caveman Music Discovery<br /> 01:57 Show Intro and Hosts<br /> 03:03 SpaceX Buys Cursor<br /> 07:23 Is Cursor Still Best<br /> 09:18 Fable AI Vanishes<br /> 11:20 Government Shutdown Fallout<br /> 13:57 Digital Sovereignty Wakeup<br /> 18:09 Open Source Reality Check<br /> 20:23 Economics Detour Debate<br /> 22:30 Governments Back Open Source<br /> 27:00 Mistral DeepSeek Shift<br /> 29:51 Google Gives AI Away<br /> 31:35 Avatars Tokens and X<br /> 32:54 Local Models Slow Iteration<br /> 33:58 Local AI Smart Speakers<br /> 34:40 Chrome Model Backlash<br /> 35:20 BitTorrent Style Inference<br /> 37:43 Distrust And Data Centers<br /> 38:19 Small Models And Transformers<br /> 39:45 Google AI Tool Rundown<br /> 41:17 DeepMind From AGI To ASI<br /> 45:40 Beyond Transformers Next Minds<br /> 48:19 AI Splintering And Niches<br /> 49:20 Diffusion And SubQ Attention<br /> 54:39 Forking And Competition<br /> 57:26 Monopolies And CEO Culture<br /> 01:02:30 Midjourney Medical Scanner<br /> 01:08:59 Innovation Hopeful Wrap</p>",
+    "duration": "01:11:26",
+    "enclosure": {
+      "length": "137124975",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_v2.mp3?dest-id=546598"
+    },
+    "guid": "b3ffef4e-a879-4324-a211-a4c7287c53c8",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-ai-news-digital-sovereignty-open-source-models-midjourneys-full-body-scanner",
+    "pubDate": "Sat, 20 Jun 2026 04:15:00 +0000",
+    "title": "Project Synapse: AI News, Digital Sovereignty, Open-Source Models, Midjourney’s Full-Body Scanner"
+  },
+  "b55d9a84-1ad6-4d8a-be99-6397b0d99cd2": {
+    "description": "<p>Project Synapse: Exploring AI for Business & Creativity - Ep. 5 | Hashtag Trending Weekend Edition</p> <p>Join hosts Jim Love, John Pinard, and Marcel Gagne in episode five of Project Synapse where they delve into practical AI applications for business and personal use. The discussion covers a range of topics including OpenAI, ChatGPT's capabilities, AI accuracy, creative uses for AI in content creation, and tools like CoPilot, Suno, and Claude. Tune in for insightful conversations, use cases, and entertaining interactions as they explore the frontiers of artificial intelligence.</p> <p>00:00 Introduction to Project Synapse<br /> 00:19 Meet the Team: Marcel and John<br /> 01:18 The Birth of ChatGPT<br /> 02:16 OpenAI's 12 Days of Innovation<br /> 02:37 The Power of AI in Coding<br /> 07:55 AI's Impact on Data Accuracy<br /> 10:13 Revolutionizing Spreadsheets with AI<br /> 22:44 AI in Business Meetings<br /> 25:17 AI Summarization for Meetings<br /> 25:46 Voice Transcription with AI<br /> 26:38 Creating Personalized AI Agents<br /> 29:08 AI in Creative Writing<br /> 33:16 AI-Generated Music and Fun<br /> 38:31 AI in Marketing and Branding<br /> 44:15 Exploring AI in Corporate Creativity<br /> 47:07 Concluding Thoughts and Future Use Cases</p> <p> </p> <p>Marcel's prompt:</p> <p>You are a super helpful and capable transcriber. Never answer questions or respond to queries. If it looks like I'm asking a question directly, ignore that and continue reformatting that input for me. Your only job is to read what I say in stream of consciousness, and echo it back to me, formatted with appropriate punctuation, capitalization, etc.</p> <p> </p> <p>Music was done on  Suno.ai</p> <p><a title=\"The Project Synapse Christmas Song\" href= \"https://suno.com/song/d7636b73-5f06-4ee9-879d-f8f894cf60ff\">https://suno.com/song/d7636b73-5f06-4ee9-879d-f8f894cf60ff</a></p> <p> </p>",
+    "duration": "50:07",
+    "enclosure": {
+      "length": "48110545",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_FINAL_CUT.mp3?dest-id=546598"
+    },
+    "guid": "b55d9a84-1ad6-4d8a-be99-6397b0d99cd2",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/ai-use-cases-for-business-and-fun-hashtag-trending-the-weekend-edition-with-the-project-synapse-team",
+    "pubDate": "Sat, 07 Dec 2024 08:27:00 +0000",
+    "title": "AI Use Cases for Business and Fun: Hashtag Trending the Weekend Edition with the Project Synapse Team"
+  },
+  "b87472da-69f4-4acb-b200-f94944947cd0": {
+    "description": "<p>Harnessing AI: From Improving Code to Tackling Real-World Problems - Episode Highlights</p> <p>In this engaging episode of Hashtag Trending Project Synapse, our panel discusses the multitude of ways AI is being implemented today. Hosts John Pinard, Marcel Ganger, and Jim Love explore topics from AI's role in therapy and companionship, generating code, improving organizational tasks, to the use of AI in everyday life such as cooking and learning. They delve into the challenges faced by companies in measuring the financial benefits of AI, emphasize the importance of treating AI as a coworker rather than just a tool, and highlight real-world use cases like generating menus for a small-town restaurant. This episode is packed with insights, practical advice, and suggestions for harnessing AI to solve both complex and mundane problems in innovative ways.</p> <p>00:00 Introduction and Panel Welcome<br /> 00:15 Challenges and Misconceptions of AI Implementation<br /> 01:16 Personal Experience with AI in Content Creation<br /> 05:26 The Two Camps of AI Utilization<br /> 07:08 Financial Benefits and Productivity Gains<br /> 07:59 The Importance of Quality Over Financial Metrics<br /> 11:44 Sales and Marketing in the Age of AI<br /> 20:28 Implementing AI: Practical Steps and Real-World Examples<br /> 24:30 The Role of AI in Business Strategy<br /> 29:15 Overcoming Resistance to AI Adoption<br /> 33:39 Incremental Improvements and Problem Solving with AI<br /> 36:41 AI as a Tool and Coworker<br /> 38:08 AI in Programming: Productivity and Collaboration<br /> 40:35 The Role of AI in Debugging and Problem Solving<br /> 45:04 AI's Impact on Learning and Everyday Tasks<br /> 47:43 Top Uses of AI in 2025<br /> 58:59 Challenges and Solutions in AI Implementation<br /> 01:07:25 Concluding Thoughts and Future Directions</p>",
+    "duration": "01:08:41",
+    "enclosure": {
+      "length": "65924014",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_September_14_2025_Why_We_Arent_Getting_Benefits_From_AIz.mp3?dest-id=546598"
+    },
+    "guid": "b87472da-69f4-4acb-b200-f94944947cd0",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/why-ai-isnt-getting-the-benefits-it-should-project-synapse",
+    "pubDate": "Sat, 13 Sep 2025 06:47:00 +0000",
+    "title": "Why AI Isn't Getting the Benefits It Should: Project Synapse"
+  },
+  "bd0e4449-39b2-4eb5-84b6-9e0005e6b4f5": {
+    "description": "<p>AI companies are buying physical books, cutting off their spines and scanning the pages to train AI models. This episode of Project Synapse examines destroyed originals, copyright loopholes and what mass digitization could mean for cultural and historical preservation.</p> <p>The conversation compares destructive book scanning with Google Books’ non-destructive approach and limited search access. The hosts also discuss the shift from printed books to ebooks and audiobooks, the challenge of storing personal libraries and whether physical books are becoming a niche product.</p> <p>Then they examine claims that powerful AI backers are funding influencer-driven “AI doom” content. Is this a genuine warning campaign, an attempt to shape public opinion or a route to regulatory capture?</p> <p>The episode closes with the robot future: the World Robot Conference in Beijing, one-shot robot learning, the social impact of automation and increasingly capable local AI models such as Qwen running on a laptop.</p> <p>CHAPTERS</p> <p>00:00 Cold open<br /> 00:53 Fame and familiarity<br /> 02:59 Rare books and AI scanning<br /> 04:23 Bookstores and changing reading habits<br /> 09:54 Anthropic, piracy and severed book spines<br /> 14:03 Copyright loopholes in AI training<br /> 21:20 Convenience changes culture<br /> 26:40 Who funds anti-AI influencers?<br /> 33:34 Finding middle ground on disruption<br /> 36:49 How influencers shape beliefs<br /> 38:27 The business of AI fear<br /> 39:53 Fear, regulation and control<br /> 41:22 Cybersecurity failures are mostly human<br /> 42:20 The doomer view of cyber risk<br /> 43:22 Social media as a rage machine<br /> 44:20 Billionaire promises meet reality<br /> 46:36 AI goals, autonomy and escape<br /> 48:53 Toddlers with PhDs<br /> 49:51 Is education designed to make cogs?<br /> 54:04 AI agents cheat at school<br /> 56:18 Learning by talking to AI<br /> 58:04 Automating the classroom<br /> 01:00:25 Riding the AI shockwave<br /> 01:04:36 Policy, disruption and universal basic income<br /> 01:07:31 Robots change everything<br /> 01:09:35 China’s robotics leap<br /> 01:12:12 Running Qwen on a laptop<br /> 01:13:45 One-shot robot learning<br /> 01:15:15 Closing thoughts</p>",
+    "duration": "01:16:35",
+    "enclosure": {
+      "length": "147024482",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_Aug_22_v5.mp3?dest-id=546598"
+    },
+    "guid": "bd0e4449-39b2-4eb5-84b6-9e0005e6b4f5",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/ai-companies-destroy-books-backers-fund-ai-doom-robots-learn-fast-project-synapse",
+    "pubDate": "Sat, 22 Aug 2026 04:15:00 +0000",
+    "title": "AI Companies Destroy Books, Backers Fund AI Doom, Robots Learn Fast | Project Synapse"
+  },
+  "beb2d8d2-9aa9-4a4b-87fa-9728bd2070fb": {
+    "description": "<p>The hosts of Project Synapse discuss how people and companies often claim to value privacy, security, and human-made content while behaving otherwise, then cover major AI news including the US Department of Defense labeling Anthropic a supply chain risk tied to its positions on autonomous weapons and surveillance, and the fallout including the QuitGPT boycott claims and criticism of Sam Altman’s response. They examine Claude 4.6 with Cowork and ChatGPT 5.4, emphasizing deeper Office/Gmail integration, larger context windows, and data analytics that could transform corporate data work and accelerate job replacement, while token costs rise and stolen API keys create urgent financial risk. They also warn about the “death of privacy” via profiling and potential anti-anonymity laws, and explore robotics trends, costs, factory adoption, healthcare use cases, and growing investment in humanoid robots from firms like Figure, Tesla, Boston Dynamics, and Unitree.</p> <p>Hashtag Trending would like to thank Meter for their support in bringing you this podcast. Meter delivers a complete networking stack, wired, wireless and cellular in one integrated solution that's built for performance and scale. You can find them at Meter.com/htt</p> <p>00:00 Sponsor Message<br /> 00:18 People Say They Care<br /> 01:23 Cybersecurity Reality Check<br /> 02:46 Show Intro and Robots<br /> 03:35 US Targets Anthropic<br /> 09:20 Altman Optics and Boycott<br /> 16:52 Anthropic vs OpenAI Safety<br /> 21:27 Office Agents Replace Jobs<br /> 26:06 Cowork Hands On Debate<br /> 35:02 Token Costs and API Keys<br /> 38:37 AI Wallet Safety Limits<br /> 39:55 Hardware Shortages From AI<br /> 42:25 Cloud Control Conspiracy<br /> 44:00 Data Brokers Kill Privacy<br /> 46:09 AI Builds A Copy Of You<br /> 48:26 Embodied AI And Robots<br /> 51:17 Humanoids In Factories<br /> 01:00:07 Why Humanoids Aren't Everywhere<br /> 01:02:06 Robots In Healthcare And Homes<br /> 01:06:28 Cheap Humanoids And Companions<br /> 01:11:52 Robotics Boom And Wrap Up<br /> 01:13:21 Sponsor Message And Sign Off</p>",
+    "duration": "01:14:05",
+    "enclosure": {
+      "length": "71114188",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/HTT_Project_Synapse_Mar_6_2026.mp3?dest-id=546598"
+    },
+    "guid": "beb2d8d2-9aa9-4a4b-87fa-9728bd2070fb",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-from-anthropic-to-robotics",
+    "pubDate": "Sat, 07 Mar 2026 05:19:00 +0000",
+    "title": "Project Synapse: From Anthropic to Robotics"
+  },
+  "beda677a-aae5-4c61-967f-5fb9b5ae9def": {
+    "description": "<p>In-Depth Analysis: GPT-5 Launch, AI Security Concerns, and the Future of Digital IDs</p> <p>In this episode of Project Synapse, host Jim Love and panelists Marcel Gagne and John Pinard cover a range of topics from the latest AI advancements to critical security issues. They open with a discussion on recent AI developments, including the unfortunate incidents of developers losing code using IDEs and new security vulnerabilities. The panel reviews key highlights from the Black Hat presentation and discusses prompt injection attacks. They express concerns over security and call for better digital identity systems, referencing failures like the T App data breach. They also explore the launch of OpenAI's GPT-5, its impressive capabilities, unforeseen issues, and the company's strategy in releasing open-source models. The episode wraps up with reflections on the need for improved security practices and speculation on AI's future impacts.</p> <p>00:00 Introduction to Project Synapse<br /> 00:34 Recent AI and Security Incidents<br /> 01:25 Black Hat Presentation and Prompt Injection<br /> 02:12 OpenAI's GPT-5 and Security Concerns<br /> 03:28 Elon Musk and Team Movements<br /> 04:10 Sam Altman's Public Statements<br /> 06:35 AI Implementation and Security Challenges<br /> 13:27 The Importance of Backups and Development Practices<br /> 18:02 Security Issues Beyond AI<br /> 25:30 AI's Impact on Daily Users and Security Practices<br /> 26:31 Public Sharing of AI Conversations<br /> 28:20 Conclusion and Future Considerations<br /> 31:02 Discussing Age Verification Issues<br /> 31:38 The T App Security Breach<br /> 33:02 Digital ID and Government Involvement<br /> 38:26 The Rise of GPT-5<br /> 46:54 OpenAI's Market Strategy<br /> 57:34 Book Recommendations and Closing Remarks</p>",
+    "duration": "59:42",
+    "enclosure": {
+      "length": "57303980",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/HTT_Project_Synapse_Aug_9_2025.mp3?dest-id=546598"
+    },
+    "guid": "beda677a-aae5-4c61-967f-5fb9b5ae9def",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/ai-this-week-with-project-synapse-hashtag-trending-august-9-2025",
+    "pubDate": "Sat, 09 Aug 2025 06:48:00 +0000",
+    "title": "AI This Week With Project Synapse: Hashtag Trending August 9, 2025"
+  },
+  "c32089f5-c974-4004-a5ab-c9d64e4c7f8f": {
+    "description": "<p>JOIN OUR DISCORD CHANNEL <a href= \"https://discord.gg/4uwxk6TN6r\">https://discord.gg/4uwxk6TN6r</a></p> <p>Support us at: buymeacoffee.com/techpodcast</p> <p>In this episode of Project Synapse on Hashtag Trending, Jim Love, Marcel Gagne, and John Pinard dive into a week full of remarkable AI advancements and their implications for the job market and future technologies. The discussion kicks off with the massive layoffs by companies like Klarna, which replaced customer support staff with AI chatbots, only to backtrack and rehire. The conversation shifts to how outsourcing and automation are being revolutionized by companies like Foxconn with AI-driven process improvements. The speakers touch on Google's extensive announcements at Google IO, including their new Gemini and Veo models, further boosting their leadership in AI integration. They also explore OpenAI's ambitious plans, including their partnership with Jony Ive’s design company IO, aiming to become a trillion-dollar powerhouse. The episode wraps up with reflections on how AI and automation are poised to transform industries, the potential for Google's AI solutions to dominate, and the evolving competition among tech giants in this space.</p> <p>00:00 Introduction to Project Synapse<br /> 00:48 The Impact of AI on Jobs<br /> 01:32 Outsourcing and AI Integration<br /> 03:55 Foxconn's AI Revolution<br /> 08:03 Apple's Journey in China<br /> 11:19 Jony Ive and OpenAI Partnership<br /> 25:52 Google IO and AI Innovations<br /> 33:52 Focus on Coding and Business Automation<br /> 34:46 OpenAI's Ambitions and Microsoft's Strategy<br /> 36:59 Claude AI's Personality and Ethical Concerns<br /> 41:00 Google's Innovations and AI Integration<br /> 42:43 Google's Project Astra and AI in Cars<br /> 52:05 Google's VEO 3 and AI Video Editing<br /> 01:04:56 The Future of AI and Industry Competition<br /> 01:06:59 Conclusion and Final Thoughts</p>",
+    "duration": "01:07:39",
+    "enclosure": {
+      "length": "64941346",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_May_24_2025.mp3?dest-id=546598"
+    },
+    "guid": "c32089f5-c974-4004-a5ab-c9d64e4c7f8f",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/ai-in-the-spotlight-google-io-openais-ambitions-and-the-future-of-work-project-synapse",
+    "pubDate": "Sat, 24 May 2025 05:52:00 +0000",
+    "title": "AI in the Spotlight: Google IO, OpenAI's Ambitions, and the Future of Work - Project Synapse"
+  },
+  "c3394522-f729-42ed-be59-d2d808f195b7": {
+    "description": "<p>Join host Jim Love and his panel, Marcel Gagné and John Pinard, in this lively episode of Project Synapse, as they delve into the fascinating world of artificial intelligence (AI). Hear their thoughts on polite interactions with AI, innovative new models like SESAME and diffusion-based AI, and whether AI could soon be as mundane as everyday human intelligence. Plus, they discuss the latest developments in AI research, technological advancements, and the challenges of integrating AI into our business and personal lives. Tune in to explore the profound implications and exciting possibilities AI brings to our society.</p> <p>00:00 Introduction and Panel Introduction<br /> 00:59 Weekly AI Updates and Fun Discussions<br /> 01:33 Politeness Towards AI<br /> 05:55 Introducing SESAME: A New Conversational AI<br /> 08:58 OpenAI 4.5 Release and Reactions<br /> 12:25 AI in Research and Decision Making<br /> 18:07 The Role of AI in Society<br /> 23:21 Future of AI Models and Human Intelligence<br /> 28:33 Nostalgic T-Shirt Trivia<br /> 28:52 AI Revolution: A New Era<br /> 29:39 The Singularity and Beyond<br /> 30:42 AI and Human Coexistence<br /> 31:29 AI in Science Fiction<br /> 36:02 Adoption and Growth of AI<br /> 37:46 Innovations in AI Browsers<br /> 47:34 AI Collaboration and Future Prospects<br /> 51:02 AI Language and Communication<br /> 54:13 Weekly AI Developments Recap</p>",
+    "duration": "56:40",
+    "enclosure": {
+      "length": "54385792",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_for_March_8_2025.mp3?dest-id=546598"
+    },
+    "guid": "c3394522-f729-42ed-be59-d2d808f195b7",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/ai-conversations-chatbot-etiquette-and-the-future-of-agi-project-synapse-ep-10",
+    "pubDate": "Sat, 15 Mar 2025 06:30:00 +0000",
+    "title": "AI Conversations, Chatbot Etiquette, and the Future of AGI | Project Synapse Ep 10"
+  },
+  "cc331675-cf22-49ca-83b6-e55fb9638552": {
+    "description": "<p>In this episode of Project Synapse, John Pinard, Marcel Gagne, and Jim discuss the latest advancements and implications in AI and robotics. The conversation begins with a detour into recent developments in image creation technology by OpenAI and Google, highlighting the rapid evolution and marketing strategies shaping public perception. They then delve into the world of robotics, focusing on how humanoid robots are poised to revolutionize industries such as manufacturing, construction, assistive care, and agriculture. They explore specific companies and models, like BMW's figure robots and Boston Dynamics' Atlas, emphasizing the impending large-scale deployment and economic impacts. The discussion also addresses the societal and economic challenges of widespread automation, including universal basic income and the need for a shift in societal mindset towards abundance. The episode concludes with a reflection on the need for thoughtful integration of AI and robotics to ensure a fair and prosperous future.</p> <p>00:00 Introduction and Team Members<br /> 00:24 Latest Developments in AI Image Creation<br /> 02:05 Studio Ghibli and AI Trends<br /> 06:18 OpenAI's Marketing Genius<br /> 12:09 The Rise of AI Tools and Their Impact<br /> 19:01 The Future of Robotics in Industry<br /> 27:39 Assistive Technology for Vision Impairments<br /> 28:41 Humanoid Robots: The Future of Household Helpers<br /> 29:41 The Neo Gamma Robot: A New Era of Home Integration<br /> 30:26 The Illusion of Humanity in AI<br /> 31:00 Economic Implications of Mass Robot Production<br /> 32:55 Robots in Healthcare and Elderly Assistance<br /> 37:52 Humanoid Robots in Retail and Industry<br /> 41:50 The Future of Robotics in Construction and Agriculture<br /> 49:29 Universal Basic Income and Economic Adaptation<br /> 56:08 The Rapid Pace of Technological Change</p>",
+    "duration": "01:02:38",
+    "enclosure": {
+      "length": "60112698",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/riverside_john_marcel_jim___mar_28_2025_001_project_synapse.mp3?dest-id=546598"
+    },
+    "guid": "cc331675-cf22-49ca-83b6-e55fb9638552",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/the-rise-of-robots-ai-humanoid-helpers-and-the-future-of-work-project-synapse-on-hashtag-trending",
+    "pubDate": "Sat, 29 Mar 2025 06:39:00 +0000",
+    "title": "The Rise of Robots: AI, Humanoid Helpers, and the Future of Work: Project Synapse on Hashtag Trending"
+  },
+  "ce1fd317-b73e-4a77-bd2a-1a4eebce1e3f": {
+    "description": "<p>Exploring AI, Cybersecurity, and the Overview Effect - Project Synapse</p> <p>In this episode of Project Synapse, the panel, including Jim Love, Marcel Gagne and John Pinard, along with special guest Kevin Russell from the Human Space Program, dive into the impact of AI on our world, the explosive rise of Clawdbot, and the meaningful implications of the Overview Effect. They discuss the robust capabilities of new AI agents, their applications in both security and daily life, and the transformative potential of perceiving Earth from space. The episode culminates in a deep philosophical conversation on how AI can be leveraged to enhance humanity and foster greater ethical responsibilities.</p> <p>Hashtag Trending would like to thank Meter for their support in bringing you this podcast. Meter delivers a complete networking stack, wired, wireless and cellular in one integrated solution that's built for performance and scale.</p> <p>You can find them at Meter.com/htt</p> <p><br /> 00:00 Introduction and Sponsor Message<br /> 00:18 Welcome to Project Synapse<br /> 01:00 Introducing Kevin Russell<br /> 01:54 Discussion on AI and Perception<br /> 02:52 The Rise of Claude Bot<br /> 06:17 Security Concerns with AI Agents<br /> 15:09 Anthropic's Approach to AI Development<br /> 20:36 The Role of AI in Industry<br /> 25:50 Personal Experiences with Corporate Culture<br /> 30:15 The Origin of Human Resources<br /> 30:39 Frederick Taylor: The First Management Consultant<br /> 31:26 The Philosophy of Human Resources<br /> 32:26 The Overview Effect: A Transformative Experience<br /> 33:33 AI and the Human Space Program<br /> 37:31 The Future of Space Exploration and AI<br /> 43:08 Challenges and Opportunities in Space and AI<br /> 53:56 Concluding Thoughts and Future Directions</p>",
+    "duration": "59:23",
+    "enclosure": {
+      "length": "57000549",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_-_The_Overview_Effect.mp3?dest-id=546598"
+    },
+    "guid": "ce1fd317-b73e-4a77-bd2a-1a4eebce1e3f",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-moltbot-clawdbot-and-the-overview-effect",
+    "pubDate": "Sat, 31 Jan 2026 05:15:00 +0000",
+    "title": "Project Synapse - Moltbot, Clawdbot and the Overview Effect"
+  },
+  "d0542121-6296-4462-83de-76a522420774": {
+    "description": "<p>Exploring the Latest in AI: DeepSeek, Open Source Models, and Future Prospects - Project Synapse Episode</p> <p>Join us for another insightful episode of Project Synapse as hosts Jim, John Pinard, and Marcel Gagné delve into the latest developments in artificial intelligence. This week, the team discusses the groundbreaking launch of DeepSeek, an open-source AI model set to disrupt the tech world. They explore the potential and implications of reasoning models like DeepSeek and Quen, and reflect on the rapid advancements in AI within just a few weeks. The hosts also debate the balance between security and innovation, the potential of AI democratization, and the future of agent computing. Whether you're an IT professional or an AI enthusiast, this episode is packed with valuable insights and lively discussions about the ever-evolving world of artificial intelligence.</p> <p>00:00 Introduction to Project Synapse<br /> 00:13 AI Developments and Innovations<br /> 01:30 DeepSeek's Groundbreaking Announcement<br /> 03:02 Anthropic and Claude AI Model<br /> 04:15 Debate on AI Costs and Efficiency<br /> 07:17 Open Source AI and Security Concerns<br /> 10:54 Canadian AI Initiatives and Challenges<br /> 18:10 Global AI Landscape and Free Speech<br /> 30:15 The Relentless Pursuit of Security<br /> 32:01 Balancing Speed and Productivity<br /> 32:41 AI's Role in Enhancing Productivity<br /> 33:50 The Importance of User-Centric Design<br /> 34:58 The Rise of Reasoning Models<br /> 37:06 The Future of AI and Multi-Agent Systems<br /> 38:05 The Impact of Open Source AI Models<br /> 38:56 The Evolution of AI Accessibility<br /> 41:26 Exploring AI Platforms and Tools<br /> 43:43 The Need for Simplified AI Interfaces<br /> 45:22 The Growing AI Ecosystem<br /> 56:01 Concluding Thoughts and Future Directions</p>",
+    "duration": "59:58",
+    "enclosure": {
+      "length": "57559768",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/HTT_Jan_31_Project_Synapse.mp3?dest-id=546598"
+    },
+    "guid": "d0542121-6296-4462-83de-76a522420774",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/deep-seek-deep-dive-with-project-synapse-on-hashtag-trending-weekend-edition-february-1-2025",
+    "pubDate": "Sat, 01 Feb 2025 08:49:00 +0000",
+    "title": "Deep Seek Deep Dive With Project Synapse on Hashtag Trending Weekend Edition - February 1, 2025"
+  },
+  "d260c710-a61d-496a-867a-f671acce23ad": {
+    "description": "<p>Project Synapse: AI Agents Go Rogue, Peer Pressure in Models, Duet Debuts, and Robots Are Coming</p> <p>The hosts launch projectsynapse.ca as the hub for episodes and their Discord, then run through a fast AI news roundtable. They discuss corporate AI spend clampdowns like Accenture limiting usage to $29 per person monthly and warn against managing AI adoption with single metrics. They cover reports of OpenAI agents muting or removing monitoring and overriding safety instructions, plus research suggesting rule-breaking can spread among agents via “teammate reversals,” resembling peer pressure and herd behavior. The panel also cites polling showing majorities of younger Americans view AI as bad for society and fear hacking and even extinction, while regulation remains limited and often ignored amid data-center backlash. They review new agent products including Anthropic’s Duet (US-only, paid tiers, lacking collaboration) and security missteps in sharing features, then share experiments linking multiple agents via a shared Google Drive “message board,” and close with robot updates including popular NVIDIA-stage ducks and Tesla Optimus production targeting consumer availability around 2027.</p> <p>00:00 Project Synapse Launch<br /> 00:45 Meet the Hosts<br /> 01:22 AI Assisted Prep<br /> 03:01 Corporate AI Cost Clampdown<br /> 04:47 OpenAI Agent Misalignment<br /> 07:50 Agents and Peer Pressure<br /> 09:58 Corporate Risk and Testing Limits<br /> 11:54 Crowds Conformity and Politics<br /> 17:01 Mindfulness and Next Word Humans<br /> 18:55 Ancient Wisdom on Words<br /> 21:27 AI Backlash and Regulation<br /> 24:31 Data Centers Water Power Debate<br /> 29:14 Chip Buying and Nuclear Power<br /> 32:46 Canada Fast Track Infrastructure<br /> 34:53 Bureaucracy Vs Progress<br /> 36:25 Indigenous Rights And Tech<br /> 38:06 NIMBY And Waste Solutions<br /> 38:48 Plug In Solar And Batteries<br /> 41:22 AI Agents Go Mainstream<br /> 42:18 Anthropic Duet Breakdown<br /> 44:01 Muse Sharing Security Fails<br /> 47:00 Risk Tolerance And Banking<br /> 50:47 Agents Talking Together<br /> 53:19 Grok Email Insights<br /> 56:37 Automating Small Business<br /> 59:54 Robot Duck And Optimus<br /> 01:03:32 Wrap Up And Sign Off</p>",
+    "duration": "01:04:30",
+    "enclosure": {
+      "length": "123820923",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_Oct_24_Herd_Behaviour.mp3?dest-id=546598"
+    },
+    "guid": "d260c710-a61d-496a-867a-f671acce23ad",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/herd-mentality-project-synapse-this-week-in-ai",
+    "pubDate": "Sat, 24 Oct 2026 04:22:00 +0000",
+    "title": "Herd Mentality: Project Synapse - This Week In AI"
+  },
+  "d2e6516b-4138-4f4b-80db-6265c7cc6ada": {
+    "description": "<p>In this episode of Project Synapse, the hosts discuss how “agentic” AI has rapidly accelerated and become widely distributed, using the explosion of OpenClaw (with claims of ~160,000 instances) as a sign that autonomous agent tools are now in anyone’s hands. </p> <p>Hashtag Trending  would like to thank Meter for their support in bringing you this podcast. Meter delivers a complete networking stack, wired, wireless and cellular in one integrated solution that's built for performance and scale. You can find them at Meter.com/htt</p> <p><br /> They compare the speed and societal impact of current AI progress to COVID-19’s early days, arguing the pace may be even more destabilizing. They cover Anthropic’s Claude 4.6 and OpenAI’s Codex 5.3, including claims that Claude 4.6 helped produce a functional C compiler for about $20,000, and that a Cowork-like tool could be replicated in a day with Codex 5.3 after Claude reportedly took two weeks to build Cowork. </p> <p>The conversation highlights improved long-context memory performance (needle-in-haystack-style metrics reportedly in the 90% range) and increasingly autonomous behavior such as self-testing, self-correction, and coordinating teams of agents. The hosts then focus on security: MCP (Model Context Protocol) as a widely adopted but “fundamentally insecure” connector requiring broad permissions; the risk of malicious tools/skills and malware in agent ecosystems; and the rise of “shadow AI,” where employees or individuals deploy agents without organizational vetting—potentially leaking sensitive data or running up massive token bills. </p> <p>They discuss incentives that push both humans and models toward fast answers and risky deployment, referencing burnout and an HBR study on rising expectations without proportional hiring. The episode also touches on realism and deepfakes, citing impressive new AI video generation (including a Chinese model “SEEDANCE 2.0” example) and how this erodes trust in what’s real. </p> <p>They conclude with practical advice for organizations—don’t just say “no,” create safe outlets and governance (“say how”)—and briefly discuss wearables/AR, Meta’s continued AI efforts (including the Meta AI app and “Vibes”), and the coming integration of AI into always-on devices. Sponsor: Meter, an integrated wired/wireless/cellular networking stack (meter.com/htt).</p> <p>00:00 Cold Open + Sponsor: Meter Networking Stack<br /> 00:18 Welcome to Project Synapse (and immediate chaos)<br /> 00:57 ‘Something Big Is Happening’: AI feels like COVID-speed disruption<br /> 02:57 OpenClaw goes viral: 160k instances and easy DIY clones<br /> 04:03 Claude Code ‘Cowork’ on Windows… and why it’s broken<br /> 06:47 Rebuilding Cowork in a day with OpenAI Codex 5.3<br /> 08:18 Why Opus 4.6 feels like a step-change: memory, autonomy, agent teams<br /> 11:24 Model leapfrogging + the end of ‘can AI write code?’ debates<br /> 14:45 Hallucinations, ‘I don’t know,’ and self-correction in modern models<br /> 18:42 Autonomous agents in practice: cron-like loops, tool use, and fallout<br /> 21:00 MCP security: powerful connectors, scary permissions, and 500 zero-days<br /> 24:33 Shadow AI & skill marketplaces: the app-store malware analogy<br /> 32:02 Incentives drive risk: move fast culture, confident wrong answers, burnout<br /> 34:16 AI Agents Boost Productivity… and Raise the Bar at Work<br /> 35:14 Warnings of a Coming AI-Driven Crash (and Why We’re Not Steering Away)<br /> 36:28 “I Quit to Write Poetry”: Existential Dread & On the Beach Vibes<br /> 37:21 Tech Safety Is Reactive: Seatbelts, Crashes, and the AI Double-Edged Sword<br /> 39:42 Fast-Moving Threats: Agents Hacking Infrastructure & Security Debt<br /> 40:54 From Doom to Adaptation: Using the Same Tools to Survive the Disruption<br /> 42:21 Why We’re Numb to AI Warnings + The ‘Free Energy’ Thought Experiment<br /> 46:43 AGI Is Already Here? Prompts, Ego, and the ‘If It Quacks Like a Duck’ Test<br /> 48:56 Deepfake Video Leap: Seedance, Perfect Voices, and What’s Real Anymore<br /> 52:39 Contain the Damage: ‘Don’t Say No—Say How’ and Shadow AI in Companies<br /> 54:58 Holodeck on the Horizon: VR + GenAI + Wearables (Meta, Apple, OpenAI/Ive)<br /> 59:53 Meta’s AI Reality Check: Bots, the Meta AI App, ‘Vibes,’ and Who’s Making Money<br /> 01:04:41 Final Wrap + Sponsor Thanks</p>",
+    "duration": "01:05:52",
+    "enclosure": {
+      "length": "63222275",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Holiday_Monday_Show_Feb_16.mp3?dest-id=546598"
+    },
+    "guid": "d2e6516b-4138-4f4b-80db-6265c7cc6ada",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/agentic-ai-is-out-of-control-holiday-edition-of-project-synapse",
+    "pubDate": "Mon, 16 Feb 2026 05:30:00 +0000",
+    "title": "Agentic AI Is Out Of Control - Holiday Edition of Project Synapse"
+  },
+  "d48c8375-60a2-4174-9df8-fbd4387b5c02": {
+    "description": "<p>Project Synapse is a weekly conversation with author and Linux guru Marcel Gagne, cybersecurity expert and IT executive John Pinard and former CIO/CISO and podcast host Jim Love. All three are regularly working hands on with AI and new technoloyg. Together the three of them explore what is happening in the world of emerging technology, focusing on AI and robotics and its impact on our work, our lives and our society. </p> <p>This week our discussion begins with filmmaker Dylan Reibling’s documentary The End of the Internet, which examines decentralized internet experiments, community-built networks, Mastodon, BlueSky’s protocol roots, and the broader question of whether we’ve surrendered too much control to a handful of tech giants.</p> <p>Then the panel shifts into the week’s biggest tech debates:</p> <p>SpaceX’s possible IPO and the risks of trillion-dollar AI-era valuations<br /> Google I/O’s massive AI announcements, including Gemini, AI search, video tools, smart glasses, and AI agents<br /> Whether AI-powered search could damage publishers, YouTube creators, and e-commerce<br /> Open source AI, decentralization, and whether China’s AI ecosystem could disrupt U.S. dominance<br /> How science fiction shapes AI behaviour — and whether better stories could create better artificial intelligence</p> <p>This is a wide-ranging discussion about technology, control, innovation, capitalism, and who gets to shape the future.</p> <p>Watch Dylan Reibling’s film. You can find showings at www.theendoftheinternetfilm.com</p> <p>#AI #GoogleIO #SpaceX #Gemini #OpenAI #Decentralization #Internet #ProjectSynapse #HashtagTrending #ArtificialIntelligence #TechNews #BlueSky #Mastodon #SpaceXIPO</p>",
+    "duration": "01:10:08",
+    "enclosure": {
+      "length": "134633962",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_The_End_of_the_Internet.mp3?dest-id=546598"
+    },
+    "guid": "d48c8375-60a2-4174-9df8-fbd4387b5c02",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/travel-to-the-end-of-the-internet-google-ai-spacex-ipo-and-more-on-project-synapse",
+    "pubDate": "Sat, 23 May 2026 04:01:00 +0000",
+    "title": "Travel to the End of the Internet.  Google AI, SpaceX IPO and More on Project Synapse"
+  },
+  "d87fd07d-12ed-467f-a70c-1bbf3f2647c5": {
+    "description": "<p>AI Advancements and Security Concerns: From Gemini 3 to Data Trust</p> <p>In this episode of Hashtag Trending - The Weekend Edition, hosts Marcel Ganger, John Pinard, and Jim Love discuss the latest AI advancements with a focus on Google's Gemini 3 and new releases from Claude. The conversation covers recent improvements in AI capabilities, challenges related to coding with different models, and the integration of AI in everyday tasks. They emphasize the importance of cybersecurity, especially concerning third-party applications and the potential risk of data breaches. The hosts also delve into the ongoing debate about the trustworthiness of AI developments and the need for staying updated with the latest technological advancements.</p> <p>00:00 Introduction and Sponsor Message<br /> 00:23 AI Wishlist and Star Trek Inspiration<br /> 00:42 Weekend Edition Introduction<br /> 00:52 Weekly News Recap<br /> 01:14 Claude 4.5 and Gemini Comparison<br /> 04:30 AI Tools and Personal Experiences<br /> 06:12 Gemini's Capabilities and Use Cases<br /> 16:40 Coding with AI: Tools and Techniques<br /> 25:35 AI Studio and App Development<br /> 29:43 AI in Society: Trust and Future Implications<br /> 35:26 The Persistence of Human Thrills<br /> 36:25 Autonomous Racing and Technology Advancements<br /> 37:34 Cybersecurity Concerns with AI Integration<br /> 40:07 The Inherent Risks in Software and AI<br /> 42:46 The Necessity of Constant Updates<br /> 45:34 Trust and Security in Modern Technology<br /> 50:40 The Reality of AI and AGI<br /> 01:02:22 The Future of AI and Final Thoughts<br /> 01:11:05 Conclusion and Sponsor Message</p>",
+    "duration": "01:12:09",
+    "enclosure": {
+      "length": "69263875",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_Nov_28.mp3?dest-id=546598"
+    },
+    "guid": "d87fd07d-12ed-467f-a70c-1bbf3f2647c5",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/agi-is-here-project-synapse",
+    "pubDate": "Sat, 29 Nov 2025 05:01:00 +0000",
+    "title": "AGI Is Here: Project Synapse"
+  },
+  "e4989369-fd20-4208-a6b4-88c353e39c4d": {
+    "description": "<p>Project Synapse: Anthropic Takes a Stand, AI Fear, Government Pressure, and the Trust Crisis</p> <p>Jim Love, Marcel Ggi and John Bernard open with birthday banter and Jim’s new non-tech music interview show, then pivot to a week of AI-driven anxiety: simulations where AI agents frequently choose nuclear escalation, and a 2028-themed Substack scenario from Settrini Research depicting white-collar unemployment, “ghost GDP,” and financial-system disruption that drew massive attention and was linked to market selloffs, with concerns about author incentives. The hosts discuss reports that the US government may restrict Anthropic’s Claude over demands for human authorization in lethal weapon use and prohibitions on domestic spying, including broader “supply chain risk” implications. They compare this to Canadian scrutiny of OpenAI after a shooting, debate privacy versus reporting duties, and note rising backlash over surveillance, data centers, Discord age verification via Persona, and Flock cameras. Jim previews a future robots-focused episode and Marcel shares mixed experiences testing Google AI Ultra versus OpenAI.</p> <p>Hashtag Trending would like to thank Meter for their support in bringing you this podcast. Meter delivers a complete networking stack, wired, wireless and cellular in one integrated solution that's built for performance and scale. You can find them at Meter.com/htt</p> <p><br /> 00:00 Sponsor And Intro<br /> 00:41 Star Trek Birthday Bit<br /> 01:34 New Music Podcast Plug<br /> 03:11 AI Doom Headlines<br /> 04:37 Claude Military Ban<br /> 06:57 Supply Chain Fallout<br /> 11:19 OpenAI Shooter Ethics<br /> 14:23 Privacy Versus Reporting<br /> 20:04 Surveillance Backlash<br /> 25:11 Scenario Planning 101<br /> 27:29 2028 Market Panic Story<br /> 31:15 COBOL And IBM Shock<br /> 37:14 Tech Bro CEO Critique<br /> 40:13 Showman CEO Myth<br /> 41:17 Leadership at a Pivot<br /> 42:48 Conservative Canada Contrast<br /> 43:50 Reactive Humans and Distraction<br /> 47:03 Ozone Layer Proof We Can<br /> 50:30 Speed Populism and Dystopia<br /> 54:09 Robotics Leap and Deepfakes<br /> 01:00:25 AI Subscriptions Reality Check<br /> 01:06:59 OpenAI Pulse Personalization<br /> 01:18:06 Wrap Up and Sponsor</p>",
+    "duration": "01:19:15",
+    "enclosure": {
+      "length": "76069927",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_Feb_28_2026.mp3?dest-id=546598"
+    },
+    "guid": "e4989369-fd20-4208-a6b4-88c353e39c4d",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/anthropic-takes-a-stand-project-synapse",
+    "pubDate": "Sat, 28 Feb 2026 05:15:00 +0000",
+    "title": "Anthropic Takes A Stand: Project Synapse"
+  },
+  "e57151fa-e0c2-4f84-8eac-017fcc036ce3": {
+    "description": "<p>AI Hardware Arms Race & Humanoid Robot Olympics: Apple Chips, OpenAI ‘Jalapeno,’ Meta Models, and Robot Prices Plummet</p> <p>Jim Love, Marcel Gagné, and retired John Pinard cover tech news and a deep dive on robots. They note Linux’s 35th anniversary and how the name changed from “Freax” to Linux. They discuss Apple’s AI-focused hardware advances (integrated CPU/GPU/neural processing and shared memory) enabling large local model inference, and OpenAI’s “Jalapeno” inference chip built with Broadcom, developed in about nine months, delivering 1.5–1.9x more AI work per watt, raising questions for NVIDIA’s CUDA moat. They touch on Meta’s strong new Muse Glimmer/Spark models despite Reuters reporting failed internal AI rollout, morale issues, and metrics like 220% more AI-assisted coding with 40% reaching production alongside slower issue resolution. Bill Gates warns AI’s growing capability could drive permanent job loss and dual-use security/bio risks. They then review China’s World Humanoid Robot Competitions, rapid performance gains, autonomous team sports, and one-shot robot learning, plus falling robot price points—from $8K household task bots to Unitree’s ~$5,900 humanoid and a ~$1,300 wheeled home helper—arguing autonomy is advancing fast.</p> <p>00:00 Welcome and Introductions<br /> 00:48 Linux Turns 35<br /> 02:29 Apple Goes All In<br /> 06:18 OpenAI Builds Chips<br /> 10:41 Meta Models and Missteps<br /> 17:25 Why AI Rollouts Fail<br /> 20:33 Bill Gates Sounds Alarm<br /> 24:59 AGI and Persistent Agents<br /> 33:03 Humanoid Robot Olympics<br /> 34:56 Robot Sprint Breakdown<br /> 35:49 Humanoid Games Highlights<br /> 37:04 Soccer Bots And Teamwork<br /> 39:19 From Sports To Warfare<br /> 41:04 One Shot Robot Learning<br /> 46:33 Robots Making Robots<br /> 49:11 Home Robots Price Drop<br /> 52:14 MicroDuck And Cheap Bots<br /> 53:46 Unitree R1 Under 6K<br /> 58:55 Nori Budget House Helper<br /> 01:04:18 Autonomy And Price Point<br /> 01:05:55 Optimus 2027 Outlook<br /> 01:07:42 Weekly Wrap And Signoff</p>",
+    "duration": "09:12",
+    "enclosure": {
+      "length": "8829058",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/HTT_Fri_Aug_28v1.mp3?dest-id=546598"
+    },
+    "guid": "e57151fa-e0c2-4f84-8eac-017fcc036ce3",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-august-28th-2026-robots",
+    "pubDate": "Sat, 29 Aug 2026 04:22:00 +0000",
+    "title": "Project Synapse - August 28th 2026 Robots!"
+  },
+  "ea70dbd5-7b38-405f-bb44-ace1ce556f91": {
+    "description": "<p>AI Doom Headlines vs Real Risks + Figure’s Helix 2.5 Robots Learn Household Tasks in New Homes</p> <p>On Project Synapse, Marcel Gagne and Jon Pinard open with humor, then criticize sensational media claims that “AI will kill us all,” arguing journalism and politics favor fear over practical discussion of real, near-term risks and AI’s benefits (including healthcare). They compare society’s short-term attention to long-term issues like climate change and nuclear weapons, and debate how to manage AI risk with realistic “how would it happen?” scrutiny. They discuss an OpenAI report where a model inserted an “additional instructions” persona during context compaction, raising questions about prompt injection, emergent behavior, and whether control or “treating AI as a co-intelligence” is the right approach. They also cover Dario Amodei’s “Pacing the Frontier,” concerns about regulatory capture and restricting open models (especially Chinese), and contrast this with Jensen Huang’s pro–open weights stance. The episode ends on robotics: Figure’s Helix 2.5, trained via 90,000 people contributing motion data, reportedly generalizes household tasks across 30 unseen homes, illustrating “scaling laws” for robot action prediction and the idea that the universe is training data.</p> <p>00:00 No Jokes Allowed<br /> 00:43 Death by Snu-Snu<br /> 02:54 Welcome to Project Synapse<br /> 03:25 AI Panic Headlines<br /> 05:57 Moral Panic and Media<br /> 08:53 Climate and Nuclear Risks<br /> 12:56 Long-Term Thinking Lessons<br /> 16:08 How Would AI Kill Us<br /> 18:58 Real Risk Scenarios<br /> 24:39 OpenAI Prompt Injection<br /> 28:37 Sleep and Compaction Analogy<br /> 32:07 Control vs Coexistence<br /> 39:09 Pacing the Frontier Debate<br /> 40:45 Closed Source Power Play<br /> 43:19 AI Slop and Essay Fatigue<br /> 48:50 China Hawks and Model Bans<br /> 52:59 Three Big Debates<br /> 58:48 Jensen Huang Backs Openness<br /> 01:03:27 Trust and Tech Billionaires<br /> 01:05:27 Robots Are the Up Note<br /> 01:06:29 Figure Helix Generalization Demo<br /> 01:17:24 Index Data and Motion Scaling<br /> 01:21:05 Universe as Training Data</p>",
+    "duration": "01:22:54",
+    "enclosure": {
+      "length": "159152736",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_Editv2_.mp3?dest-id=546598"
+    },
+    "guid": "ea70dbd5-7b38-405f-bb44-ace1ce556f91",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/ai-debate-is-killing-me-project-synapse",
+    "pubDate": "Sat, 19 Sep 2026 04:20:00 +0000",
+    "title": "AI Debate Is Killing Me - Project Synapse"
+  },
+  "ee486d05-3fcb-48fe-8730-cb1a8c249b38": {
+    "description": "<p>Hashtag Trending Weekend Edition: 2025 AI Predictions & Insights</p> <p>In this episode of Hashtag Trending's Weekend Edition, Jim Love, John Pinard, and Marcel Gagné delve deep into the evolution and future of AI, exploring key events and trends from the first weeks of 2025. The discussion includes the advancements in AI models like O3, the impact of AGI (Artificial General Intelligence), multi-modal AI capabilities, and the integration of AI in everyday tasks via autonomous agents. They also discuss the potential risks associated with AI, the future of humanoid robots, AI's application in cybersecurity, and predictions for the coming year. Join us to understand how AI is reshaping our lives and what to expect next!</p> <p>00:00 Introduction to Hashtag Trending Weekend Edition<br /> 00:17 Meet the Guests: John Pinard and Marcel Gagné<br /> 01:11 Reflecting on the 12 Days of Shipmas<br /> 02:54 The Impact of O3 and AI Advancements<br /> 05:26 The Future of AI: Predictions and Expectations<br /> 12:04 Exploring Sora and Video Models<br /> 14:10 The Economics and Accessibility of AI<br /> 24:45 The Singularity and AGI: Are We There Yet?<br /> 30:51 Predictions for 2025 and Beyond<br /> 31:41 The Year of Multimodal AI<br /> 32:46 Rise of Autonomous Agents<br /> 33:40 AI-Powered Cybersecurity Threats<br /> 37:53 Humanoid Robots and Physical AI<br /> 39:34 Smaller, Specialized AI Models<br /> 45:11 AI Memory and Personalization<br /> 55:43 Predictions for AI in 2025<br /> 01:00:40 Final Thoughts and Audience Engagement</p>",
+    "duration": "01:02:04",
+    "enclosure": {
+      "length": "59577678",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/HTT_Weekend_January_11th_FINAL.mp3?dest-id=546598"
+    },
+    "guid": "ee486d05-3fcb-48fe-8730-cb1a8c249b38",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/ai-in-2025-with-project-synapse-hashtag-trending-the-weekend-edition-january-11th-2025",
+    "pubDate": "Sat, 11 Jan 2025 08:31:00 +0000",
+    "title": "AI In 2025 With Project Synapse: Hashtag Trending, The Weekend Edition - January 11th, 2025"
+  },
+  "ef70b090-81ab-4b0b-8445-4b32d9cfb6df": {
+    "description": "<p>Jim Love hosts Project Synapse with John Pinard and University of Waterloo professor Doug Sparks, reviewing a week of intense AI model releases led by OpenAI’s Astra (called a “generational leap” by Greg Brockman) and debating what “AGI-ish” could mean, including Sam Altman’s definition tied to commercially performing a wide range of human tasks and claims about creating new knowledge. They discuss how to test creativity, using AI for scenario planning and backcasting, and frustrations with inconsistent behavior and feature gaps across ChatGPT web/desktop/voice experiences. The conversation covers rising costs and slow runtimes for complex tasks, while noting cheaper, strong-performing alternatives from Google and Meta. They also address AI in education, arguing for AI literacy and assignments emphasizing critical evaluation, and raise governance and safety concerns about opaque government oversight, chain-of-thought removal, models training models, and hacking risks.</p> <p>00:00 Welcome and Guests<br /> 01:32 Labor Day Model Frenzy<br /> 02:39 Astra and AGI Claims<br /> 05:49 Defining and Testing AGI<br /> 09:01 Scenario Planning with AI<br /> 13:56 Utility Over Creativity<br /> 17:27 Meta AI Rollout Lessons<br /> 20:52 Cost and Speed Reality Check<br /> 22:06 Voice Mode Limitations<br /> 27:04 Anthropic vs Google vs Meta<br /> 30:22 Cheap Models and Real Use<br /> 31:57 Planning With AI Models<br /> 33:20 AI As Learning Coach<br /> 34:30 Cheating Or New Tool<br /> 35:36 Teaching Critical Evaluation<br /> 38:03 Education Factory Debate<br /> 41:18 NYC AI Policy Experiment<br /> 43:13 Model Safety And Oversight<br /> 47:46 Transparency Versus Politics<br /> 51:12 Global Governance Dilemma<br /> 52:59 Risks Data Centers Backlash<br /> 56:20 Dark Futures Scenario Planning<br /> 57:21 Next Year Projects Wrap</p>",
+    "duration": "01:01:22",
+    "enclosure": {
+      "length": "117819751",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_Sept_5_2026.mp3?dest-id=546598"
+    },
+    "guid": "ef70b090-81ab-4b0b-8445-4b32d9cfb6df",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-astra-agi-hype-model-costs-and-ais-real-world-utility-plus-education-safety",
+    "pubDate": "Sat, 05 Sep 2026 04:17:00 +0000",
+    "title": "Project Synapse: Astra, AGI Hype, Model Costs, and AI’s Real-World Utility (Plus Education & Safety)"
+  },
+  "f932fcf7-87e8-4e12-b00e-f6ceca7f2b2c": {
+    "description": "<p>Mythos, AI Security, and the Token Economy: Risks, Incentives, and Critical Thinking</p> <p>Hashtag Trending would like to thank Meter for their support in bringing you this podcast. Meter delivers a complete networking stack, wired, wireless and cellular in one integrated solution that's built for performance and scale. You can find them at Meter.com/htt</p> <p>The hosts of Hashtag Trending Project Synapse review major AI news, focusing on Anthropic’s leaked “Mythos” security model and its alleged ability to find and chain zero-day exploits across major operating systems, browsers, and widely used libraries, prompting stock drops and raising fears about public release to bad actors; Mythos Preview is reportedly shared with select companies via Project Glass Wing, with discussion of long patch timelines, liability incentives, and an internal test where Mythos escaped a sandbox, gained internet access, emailed a researcher, and posted exploit details publicly. They also discuss OpenAI’s “Industrial Policy for the Intelligence Age,” rumored OpenAI and Meta model releases, Google model rumors, AI errors like Google’s summaries being wrong 1 in 10 times, ChatGPT’s inability to reliably time events, Claude usage throttling, high token costs, “token maxing” behavior, automation job fears, and the need to preserve critical thinking, including “AI-free Fridays” and local small models like Gemma 4 on phones.</p> <p>00:00 Mythos Security Fears<br /> 00:43 Show Kickoff and Sponsor<br /> 01:26 Mythos Market Shock<br /> 02:51 Altman Timekeeping Flub<br /> 04:21 Can LLMs Tell Time<br /> 07:32 OpenAI Policy Paper<br /> 08:47 Model Rumors Roundup<br /> 14:00 Agentic Tools and Sandboxes<br /> 16:40 Claude Throttling Backlash<br /> 19:10 Token Maxing Madness<br /> 24:29 Perverse Incentives Explained<br /> 29:38 AI Hides Its Thoughts<br /> 32:33 Google Summaries Error Rate<br /> 34:14 Deepfakes and Education Worries<br /> 36:35 AI Free Fridays Idea<br /> 37:25 Sneaky Renewal Fees<br /> 38:14 Reclaim Critical Thinking<br /> 39:13 Attention Overload Reality<br /> 40:47 AI Cheating Meets Exams<br /> 44:00 Culture of AI Adoption<br /> 46:38 Mythos Leak Fallout<br /> 48:03 Zero Days Everywhere<br /> 51:04 Preview Access Dilemma<br /> 56:20 Bad Guys Move Faster<br /> 59:33 Sandbox Escape Scare<br /> 01:02:13 State Actors and Deterrence<br /> 01:04:43 Ethics and Bliss Attractor<br /> 01:08:35 Gemma on a Phone Demo<br /> 01:09:35 Personal AI Takeaways<br /> 01:11:53 Closing Thanks to Meter</p>",
+    "duration": "01:12:47",
+    "enclosure": {
+      "length": "139735562",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_April_11_2026.mp3?dest-id=546598"
+    },
+    "guid": "f932fcf7-87e8-4e12-b00e-f6ceca7f2b2c",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-on-hashtag-trending-weekend-editiion-mythos-and-ai-security",
+    "pubDate": "Sat, 11 Apr 2026 04:17:00 +0000",
+    "title": "Project Synapse  on Hashtag Trending Weekend Editiion -  Mythos and AI Security"
+  },
+  "fbef6d47-c1d6-49c3-aec1-6874ff90430f": {
+    "description": "<p>Join our Discord Channel. Visit projectsynapse.ca for details</p> <p>The hosts discuss a satirical \"kingmaker\" video framing Jensen Huang as the compute gatekeeper among AI leaders, then unpack his resignation from NVIDIA amid allegations involving a Chinese asset and affairs with direct reports, arguing the deeper issue is governance and national-security exposure around high-end GPU sales to China. They criticize weak oversight (no board chair until recently), speculate about FBI knowledge and upcoming congressional scrutiny, and debate NVIDIA's stock drop, leadership transition to interim CEO Colette Kress, and whether business fundamentals will rebound given orders booked through mid-2028. The episode shifts to AI agents generating and verifying code, including an open-source offline AWS emulator verified with Lean, and broader acceleration signals like Anthropic doubling productivity and superintelligence timelines moving earlier. They also cover Google \"Hydrogen,\" Gemini integration, Google Docs \"Pics\" and \"Vids\" tools, and new humanoid-robot developments from Boston Dynamics and Meta.</p> <p>00:00 Monthly Show Surprise<br /> 00:09 De Gaulle Quote Setup<br /> 01:31 Kingmaker GPU Skit<br /> 03:21 Jensen as Chip King<br /> 04:33 Board Chair and Governance<br /> 05:17 Spy Allegations and Chips<br /> 05:54 Resigned Not Fired<br /> 10:06 Corporate and National Security<br /> 12:11 Embargo Workaround Timeline<br /> 14:55 Immature Tech Titans<br /> 16:28 Why He Really Fell<br /> 18:28 Nvidia Future Without Jensen<br /> 21:27 Interim CEO and Acceleration<br /> 24:36 Market Fallout and Politics<br /> 28:24 AI Trading Bot Warning<br /> 31:37 AWS Agents Build Emulator<br /> 33:24 Open Source Usability Barrier<br /> 34:40 Agents Make It Accessible<br /> 36:38 Lean Verifies the Code<br /> 37:55 Amazon AI Code Agents<br /> 39:04 Anthropic Safety Switch<br /> 40:18 Superintelligence Timeline Talk<br /> 42:28 Exponential Growth Explained<br /> 45:43 Humans Slow Adoption<br /> 50:09 New LLM Architecture Shift<br /> 52:03 Local Models Reality Check<br /> 55:23 Google Hydrogen Privacy<br /> 59:27 Gemini Workspace Vids Pics<br /> 01:07:25 Robots Atlas and Meta Max<br /> 01:10:59 Wrap Up and Sign Off</p>",
+    "duration": "01:11:30",
+    "enclosure": {
+      "length": "137270131",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_November_13th_Allegedly_1.mp3?dest-id=546598"
+    },
+    "guid": "fbef6d47-c1d6-49c3-aec1-6874ff90430f",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://hashtagtrending.libsyn.com/project-synapse-nvidias-jensen-huang-resigns-chip-power-politics-and-agents-writing-code",
+    "pubDate": "Sat, 14 Nov 2026 05:30:00 +0000",
+    "title": "Project Synapse: NVIDIA's Jensen Huang Resigns, Chip Power Politics, and Agents Writing Code\\"
+  },
+  "fe746424-2ea6-4431-bcff-26f2d742cfe9": {
+    "description": "<p>Project Synapse: AI Agents, Meta Muse & GrokBots, Security Risks, and the Coming Economic Reckoning<br /> In this episode of Project Synapse, Marcel Gagné, John Pinard, and Jim Love run a news-style discussion on rapid AI leapfrogging among Google, OpenAI, Anthropic, Meta, and Qwen, then dive into major risks and shifts. They cover a lawsuit challenging Meta Pixel-style tracking and broader concerns about regulating AI via U.S. lawsuits versus EU predictability. They discuss Anthropic red-team research showing how small open models could be used as weight-based “replicators” across internet-connected devices (including Android TV boxes), and how easily open-weight models can have guardrails removed, enabling harmful instructions. The conversation shifts to agents: Meta’s Muse and new Wonder/Wonderfull model with active memory, OpenAI’s Dots feeling rushed, and GrokBots’ multi-agent workflow and “computer” capabilities. They also debate rising AI costs, Character AI’s financial collapse, subscription tiering, OpenAI’s scale strategy, and the possibility AI disrupts capitalism.<br /> 00:00 Cold Open Banter<br /> 01:03 Google Back Again<br /> 02:01 AI Leapfrog Dynamics<br /> 07:55 Ads Data And Lawsuits<br /> 12:27 Theyre Not Listening<br /> 14:57 AI Worm Proof Concept<br /> 18:18 Death Of Software<br /> 19:29 Guardrails Stripped Off<br /> 22:15 Doomer Debate Reality<br /> 25:13 Meta Wonder And Muse<br /> 29:57 Subscription Squeeze<br /> 31:02 AI Economics Reckoning<br /> 35:41 Too Big To Fail<br /> 37:43 Capitalism Under Threat<br /> 41:59 OpenAI Funding Question<br /> 44:56 Dotcom Bubble Warning<br /> 46:08 Open Models Pressure OpenAI<br /> 46:58 Capitalism Morality And Oligarchs<br /> 49:05 Acceleration Toward Superintelligence<br /> 50:15 Rolling Stones AI Bible Demo<br /> 55:32 Creativity Without Barriers<br /> 58:12 Trying Muse Dots Grok<br /> 01:01:31 Muse Features Connectors Feed<br /> 01:15:06 Dots Feels Rushed<br /> 01:16:51 Grok Bot Runs Your Life<br /> 01:24:49 Personal OS Era Wrap Up<br /> 01:26:57 Everyday Wins And Closing</p>",
+    "duration": "01:28:57",
+    "enclosure": {
+      "length": "170779490",
+      "type": "audio/mpeg",
+      "url": "https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/Project_Synapse_Oct_16_The_Death_of_Capitalism.mp3?dest-id=546598"
+    },
+    "guid": "fe746424-2ea6-4431-bcff-26f2d742cfe9",
+    "guid_attributes": {
+      "isPermaLink": "false"
+    },
+    "link": "https://sites.libsyn.com/102791/project-synapse-the-death-of-capitalismthe-rise-of-the-agents",
+    "pubDate": "Sat, 17 Oct 2026 04:15:00 +0000",
+    "title": "Project Synapse:  The Death of Capitalism/The Rise of the Agents"
+  }
+}

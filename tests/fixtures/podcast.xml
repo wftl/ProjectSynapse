@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Hashtag Trending</title>
+    <item>
+      <title>Project Synapse: AI &amp; robots</title>
+      <description><![CDATA[<p>Jim & Marcel discuss <b>AI</b>.</p>
+<p>Original formatting stays.</p>]]></description>
+      <pubDate>Sat, 14 Nov 2026 05:30:00 +0000</pubDate>
+      <guid isPermaLink="false">synapse-new</guid>
+      <link>https://hashtagtrending.libsyn.com/ai-and-robots</link>
+      <enclosure url="https://media.blubrry.com/4044638/traffic.libsyn.com/secure/hashtagtrending/new.mp3?dest-id=546598&amp;source=rss" length="137270131" type="audio/mpeg" />
+      <itunes:duration>01:11:30</itunes:duration>
+    </item>
+    <item>
+      <title>Hashtag Trending: Daily technology headlines</title>
+      <description>Project Synapse is mentioned here but this is a daily show.</description>
+      <pubDate>Mon, 16 Nov 2026 05:30:00 +0000</pubDate>
+      <guid isPermaLink="false">daily</guid>
+    </item>
+    <item>
+      <title>Weekend edition — pRoJeCt SyNaPsE</title>
+      <description>&lt;p&gt;Older episode with Gagné.&lt;/p&gt;</description>
+      <pubDate>Sat, 07 Nov 2026 05:15:00 +0000</pubDate>
+      <guid isPermaLink="true">https://hashtagtrending.libsyn.com/older</guid>
+      <link>https://hashtagtrending.libsyn.com/older</link>
+      <enclosure url="https://traffic.libsyn.com/secure/hashtagtrending/older.mp3" length="1234567" type="audio/mpeg" />
+      <itunes:duration>42:01</itunes:duration>
+    </item>
+  </channel>
+</rss>

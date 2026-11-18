@@ -122,7 +122,7 @@ class PageLinksFeedTest(unittest.TestCase):
 class DeployScriptTest(unittest.TestCase):
     def test_weekly_job_commits_feed_and_stages_before_diffing(self):
         script = (build.ROOT / "deploy" / "run-update.sh").read_text(encoding="utf-8")
-        self.assertIn("data_files=(episodes.json index.html feed.xml)", script)
+        self.assertIn("data_files=(episodes.json index.html feed.xml podcast_episodes.json podcast.xml)", script)
         # Staging must precede the "anything changed?" check, or a not-yet-tracked
         # feed.xml is invisible to git diff and rejected by git commit.
         self.assertLess(script.index('git add -- "${data_files[@]}"'),

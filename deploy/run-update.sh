@@ -7,7 +7,7 @@ set -euo pipefail
 
 repo_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 expected_branch="${SYNAPSE_BRANCH:-master}"
-data_files=(episodes.json index.html feed.xml)
+data_files=(episodes.json index.html feed.xml podcast_episodes.json podcast.xml)
 
 cd "$repo_dir"
 
@@ -22,6 +22,9 @@ if ! git diff --quiet HEAD -- "${data_files[@]}"; then
 fi
 
 python3 update.py
+if ! python3 podcast.py; then
+    echo "warning: podcast refresh failed; continuing with the existing podcast files" >&2
+fi
 python3 -m unittest discover -s tests -q
 
 # Stage first: git diff/commit ignore a feed.xml that isn't tracked yet.
